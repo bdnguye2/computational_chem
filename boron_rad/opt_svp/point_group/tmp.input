@@ -1,0 +1,6 @@
+$title
+$symmetry cs
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$end

@@ -1,0 +1,24 @@
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 11
+
+ energy change  : actual value =  -0.2034E-06 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.6517E-04 threshold =   0.1000E-02
+
+Job ended at   Sat Mar 7 13:25:30 PST 2020
+  on machine     newyork
+  by user        bdnguye2
+  in directory   /work/bdnguye2/boron_rad/opt_svp
+  
+job.start file had been created with details about the job type: 
+
+Sat Mar  7 13:21:58 PST 2020
+jobex WAS CALLED AS: jobex -ri -c 40
+AN OPTIMIZATION WITH MAX. 40 CYCLES WILL BE PERFORMED
+CONVERGENCY CRITERION FOR TOTAL SCF-ENERGY IS 10**(-6)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF SCF-ENERGY GRADIENT IS 10**(-3)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF BASIS SET GRADIENT IS 10**(-3)
+PROCEDURE WILL START WITH A dscf like STEP
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /modfac/apps/TURBOMOLE/7.4.1-official/bin/em64t-unknown-linux-gnu
+DSCF  = /modfac/apps/TURBOMOLE/7.4.1-official/bin/em64t-unknown-linux-gnu/ridft
+GRAD  = /modfac/apps/TURBOMOLE/7.4.1-official/bin/em64t-unknown-linux-gnu/rdgrad
+STATPT = /modfac/apps/TURBOMOLE/7.4.1-official/bin/em64t-unknown-linux-gnu/statpt
+

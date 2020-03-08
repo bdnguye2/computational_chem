@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsthm} %lets us use \begin{proof}
+\usepackage{amssymb} %gives us the character \varnothing
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{braket}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{mathtools}
+
+\title{Chem150L: Final} % Title of the assignment
+
+\begin{document}
+
+\maketitle
+
+\section*{Electronic Structure of a New Carborane Radical}
+
+\noindent a) Perform an initial geometry optimization of meta-C$_2$B$$_{10}$H$_{11}$
+using def2-SV(P) basis sets and TPSS/RI. (8)
+\\
+
+\noindent b) Confirm that the converged structure is a minimum by analytical
+second derivative calculations. What point group symmetry, if any, does the
+radical have? (4)
+\\
+
+{\color{blue} No point group symmetry}
+\\
+
+\noindent c) Refine the structure by re-optimizing it using def2-TZVP basis
+sets and the TPSSh. Use the refined methodology for the following property
+calculations. (4)
+\\
+
+\noindent d) Investigate the bonding in the cluster core by visually inspecting
+the orbitals and their energies. Identify and plot the low-lying totally symmetric
+delocalized valence orbital expected from the Wade rules. Can the electronic
+structure of the radical be described by localized two-electron two-center
+bonds? (4)
+\\
+
+\begin{figure}[H]
+  \includegraphics[width=0.5\textwidth]{homo_37a_a.png}
+  \includegraphics[width=0.5\textwidth]{lumo_37a_b.png}
+  \caption{}
+  \label{fig:orbital}
+\end{figure}
+
+\end{document}

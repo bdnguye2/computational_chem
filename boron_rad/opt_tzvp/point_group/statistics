@@ -1,0 +1,105 @@
+Sat Mar  7 15:35:49 PST 2020
+
+ DSCF STATISTICS OUTPUT :
+
+ integral neglect threshold       :  0.67E-11
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ --------------------    1.ITERATION  --------------------
+ total energy                          : -329.44072249504    
+ one-electron energy                   : -1513.2342640181    
+ two-electron energy                   :  626.62985755473    
+ damping factor ttr                    :            1.000    
+
+ --------------------    2.ITERATION  --------------------
+ total energy                          : -331.00557416136    
+ one-electron energy                   : -1530.4902421453    
+ two-electron energy                   :  642.32098401553    
+ energy increment                      :           -1.565    
+ damping factor ttr                    :           0.9500    
+
+ --------------------    3.ITERATION  --------------------
+ total energy                          : -331.41718461522    
+ one-electron energy                   : -1536.6825369126    
+ two-electron energy                   :  648.10166832900    
+ energy increment                      :          -0.4116    
+ damping factor ttr                    :           0.8500    
+
+ --------------------    4.ITERATION  --------------------
+ total energy                          : -331.57603615761    
+ one-electron energy                   : -1540.4755000529    
+ two-electron energy                   :  651.73577992695    
+ energy increment                      :          -0.1589    
+ damping factor ttr                    :           0.7500    
+
+ --------------------    5.ITERATION  --------------------
+ total energy                          : -331.63225784272    
+ one-electron energy                   : -1542.8207809949    
+ two-electron energy                   :  654.02483918383    
+ energy increment                      :          -0.5622E-01
+ damping factor ttr                    :           0.6500    
+
+ --------------------    6.ITERATION  --------------------
+ total energy                          : -331.64814656776    
+ one-electron energy                   : -1544.1936203273    
+ two-electron energy                   :  655.38178979117    
+ energy increment                      :          -0.1589E-01
+ damping factor ttr                    :           0.5500    
+
+ --------------------    7.ITERATION  --------------------
+ total energy                          : -331.65133570491    
+ one-electron energy                   : -1544.6533517941    
+ two-electron energy                   :  655.83833212084    
+ energy increment                      :          -0.3189E-02
+ damping factor ttr                    :           0.4000    
+
+ --------------------    8.ITERATION  --------------------
+ total energy                          : -331.65196605858    
+ one-electron energy                   : -1544.9635800829    
+ two-electron energy                   :  656.14793005596    
+ energy increment                      :          -0.6304E-03
+ damping factor ttr                    :           0.2500    
+
+ --------------------    9.ITERATION  --------------------
+ total energy                          : -331.65203546613    
+ one-electron energy                   : -1544.9876406381    
+ two-electron energy                   :  656.17192120359    
+ energy increment                      :          -0.6941E-04
+ damping factor ttr                    :           0.1000    
+
+ --------------------   10.ITERATION  --------------------
+ total energy                          : -331.65204925822    
+ one-electron energy                   : -1545.0449430487    
+ two-electron energy                   :  656.22920982211    
+ energy increment                      :          -0.1379E-04
+ damping factor ttr                    :           0.1000    
+
+ --------------------   11.ITERATION  --------------------
+ total energy                          : -331.65205098290    
+ one-electron energy                   : -1545.0426893271    
+ two-electron energy                   :  656.22695437578    
+ energy increment                      :          -0.1725E-05
+ damping factor ttr                    :           0.1500    
+
+ --------------------   12.ITERATION  --------------------
+ total energy                          : -331.65205119829    
+ one-electron energy                   : -1545.0378685928    
+ two-electron energy                   :  656.22213342618    
+ energy increment                      :          -0.2154E-06
+ damping factor ttr                    :           0.1000    
+
+ --------------------   13.ITERATION  --------------------
+ total energy                          : -331.65205122810    
+ one-electron energy                   : -1545.0399613601    
+ two-electron energy                   :  656.22422616357    
+ energy increment                      :          -0.2981E-07
+ damping factor ttr                    :           0.1500    
+
+ --------------------   14.ITERATION  --------------------
+ total energy                          : -331.65230207138    
+ one-electron energy                   : -1545.0399047999    
+ two-electron energy                   :  656.22391876014    
+ energy increment                      :          -0.1464E-08
+ damping factor ttr                    :           0.2000    

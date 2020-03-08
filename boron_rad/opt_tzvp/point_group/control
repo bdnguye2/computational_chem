@@ -1,0 +1,89 @@
+$title
+$symmetry cs
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+c  1,3                                                                         \
+   basis =c def2-TZVP                                                          \
+   jbas  =c def2-TZVP
+h  2,4,6,9,11,13,15,17,19,21,23                                                \
+   basis =h def2-TZVP                                                          \
+   jbas  =h def2-TZVP
+b  5,7-8,10,12,14,16,18,20,22                                                  \
+   basis =b def2-TZVP                                                          \
+   jbas  =b def2-TZVP
+$basis    file=basis
+$uhfmo_alpha   file=alpha
+$uhfmo_beta   file=beta
+$uhf
+$alpha shells
+ a'      1-24                                   ( 1 )
+ a"      1-13                                   ( 1 )
+$beta shells
+ a'      1-23                                   ( 1 )
+ a"      1-13                                   ( 1 )
+$scfiterlimit       30
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=1.000  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$natural orbitals    file=natural
+$natural orbital occupation    file=natural
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$dft
+   functional tpssh
+   gridsize   m3
+$scfconv   7
+$scforbitalshift  closedshell=.05
+$rundimensions
+   natoms=23
+   nbf(CAO)=498
+   nbf(AO)=438
+$last step     ridft
+$orbital_max_rnorm 0.43085571963898E-05
+$last SCF energy change = -331.65230
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-331.6523020714    -1545.039904800     712.4329882617    -53.82057465588    -2.388494845667     557.1636839684
+$ssquare from ridft
+          0.753 (not to be modified here)
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ridft
+  x    -0.98618213480955    y    -0.60098218076317    z     0.00000000000002    a.u.
+   | dipole | =    2.9354200099  debye
+$end
