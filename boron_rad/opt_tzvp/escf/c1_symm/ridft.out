@@ -1,0 +1,916 @@
+STARTING ridft ON 8 PROCESSORS!
+RUNNING PROGRAM /sopt/TURBOMOLE/7.4.1-official/bin/em64t-unknown-linux-gnu_smp/ridft_mpi.
+           Doing BLAS/Lapack in the master proc. with  8 CPUs.
+           SMPCPUS    set: Shared-memory Parallelization with   8 CPUs.
+
+           SMP Parallelization Reference:
+           C. van Wullen, J. Comput. Chem. 32 (2011) 1195--1201
+
+ ridft (c-4-13) : TURBOMOLE rev. V7.4.1 (b987a8a8) compiled 15 Oct 2019 at 12:03:25
+ Copyright (C) 2019 TURBOMOLE GmbH, Karlsruhe
+
+
+    2020-03-07 15:49:35.276 
+
+
+
+                                  r i d f t
+
+                        DFT program with RI approximation 
+                                for coulomb part 
+
+
+
+
+                                                 
+                                 References:     
+                                                 
+          TURBOMOLE:                             
+              R. Ahlrichs, M. Baer, M. Haeser, H. Horn, and
+              C. Koelmel
+              Electronic structure calculations on workstation
+              computers: the program system TURBOMOLE
+              Chem. Phys. Lett. 162: 165 (1989)
+          Density Functional:                              
+              O. Treutler and R. Ahlrichs                      
+              Efficient Molecular Numerical Integration Schemes
+              J. Chem. Phys. 102: 346 (1995)                   
+          Parallel Version:                                
+              Performance of parallel TURBOMOLE for Density    
+              Functional Calculations                          
+              M. v. Arnim and R. Ahlrichs                      
+              J. Comp. Chem. 19: 1746 (1998)                   
+          RI-J Method:                                     
+              Auxiliary Basis Sets to approximate Coulomb      
+              Potentials                                       
+              Chem. Phys. Lett. 240: 283 (1995)                
+              K. Eichkorn, O. Treutler, H. Oehm, M. Haeser     
+              and R. Ahlrichs                                  
+              Chem. Phys. Lett. 242: 652 (1995)                
+                                                           
+              Auxiliary Basis Sets for Main Row Atoms and their
+              Use to approximate Coulomb Potentials            
+              K. Eichkorn, F. Weigend, O. Treutler and         
+              R. Ahlrichs                                      
+              Theo. Chem. Acc. 97: 119 (1997)                   
+                                                           
+              Accurate Coulomb-fitting basis sets for H to Rn 
+              F. Weigend                                        
+              Phys. Chem. Chem. Phys. 8: 1057 (2006)            
+                                                           
+          Multipole accelerated RI-J (MARI-J):             
+              Fast evaluation of the Coulomb potential for     
+              electron densities using multipole accelerated   
+              resolution of identity approximation             
+              M. Sierka, A. Hogekamp and R. Ahlrichs           
+              J. Chem. Phys. 118: 9136 (2003)                  
+          RI-JK Method:                                     
+              A fully direct RI-HF algorithm: Implementation,
+              optimised auxiliary basis sets, demonstration of
+              accuracy and efficiency                         
+              F. Weigend                                      
+              Phys. Chem. Chem. Phys. 4: 4285 (2002)           
+          Two-component HF and DFT with spin-orbit coupling:  
+              Self-consistent treatment of spin-orbit         
+              interactions with efficient Hartree-Fock and    
+              density functional methods                      
+              M. K. Armbruster, F. Weigend, C. van Wüllen and 
+              W. Klopper                                      
+              Phys. Chem. Chem. Phys. 10: 1748 (2008)         
+          Two-component difference density and DIIS algorithm 
+              Efficient two-component self-consistent field   
+              procedures and gradients: implementation in     
+              TURBOMOLE and application to Au20-              
+              A. Baldes, F. Weigend                           
+              Mol. Phys. 111: 2617 (2013)                     
+          Relativistic all-electron 2c calculations           
+              An efficient implementation of two-component    
+              relativistic exact-decoupling methods for large 
+              molecules                                       
+              D. Peng, N. Middendorf, F. Weigend, M. Reiher   
+              J. Chem. Phys. 138: 184105 (2013)               
+          Finite nucleus model and SNSO approximation         
+              Efficient implementation of one- and two-       
+              component analytical energy gradients in exact  
+              two-component theory                            
+              Y. J. Franzke, N. Middendorf, F. Weigend        
+              J. Chem. Phys. 148: 104110 (2018)               
+                                         
+
+
+
+
+              +--------------------------------------------------+
+              |      general information about current run       |
+              +--------------------------------------------------+
+
+ 
+
+ UHF modus switched on !
+
+ DENSITY CONVERGENCE CHECK SWITCHED ON !
+ SCF CONVERGENCE IF RMS(delta[D]) <     0.1000000000E-06
+
+ TPSS global hybrid functional
+ exchange:    9/10 (LDA+TPSS) + 1/10 HF
+ correlation: LDA (PW) + TPSS
+ A Hybrid-DFT calculation using the RI-J approximation will be carried out.
+ Allocatable memory for RI due to $ricore (MB):                  5000
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -1.12643722    7.79952936   11.84055197    c      6.000     0
+         -2.86518503    6.83615983   11.36841144    h      1.000     0
+          1.48944591   10.18593617   15.26100773    c      6.000     0
+          1.57652018   10.88906049   17.17694720    h      1.000     0
+          1.16003767    8.05590431    9.56550996    b      5.000     0
+          0.77671207    7.17651796    7.54816066    h      1.000     0
+          2.67781766   10.90480962   10.30766419    b      5.000     0
+          4.03248185   10.67654995   13.32177329    b      5.000     0
+          5.80773677   11.76682484   14.12766984    h      1.000     0
+          1.15172143   12.35169902   12.87225178    b      5.000     0
+          0.99932549   14.52072720   13.38037221    h      1.000     0
+          1.53164590    5.99744053   12.20165712    b      5.000     0
+          1.39853005    3.78414642   11.95034469    h      1.000     0
+         -0.62574549   10.73004943   10.54817593    b      5.000     0
+         -2.18483777   11.61581841    9.21746126    h      1.000     0
+          4.05446872    8.02147047   11.26693708    b      5.000     0
+          5.94254772    7.18356687   10.40751924    h      1.000     0
+          3.30836183    7.61850308   14.52492457    b      5.000     0
+          4.57607856    6.68292256   16.10520542    h      1.000     0
+         -0.00470984    7.40659608   14.79971665    b      5.000     0
+         -1.09435149    6.30700408   16.40034705    h      1.000     0
+         -1.34130195   10.32433643   13.78629072    b      5.000     0
+         -3.22746835   10.96787764   14.78011810    h      1.000     0
+ 
+       center of nuclear mass  :    1.31642289    9.14741220   12.57491508
+       center of nuclear charge:    1.28229520    9.12438649   12.61707427
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    c        2     46     31   def2-TZVP   [5s3p2d1f|11s6p2d1f]
+    h       11      8      6   def2-TZVP   [3s1p|5s1p]
+    b       10     46     31   def2-TZVP   [5s3p2d1f|11s6p2d1f]
+   ---------------------------------------------------------------------------
+   total:   23    640    438
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   46
+   total number of contracted shells         :  176
+   total number of cartesian basis functions :  498
+   total number of SCF-basis functions       :  438
+
+
+ integral neglect threshold       :  0.67E-11
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+ RI-J AUXILIARY BASIS SET information:
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    c        2     70     49   def2-TZVP   [6s4p3d1f1g|12s5p4d2f1g]
+    h       11     16     11   def2-TZVP   [3s1p1d|5s2p1d]
+    b       10     70     49   def2-TZVP   [6s4p3d1f1g|12s5p4d2f1g]
+   ---------------------------------------------------------------------------
+   total:   23   1016    709
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   56
+   total number of contracted shells         :  235
+   total number of cartesian basis functions :  864
+   total number of SCF-basis functions       :  709
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      438       37
+ 
+ number of basis functions   :                    438
+ number of occupied orbitals :                     37
+ 
+  
+           ------------------
+           density functional
+           ------------------
+ TPSS global hybrid functional
+ exchange:    9/10 (LDA+TPSS) + 1/10 HF
+ correlation: LDA (PW) + TPSS
+
+ iterations will be done with small grid
+  
+ spherical integration : Lebedev's spherical grid
+ spherical gridsize    :                     3
+    i.e. gridpoints    :                   302
+ value for diffuse not defined
+ radial integration    : Chebyshev 2nd kind (scaling 3)
+ radial gridsize       :                     3
+ integration cells     :                    23
+ partition function    : becke
+ partition sharpness   :                     3
+  
+
+ biggest AO integral is expected to be     5.725698708
+  
+           ------------------------
+               RI-J - INFORMATION
+           ------------------------
+ Contributions to RI integral batches: 
+  neglected integral batches:                   685
+  direct contribution:                            0
+  memory contribution:                 14891
+ Memory core needed for (P|Q) and Cholesky      4 MByte
+ Memory core minimum needed except of (P|Q)     2 MByte
+ Total minimum memory core needed (sum)         5 MByte
+  
+ ****************************************
+ Memory allocated for RI-J   814 MByte
+ ****************************************
+                                            
+
+          ------------------------
+          nuclear repulsion energy  :   557.160391760    
+          ------------------------
+
+
+         -----------------
+         -S,T+V- integrals
+         -----------------
+
+ 1e-integrals will be neglected if expon. factor < 0.671077E-12
+ Difference densities >>NOT<< switched on in parallel ridft!
+
+ DIIS switched on: error vector is FDS-SDF
+ Max. Iterations for DIIS is     :   4
+ DIIS matrix (see manual) 
+    Scaling factor of diagonals  :  1.200
+    threshold for scaling factor :  0.000
+
+ scf convergence criterion : increment of total energy < .1000000D-06
+                  and increment of one-electron energy < .1000000D-03
+
+  MOs are in ASCII format !
+
+
+ closed shell shift switched on 
+ all occupied orbitals are shifted by    0.05000
+
+
+ reading orbital data $uhfmo_alpha  from file alpha
+ orbital characterization : scfdump=7
+
+ reading orbital data $uhfmo_beta  from file beta
+ orbital characterization : scfdump=7
+
+ DSCF restart information will be dumped onto file alpha
+
+
+ Starting SCF iterations
+
+          Overall gridpoints after grid construction =         29028
+
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   1  -331.65254824218    -1545.0341201     656.22118012    0.000D+00 0.669D-11
+                            Exc = -50.8477054865     Coul =  712.430175896    
+                            exK = -5.36129029302    
+                         Ntotal = 72.999809212      Nspin = 1.0001103604    
+                             Na = 36.999959786         Nb = 35.999849426    
+                            current damping = 1.000
+ 
+          max. resid. norm for Fia-block=  2.223D-05 for orbital     29a    alpha
+          max. resid. fock norm         =  9.619D-04 for orbital    438a    alpha
+
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   2  -331.65254824812    -1545.0339566     656.22101660    0.102D-05 0.669D-11
+                            Exc = -50.8476998084     Coul =  712.430006135    
+                            exK = -5.36128973019    
+                         Ntotal = 72.999809243      Nspin = 1.0001103622    
+                             Na = 36.999959802         Nb = 35.999849440    
+                            current damping = 1.000
+ 
+          Norm of current diis error: 0.11909E-03
+          max. resid. norm for Fia-block=  1.028D-05 for orbital     29a    alpha
+          max. resid. fock norm         =  4.807D-04 for orbital    438a    alpha
+
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   3  -331.65254824996    -1545.0340611     656.22112113    0.624D-06 0.669D-11
+                            Exc = -50.8477051756     Coul =  712.430116587    
+                            exK = -5.36129027716    
+                         Ntotal = 72.999809249      Nspin = 1.0001103630    
+                             Na = 36.999959806         Nb = 35.999849443    
+                            current damping = 1.050
+ 
+          Norm of current diis error: 0.70473E-04
+          max. resid. norm for Fia-block=  6.469D-06 for orbital     29a    alpha
+          max. resid. fock norm         =  2.405D-04 for orbital    438a    alpha
+
+ ENERGY & DENSITY CONVERGED !
+
+          Overall gridpoints after grid construction =        106802
+
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   4  -331.65240768214    -1545.0340290     656.22122957    0.333D-06 0.669D-11
+                            Exc = -50.8475637269     Coul =  712.430083491    
+                            exK = -5.36129019300    
+                         Ntotal = 72.999955483      Nspin = 1.0000009222    
+                             Na = 36.999978203         Nb = 35.999977281    
+                            current damping = 1.100
+ 
+          Norm of current diis error: 0.36905E-04
+          max. resid. norm for Fia-block=  3.684D-06 for orbital     37a    alpha
+          max. resid. fock norm         =  1.232D-04 for orbital    438a    alpha
+
+ End of SCF iterations
+
+   convergence criteria satisfied after     4 iterations
+
+
+                  ------------------------------------------ 
+                 |  total energy      =   -331.65240768214  |
+                  ------------------------------------------ 
+                 :  kinetic energy    =    329.71090177634  :
+                 :  potential energy  =   -661.36330945848  :
+                 :  virial theorem    =      1.99414596167  :
+                 :  wavefunction norm =      1.00000000000  :
+                  .......................................... 
+
+
+ orbitals $uhfmo_beta  will be written to file beta
+
+ orbitals $uhfmo_alpha  will be written to file alpha
+ 
+ alpha: 
+
+    irrep                 33a         34a         35a         36a         37a   
+ eigenvalues H         -0.32769    -0.32182    -0.31533    -0.31411    -0.19909
+            eV          -8.9169     -8.7571     -8.5805     -8.5475     -5.4176
+ occupation              1.0000      1.0000      1.0000      1.0000      1.0000
+
+    irrep                 38a         39a         40a         41a         42a   
+ eigenvalues H         -0.02279    -0.00936    -0.00926    -0.00843     0.00278
+            eV          -0.6200     -0.2547     -0.2520     -0.2293      0.0757
+ 
+ beta:  
+
+    irrep                 32a         33a         34a         35a         36a   
+ eigenvalues H         -0.32525    -0.32450    -0.32031    -0.31230    -0.31083
+            eV          -8.8507     -8.8302     -8.7162     -8.4981     -8.4583
+ occupation              1.0000      1.0000      1.0000      1.0000      1.0000
+
+    irrep                 37a         38a         39a         40a         41a   
+ eigenvalues H         -0.08689    -0.02006    -0.00830    -0.00624    -0.00494
+            eV          -2.3644     -0.5459     -0.2258     -0.1697     -0.1343
+ 
+
+                                             _ _ _ 
+  IRREP     alpha occ.     beta occ.      tr(D*D-D)
+
+
+ a         37.00000000    36.00000000    -0.25173875
+
+   -------------------------------------------------
+
+   sum     37.00000000    36.00000000    -0.25173875
+
+ <S*S>     0.75347749
+
+ 
+ 
+ 
+ ==============================================================================
+                           electrostatic moments
+ ==============================================================================
+
+ reference point for electrostatic moments:    0.00000   0.00000   0.00000
+
+ 
+              nuc           elec       ->  total
+ ------------------------------------------------------------------------------
+                          charge      
+ ------------------------------------------------------------------------------
+          73.000000     -73.000000      -0.000000
+ a-b                                     1.000000
+ 
+ ------------------------------------------------------------------------------
+                       dipole moment  
+ ------------------------------------------------------------------------------
+   x      93.607549     -94.442728      -0.835179
+   y     666.080214    -666.272856      -0.192641
+   z     921.046422    -920.274401       0.772021
+ 
+   | dipole moment | =     1.1535 a.u. =     2.9320 debye 
+ 
+ ------------------------------------------------------------------------------
+                     quadrupole moment
+ ------------------------------------------------------------------------------
+  xx     431.669984    -490.297204     -58.627219
+  yy    6385.737638   -6447.366650     -61.629012
+  zz   11921.693377  -11958.258647     -36.565271
+  xy     845.907498    -852.425951      -6.518453
+  xz    1191.145273   -1199.335182      -8.189910
+  yz    8416.640605   -8409.832627       6.807978
+ 
+     1/3  trace=     -52.273834
+     anisotropy=      32.089032
+
+ CONSTRUCTING NATURAL ORBITALS ...
+
+    irrep  a   
+      tr[ S**1/2 D S**1/2 ] :   73.000000000009
+        occupation of NO's  :    1.999999999953
+                                 1.999999999876
+                                 1.999999999739
+                                 1.999999999726
+                                 1.999999999675
+                                 1.999999999665
+                                 1.999999999641
+                                 1.999999999622
+                                 1.999999999610
+                                 1.999999999602
+                                 1.999999999547
+                                 1.999999912781
+                                 1.999999852816
+                                 1.999999849625
+                                 1.999999830792
+                                 1.999999788650
+                                 1.999999678386
+                                 1.999999663649
+                                 1.999999436410
+                                 1.999999397943
+                                 1.999999287579
+                                 1.999999253574
+                                 1.999998490871
+                                 1.999997773381
+                                 1.999997597709
+                                 1.999997272740
+                                 1.999997047194
+                                 1.999996932232
+                                 1.999995831165
+                                 1.999994731147
+                                 1.999993792701
+                                 1.999992562910
+                                 1.999944118076
+                                 1.999531912127
+                                 1.999436095595
+                                 1.999390691353
+                                 1.000000000001
+                                 0.000609308646
+                                 0.000563904404
+                                 0.000468087874
+                                 0.000055881924
+                                 0.000007437091
+                                 0.000006207302
+                                 0.000005268855
+                                 0.000004168837
+                                 0.000003067768
+                                 0.000002952805
+                                 0.000002727258
+                                 0.000002402291
+                                 0.000002226621
+                                 0.000001509131
+                                 0.000000746428
+                                 0.000000712421
+                                 0.000000602056
+                                 0.000000563590
+                                 0.000000336352
+                                 0.000000321615
+                                 0.000000211349
+                                 0.000000169208
+                                 0.000000150375
+                                 0.000000147184
+                                 0.000000087219
+                                 0.000000000453
+                                 0.000000000398
+                                 0.000000000390
+                                 0.000000000378
+                                 0.000000000359
+                                 0.000000000336
+                                 0.000000000324
+                                 0.000000000271
+                                 0.000000000263
+                                 0.000000000124
+                                 0.000000000046
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+    Sum(occupation of NO's) :   73.000000000009
+ 
+ <S*S>  0.753477492221919     
+
+    irrep                 33a         34a         35a         36a         37a   
+ occupation              1.9999      1.9995      1.9994      1.9994      1.0000
+
+    irrep                 38a         39a         40a         41a         42a   
+ occupation              0.0006      0.0006      0.0005
+ 
+
+ orbitals $natural orbitals  will be written to file natural
+ 
+ ==============================================================================
+ 
+HOMO-LUMO Separation
+ HOMO         :   -0.19909099 H =     -5.41754 eV
+ LUMO         :   -0.08688897 H =     -2.36437 eV
+ HOMO-LUMO gap:    0.11220201 H =     +3.05317 eV
+ 
+ ==============================================================================
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time : 15 minutes and  8 seconds
+         total wall-time :  1 minutes and 59 seconds
+    ------------------------------------------------------------------------
+
+   ****  ridft : all done  ****
+
+
+    2020-03-07 15:51:34.214 
+

@@ -1,0 +1,27 @@
+-------------- slurm.epilog ---------------
+Job ID:    1770326
+User:      bdnguye2
+Group:     furche
+Job Name:  turbomole_job
+Partition: nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-4-333
+Nodelist:  c-4-333
+Command:   /data11/home/bdnguye2/opt_tzvp/anion/run_slurm.turbomole
+WorkDir:   /data11/home/bdnguye2/opt_tzvp/anion
+BatchHost: c-4-333
+
+Copying data from node c-4-333 to greenplanet:/data11/home/bdnguye2/opt_tzvp/anion
+sending incremental file list
+./
+control
+ridft.out
+run_slurm.turbomole.e1770326
+run_slurm.turbomole.o1770326
+statistics
+
+sent 16,461 bytes  received 114 bytes  33,150.00 bytes/sec
+total size is 8,646,781  speedup is 521.68
+
+Copyback successful, now deleting execution directory (c-4-333:/work/bdnguye2/1770326)

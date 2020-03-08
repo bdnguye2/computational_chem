@@ -1,0 +1,13 @@
+-------------- slurm.epilog ---------------
+Job ID:    1770292
+User:      bdnguye2
+Group:     furche
+Job Name:  turbomole_job
+Partition: nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-4-333
+Nodelist:  c-4-333
+Command:   /data11/home/bdnguye2/opt_tzvp/cation/run_slurm.turbomole
+WorkDir:   /data11/home/bdnguye2/opt_tzvp/cation
+BatchHost: c-4-333
