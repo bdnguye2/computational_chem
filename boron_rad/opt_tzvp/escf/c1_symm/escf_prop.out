@@ -1,9 +1,9 @@
 
- escf (gplogin2.gp.local) : TURBOMOLE rev. V7.4.1 (b987a8a8) compiled 15 Oct 2019 at 12:03:25
- Copyright (C) 2019 TURBOMOLE GmbH, Karlsruhe
+ escf (bdnguye2-Precision-5520) : TURBOMOLE rev. V7.4.0 (2671b981) compiled 14 Feb 2020 at 22:45:28
+ Copyright (C) 2020 TURBOMOLE GmbH, Karlsruhe
 
 
-    2020-03-07 22:09:22.035 
+    2020-03-07 22:26:31.001 
 
 no calculation , analysis of properties only
 
@@ -261,7 +261,7 @@ no calculation , analysis of properties only
 
  Calculating ground state density on molecular grid
 
- Integral of ground state total density: Na =   72.99980925544641    
+ Integral of ground state total density: Na =   72.99980925544639    
 
  Integral of ground state spin density:  Nb =   1.000110363976907    
 
@@ -406,22 +406,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.1485682576312414E-02
+    velocity representation:             0.1485682576312441E-02
 
-    length representation:               0.1116163123652373E-02
+    length representation:               0.1116163123652356E-02
 
-    mixed representation:                0.1287719723160131E-02
+    mixed representation:                0.1287719723160132E-02
 
 
  Rotatory strength:
 
-    velocity representation:            -0.1657218112046686E-06
+    velocity representation:            -0.1657218112050192E-06
 
-    velocity rep. / 10^(-40)erg*cm^3:   -0.1070642718738884E-01
+    velocity rep. / 10^(-40)erg*cm^3:   -0.1070642718741149E-01
 
-    length representation:               0.3209598774116497E-06
+    length representation:               0.3209598774163351E-06
 
-    length rep. / 10^(-40)erg*cm^3:      0.2073555395395213E-01
+    length rep. / 10^(-40)erg*cm^3:      0.2073555395425483E-01
 
 
  Dominant contributions:
@@ -484,22 +484,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.3023519531585356E-03
+    velocity representation:             0.3023519531585428E-03
 
-    length representation:               0.2253008779666820E-03
+    length representation:               0.2253008779667393E-03
 
-    mixed representation:                0.2609978803981846E-03
+    mixed representation:                0.2609978803982210E-03
 
 
  Rotatory strength:
 
-    velocity representation:             0.1357092401180520E-05
+    velocity representation:             0.1357092401180089E-05
 
-    velocity rep. / 10^(-40)erg*cm^3:    0.8767470542458444E-01
+    velocity rep. / 10^(-40)erg*cm^3:    0.8767470542455663E-01
 
-    length representation:               0.1269081687494677E-05
+    length representation:               0.1269081687490560E-05
 
-    length rep. / 10^(-40)erg*cm^3:      0.8198878942512755E-01
+    length rep. / 10^(-40)erg*cm^3:      0.8198878942486154E-01
 
 
  Dominant contributions:
@@ -562,22 +562,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.5640107554714555E-03
+    velocity representation:             0.5640107554714456E-03
 
-    length representation:               0.3671235925390450E-03
+    length representation:               0.3671235925390908E-03
 
-    mixed representation:                0.4538044730247127E-03
+    mixed representation:                0.4538044730247389E-03
 
 
  Rotatory strength:
 
-    velocity representation:            -0.3064422513692702E-05
+    velocity representation:            -0.3064422513693319E-05
 
-    velocity rep. / 10^(-40)erg*cm^3:   -0.1979764538882961    
+    velocity rep. / 10^(-40)erg*cm^3:   -0.1979764538883360    
 
-    length representation:              -0.5623092862000474E-05
+    length representation:              -0.5623092861979051E-05
 
-    length rep. / 10^(-40)erg*cm^3:     -0.3632788819848355    
+    length rep. / 10^(-40)erg*cm^3:     -0.3632788819834515    
 
 
  Dominant contributions:
@@ -642,20 +642,20 @@ no calculation , analysis of properties only
 
     velocity representation:             0.1109580185779527E-01
 
-    length representation:               0.1102754490876825E-01
+    length representation:               0.1102754490876885E-01
 
-    mixed representation:                0.1106158075245642E-01
+    mixed representation:                0.1106158075245672E-01
 
 
  Rotatory strength:
 
-    velocity representation:            -0.1136650971294883E-06
+    velocity representation:            -0.1136650971357643E-06
 
-    velocity rep. / 10^(-40)erg*cm^3:   -0.7343312731849167E-02
+    velocity rep. / 10^(-40)erg*cm^3:   -0.7343312732254629E-02
 
-    length representation:              -0.2375133720924439E-05
+    length representation:              -0.2375133720886665E-05
 
-    length rep. / 10^(-40)erg*cm^3:     -0.1534450779806168    
+    length rep. / 10^(-40)erg*cm^3:     -0.1534450779781764    
 
 
  Dominant contributions:
@@ -719,22 +719,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.3285181664546720E-02
+    velocity representation:             0.3285181664546733E-02
 
-    length representation:               0.2603390603136226E-02
+    length representation:               0.2603390603136247E-02
 
-    mixed representation:                0.2924484376210931E-02
+    mixed representation:                0.2924484376210948E-02
 
 
  Rotatory strength:
 
-    velocity representation:             0.1342011267952550E-05
+    velocity representation:             0.1342011267955905E-05
 
-    velocity rep. / 10^(-40)erg*cm^3:    0.8670039158119329E-01
+    velocity rep. / 10^(-40)erg*cm^3:    0.8670039158141005E-01
 
-    length representation:               0.1274579328257576E-05
+    length representation:               0.1274579328248853E-05
 
-    length rep. / 10^(-40)erg*cm^3:      0.8234396349728212E-01
+    length rep. / 10^(-40)erg*cm^3:      0.8234396349671863E-01
 
 
  Dominant contributions:
@@ -797,22 +797,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.1393492790620330E-02
+    velocity representation:             0.1393492790620315E-02
 
     length representation:               0.1463746298521248E-02
 
-    mixed representation:                0.1427873381970881E-02
+    mixed representation:                0.1427873381970873E-02
 
 
  Rotatory strength:
 
-    velocity representation:            -0.2748953144996467E-06
+    velocity representation:            -0.2748953144989397E-06
 
-    velocity rep. / 10^(-40)erg*cm^3:   -0.1775956132418803E-01
+    velocity rep. / 10^(-40)erg*cm^3:   -0.1775956132414236E-01
 
-    length representation:              -0.2538659896077094E-05
+    length representation:              -0.2538659896066758E-05
 
-    length rep. / 10^(-40)erg*cm^3:     -0.1640096565039704    
+    length rep. / 10^(-40)erg*cm^3:     -0.1640096565033026    
 
 
  Dominant contributions:
@@ -875,22 +875,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.8246999378888259E-03
+    velocity representation:             0.8246999378888181E-03
 
-    length representation:               0.8813245568373611E-03
+    length representation:               0.8813245568373486E-03
 
-    mixed representation:                0.8525422429161601E-03
+    mixed representation:                0.8525422429161499E-03
 
 
  Rotatory strength:
 
-    velocity representation:             0.1632909118159271E-06
+    velocity representation:             0.1632909118152263E-06
 
-    velocity rep. / 10^(-40)erg*cm^3:    0.1054937937867713E-01
+    velocity rep. / 10^(-40)erg*cm^3:    0.1054937937863186E-01
 
-    length representation:               0.1911668730388621E-06
+    length representation:               0.1911668730368462E-06
 
-    length rep. / 10^(-40)erg*cm^3:      0.1235030073563259E-01
+    length rep. / 10^(-40)erg*cm^3:      0.1235030073550235E-01
 
 
  Dominant contributions:
@@ -954,22 +954,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.1077777082514194E-01
+    velocity representation:             0.1077777082514170E-01
 
-    length representation:               0.1070359341302007E-01
+    length representation:               0.1070359341301876E-01
 
-    mixed representation:                0.1074061701455773E-01
+    mixed representation:                0.1074061701455695E-01
 
 
  Rotatory strength:
 
-    velocity representation:             0.6269043495199176E-05
+    velocity representation:             0.6269043495196399E-05
 
-    velocity rep. / 10^(-40)erg*cm^3:    0.4050104040501386    
+    velocity rep. / 10^(-40)erg*cm^3:    0.4050104040499591    
 
-    length representation:               0.5964169770735171E-05
+    length representation:               0.5964169770744235E-05
 
-    length rep. / 10^(-40)erg*cm^3:      0.3853140930540519    
+    length rep. / 10^(-40)erg*cm^3:      0.3853140930546375    
 
 
  Dominant contributions:
@@ -980,7 +980,7 @@ no calculation , analysis of properties only
 
  Change of electron number:
 
-             0.000000
+            -0.000000
 
 
  Electric transition dipole moment (velocity rep.):
@@ -1032,22 +1032,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.4721859957228795E-02
+    velocity representation:             0.4721859957228776E-02
 
-    length representation:               0.4804768061520664E-02
+    length representation:               0.4804768061520534E-02
 
-    mixed representation:                0.4763133487032362E-02
+    mixed representation:                0.4763133487032288E-02
 
 
  Rotatory strength:
 
-    velocity representation:             0.8566128268584924E-06
+    velocity representation:             0.8566128268589400E-06
 
-    velocity rep. / 10^(-40)erg*cm^3:    0.5534131441043172E-01
+    velocity rep. / 10^(-40)erg*cm^3:    0.5534131441046064E-01
 
-    length representation:               0.9061726744173726E-06
+    length representation:               0.9061726744189550E-06
 
-    length rep. / 10^(-40)erg*cm^3:      0.5854311926309491E-01
+    length rep. / 10^(-40)erg*cm^3:      0.5854311926319714E-01
 
 
  Dominant contributions:
@@ -1111,22 +1111,22 @@ no calculation , analysis of properties only
 
  Oscillator strength:
 
-    velocity representation:             0.2749940772577284E-02
+    velocity representation:             0.2749940772577297E-02
 
-    length representation:               0.2737268658398427E-02
+    length representation:               0.2737268658398473E-02
 
-    mixed representation:                0.2743575403130136E-02
+    mixed representation:                0.2743575403130167E-02
 
 
  Rotatory strength:
 
-    velocity representation:            -0.1576497592740024E-05
+    velocity representation:            -0.1576497592738602E-05
 
-    velocity rep. / 10^(-40)erg*cm^3:   -0.1018493375438643    
+    velocity rep. / 10^(-40)erg*cm^3:   -0.1018493375437725    
 
-    length representation:              -0.7578652690381475E-06
+    length representation:              -0.7578652690482239E-06
 
-    length rep. / 10^(-40)erg*cm^3:     -0.4896174656688278E-01
+    length rep. / 10^(-40)erg*cm^3:     -0.4896174656753376E-01
 
 
  Dominant contributions:
@@ -1191,12 +1191,12 @@ no calculation , analysis of properties only
 
 
     ------------------------------------------------------------------------
-         total  cpu-time :   8.43 seconds
-         total wall-time :   9.99 seconds
+         total  cpu-time :   5.28 seconds
+         total wall-time :   5.29 seconds
     ------------------------------------------------------------------------
 
    ****  escf : all done  ****
 
 
-    2020-03-07 22:09:31.886 
+    2020-03-07 22:26:36.271 
 
