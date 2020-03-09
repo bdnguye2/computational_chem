@@ -1,0 +1,2257 @@
+
+ ridft (newyork) : TURBOMOLE rev. V7.4.1 (b987a8a8) compiled 15 Oct 2019 at 12:03:25
+ Copyright (C) 2019 TURBOMOLE GmbH, Karlsruhe
+
+
+    2020-03-08 22:17:58.967 
+
+
+
+                                  r i d f t
+
+                        DFT program with RI approximation 
+                                for coulomb part 
+
+
+
+
+                                                 
+                                 References:     
+                                                 
+          TURBOMOLE:                             
+              R. Ahlrichs, M. Baer, M. Haeser, H. Horn, and
+              C. Koelmel
+              Electronic structure calculations on workstation
+              computers: the program system TURBOMOLE
+              Chem. Phys. Lett. 162: 165 (1989)
+          Density Functional:                              
+              O. Treutler and R. Ahlrichs                      
+              Efficient Molecular Numerical Integration Schemes
+              J. Chem. Phys. 102: 346 (1995)                   
+          Parallel Version:                                
+              Performance of parallel TURBOMOLE for Density    
+              Functional Calculations                          
+              M. v. Arnim and R. Ahlrichs                      
+              J. Comp. Chem. 19: 1746 (1998)                   
+          RI-J Method:                                     
+              Auxiliary Basis Sets to approximate Coulomb      
+              Potentials                                       
+              Chem. Phys. Lett. 240: 283 (1995)                
+              K. Eichkorn, O. Treutler, H. Oehm, M. Haeser     
+              and R. Ahlrichs                                  
+              Chem. Phys. Lett. 242: 652 (1995)                
+                                                           
+              Auxiliary Basis Sets for Main Row Atoms and their
+              Use to approximate Coulomb Potentials            
+              K. Eichkorn, F. Weigend, O. Treutler and         
+              R. Ahlrichs                                      
+              Theo. Chem. Acc. 97: 119 (1997)                   
+                                                           
+              Accurate Coulomb-fitting basis sets for H to Rn 
+              F. Weigend                                        
+              Phys. Chem. Chem. Phys. 8: 1057 (2006)            
+                                                           
+          Multipole accelerated RI-J (MARI-J):             
+              Fast evaluation of the Coulomb potential for     
+              electron densities using multipole accelerated   
+              resolution of identity approximation             
+              M. Sierka, A. Hogekamp and R. Ahlrichs           
+              J. Chem. Phys. 118: 9136 (2003)                  
+          RI-JK Method:                                     
+              A fully direct RI-HF algorithm: Implementation,
+              optimised auxiliary basis sets, demonstration of
+              accuracy and efficiency                         
+              F. Weigend                                      
+              Phys. Chem. Chem. Phys. 4: 4285 (2002)           
+          Two-component HF and DFT with spin-orbit coupling:  
+              Self-consistent treatment of spin-orbit         
+              interactions with efficient Hartree-Fock and    
+              density functional methods                      
+              M. K. Armbruster, F. Weigend, C. van Wüllen and 
+              W. Klopper                                      
+              Phys. Chem. Chem. Phys. 10: 1748 (2008)         
+          Two-component difference density and DIIS algorithm 
+              Efficient two-component self-consistent field   
+              procedures and gradients: implementation in     
+              TURBOMOLE and application to Au20-              
+              A. Baldes, F. Weigend                           
+              Mol. Phys. 111: 2617 (2013)                     
+          Relativistic all-electron 2c calculations           
+              An efficient implementation of two-component    
+              relativistic exact-decoupling methods for large 
+              molecules                                       
+              D. Peng, N. Middendorf, F. Weigend, M. Reiher   
+              J. Chem. Phys. 138: 184105 (2013)               
+          Finite nucleus model and SNSO approximation         
+              Efficient implementation of one- and two-       
+              component analytical energy gradients in exact  
+              two-component theory                            
+              Y. J. Franzke, N. Middendorf, F. Weigend        
+              J. Chem. Phys. 148: 104110 (2018)               
+                                         
+
+
+
+
+              +--------------------------------------------------+
+              |      general information about current run       |
+              +--------------------------------------------------+
+
+ 
+no calculation of wave function, analysis of properties only
+
+ UHF modus switched on !
+ TPSS global hybrid functional
+ exchange:    9/10 (LDA+TPSS) + 1/10 HF
+ correlation: LDA (PW) + TPSS
+ A Hybrid-DFT calculation using the RI-J approximation will be carried out.
+ Allocatable memory for RI due to $ricore (MB):                  5000
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -1.12643722    7.79952936   11.84055197    c      6.000     0
+         -2.86518503    6.83615983   11.36841144    h      1.000     0
+          1.48944591   10.18593617   15.26100773    c      6.000     0
+          1.57652018   10.88906049   17.17694720    h      1.000     0
+          1.16003767    8.05590431    9.56550996    b      5.000     0
+          0.77671207    7.17651796    7.54816066    h      1.000     0
+          2.67781766   10.90480962   10.30766419    b      5.000     0
+          4.03248185   10.67654995   13.32177329    b      5.000     0
+          5.80773677   11.76682484   14.12766984    h      1.000     0
+          1.15172143   12.35169902   12.87225178    b      5.000     0
+          0.99932549   14.52072720   13.38037221    h      1.000     0
+          1.53164590    5.99744053   12.20165712    b      5.000     0
+          1.39853005    3.78414642   11.95034469    h      1.000     0
+         -0.62574549   10.73004943   10.54817593    b      5.000     0
+         -2.18483777   11.61581841    9.21746126    h      1.000     0
+          4.05446872    8.02147047   11.26693708    b      5.000     0
+          5.94254772    7.18356687   10.40751924    h      1.000     0
+          3.30836183    7.61850308   14.52492457    b      5.000     0
+          4.57607856    6.68292256   16.10520542    h      1.000     0
+         -0.00470984    7.40659608   14.79971665    b      5.000     0
+         -1.09435149    6.30700408   16.40034705    h      1.000     0
+         -1.34130195   10.32433643   13.78629072    b      5.000     0
+         -3.22746835   10.96787764   14.78011810    h      1.000     0
+ 
+       center of nuclear mass  :    1.31642289    9.14741220   12.57491508
+       center of nuclear charge:    1.28229520    9.12438649   12.61707427
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    c        2     46     31   def2-TZVP   [5s3p2d1f|11s6p2d1f]
+    h       11      8      6   def2-TZVP   [3s1p|5s1p]
+    b       10     46     31   def2-TZVP   [5s3p2d1f|11s6p2d1f]
+   ---------------------------------------------------------------------------
+   total:   23    640    438
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   46
+   total number of contracted shells         :  176
+   total number of cartesian basis functions :  498
+   total number of SCF-basis functions       :  438
+
+
+ integral neglect threshold       :  0.67E-11
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+ RI-J AUXILIARY BASIS SET information:
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    c        2     70     49   def2-TZVP   [6s4p3d1f1g|12s5p4d2f1g]
+    h       11     16     11   def2-TZVP   [3s1p1d|5s2p1d]
+    b       10     70     49   def2-TZVP   [6s4p3d1f1g|12s5p4d2f1g]
+   ---------------------------------------------------------------------------
+   total:   23   1016    709
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   56
+   total number of contracted shells         :  235
+   total number of cartesian basis functions :  864
+   total number of SCF-basis functions       :  709
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      438       37
+ 
+ number of basis functions   :                    438
+ number of occupied orbitals :                     37
+ 
+  
+           ------------------
+           density functional
+           ------------------
+ TPSS global hybrid functional
+ exchange:    9/10 (LDA+TPSS) + 1/10 HF
+ correlation: LDA (PW) + TPSS
+
+ iterations will be done with small grid
+  
+ spherical integration : Lebedev's spherical grid
+ spherical gridsize    :                     3
+    i.e. gridpoints    :                   302
+ value for diffuse not defined
+ radial integration    : Chebyshev 2nd kind (scaling 3)
+ radial gridsize       :                     3
+ integration cells     :                    23
+ partition function    : becke
+ partition sharpness   :                     3
+  
+
+ biggest AO integral is expected to be     5.725698708
+  
+           ------------------------
+               RI-J - INFORMATION
+           ------------------------
+ Contributions to RI integral batches: 
+  neglected integral batches:                   685
+  direct contribution:                            0
+  memory contribution:                 14891
+ Memory core needed for (P|Q) and Cholesky      4 MByte
+ Memory core minimum needed except of (P|Q)     2 MByte
+ Total minimum memory core needed (sum)         5 MByte
+  
+ ****************************************
+ Memory allocated for RI-J   814 MByte
+ ****************************************
+                                            
+
+          ------------------------
+          nuclear repulsion energy  :   557.160391760    
+          ------------------------
+
+
+         -----------------
+         -S,T+V- integrals
+         -----------------
+
+ 1e-integrals will be neglected if expon. factor < 0.671077E-12
+ 
+   Difference densities algorithm switched on.
+   The maximal number of linear combinations of
+   difference densities is                    20 .
+
+ DIIS switched on: error vector is FDS-SDF
+ Max. Iterations for DIIS is     :   4
+ DIIS matrix (see manual) 
+    Scaling factor of diagonals  :  1.200
+    threshold for scaling factor :  0.000
+
+ scf convergence criterion : increment of total energy < .1000000D-06
+                  and increment of one-electron energy < .1000000D-03
+
+  MOs are in ASCII format !
+
+
+ closed shell shift switched on 
+ all occupied orbitals are shifted by    0.05000
+
+
+ reading orbital data $uhfmo_alpha  from file alpha
+ orbital characterization : scfconv=7
+
+ reading orbital data $uhfmo_beta  from file beta
+ orbital characterization : scfconv=7
+ 
+ 
+ 
+ ==============================================================================
+                           electrostatic moments
+ ==============================================================================
+
+ reference point for electrostatic moments:    0.00000   0.00000   0.00000
+
+ 
+              nuc           elec       ->  total
+ ------------------------------------------------------------------------------
+                          charge      
+ ------------------------------------------------------------------------------
+          73.000000     -73.000000      -0.000000
+ a-b                                     1.000000
+ 
+ ------------------------------------------------------------------------------
+                       dipole moment  
+ ------------------------------------------------------------------------------
+   x      93.607549     -94.442613      -0.835063
+   y     666.080214    -666.272867      -0.192653
+   z     921.046422    -920.274516       0.771906
+ 
+   | dipole moment | =     1.1534 a.u. =     2.9316 debye 
+ 
+ ------------------------------------------------------------------------------
+                     quadrupole moment
+ ------------------------------------------------------------------------------
+  xx     431.669984    -490.296804     -58.626820
+  yy    6385.737638   -6447.366806     -61.629168
+  zz   11921.693377  -11958.261521     -36.568145
+  xy     845.907498    -852.424957      -6.517459
+  xz    1191.145273   -1199.333984      -8.188711
+  yz    8416.640605   -8409.833868       6.806736
+ 
+     1/3  trace=     -52.274711
+     anisotropy=      32.084558
+
+ CONSTRUCTING NATURAL ORBITALS ...
+
+    irrep  a   
+      tr[ S**1/2 D S**1/2 ] :   73.000000000008
+        occupation of NO's  :    1.999999999953
+                                 1.999999999876
+                                 1.999999999738
+                                 1.999999999726
+                                 1.999999999675
+                                 1.999999999665
+                                 1.999999999641
+                                 1.999999999622
+                                 1.999999999610
+                                 1.999999999602
+                                 1.999999999547
+                                 1.999999912904
+                                 1.999999852847
+                                 1.999999849681
+                                 1.999999830790
+                                 1.999999788545
+                                 1.999999678346
+                                 1.999999663666
+                                 1.999999436291
+                                 1.999999397948
+                                 1.999999287529
+                                 1.999999253928
+                                 1.999998490930
+                                 1.999997773429
+                                 1.999997597994
+                                 1.999997274070
+                                 1.999997048007
+                                 1.999996935333
+                                 1.999995834295
+                                 1.999994733694
+                                 1.999993793043
+                                 1.999992564741
+                                 1.999944123775
+                                 1.999531988481
+                                 1.999436100498
+                                 1.999390721846
+                                 1.000000000001
+                                 0.000609278153
+                                 0.000563899501
+                                 0.000468011520
+                                 0.000055876225
+                                 0.000007435259
+                                 0.000006206961
+                                 0.000005266308
+                                 0.000004165707
+                                 0.000003064667
+                                 0.000002951992
+                                 0.000002725928
+                                 0.000002402005
+                                 0.000002226573
+                                 0.000001509071
+                                 0.000000746074
+                                 0.000000712472
+                                 0.000000602051
+                                 0.000000563709
+                                 0.000000336334
+                                 0.000000321655
+                                 0.000000211454
+                                 0.000000169210
+                                 0.000000150319
+                                 0.000000147153
+                                 0.000000087096
+                                 0.000000000453
+                                 0.000000000398
+                                 0.000000000390
+                                 0.000000000378
+                                 0.000000000359
+                                 0.000000000336
+                                 0.000000000324
+                                 0.000000000271
+                                 0.000000000263
+                                 0.000000000124
+                                 0.000000000046
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                 0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+                                -0.000000000000
+    Sum(occupation of NO's) :   73.000000000008
+ 
+ <S*S>  0.753477229923419     
+
+    irrep                 33a         34a         35a         36a         37a   
+ occupation              1.9999      1.9995      1.9994      1.9994      1.0000
+
+    irrep                 38a         39a         40a         41a         42a   
+ occupation              0.0006      0.0006      0.0005
+ 
+
+ orbitals $natural orbitals  will be written to file natural
+ 
+ 
+ ==============================================================================
+                         BOYS ORBITAL LOCALISATION 
+ ==============================================================================
+ 
+mo    37 is not occupied and thus excluded from localization procedure
+
+ ALPHA SHELLS:
+
+
+ number of sweeps =      10000
+
+ subset of molecular orbitals to be localized : 
+ ---> manually selected occupied molecular orbitals 
+
+------------------------------------------------------------------------
+  shells to be localized 
+------------------------------------------------------------------------
+ a        1-37                                               
+------------------------------------------------------------------------
+
+
+ localized orbitals are written to file lalp
+
+ boys converged after  76346 pivots, in    187 sweeps, thsw =   0.99907782D-12
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     1     diag(fock) [lmo basis] =       -10.17095
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       1a    1  -10.20023        0.99467
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      1.00261   1.00235   0.00025  -0.00000   0.00000
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     2     diag(fock) [lmo basis] =       -10.17090
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       2a    1  -10.20019        0.99467
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      1.00264   1.00239   0.00026  -0.00000   0.00000
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     3     diag(fock) [lmo basis] =        -6.71760
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       3a    1   -6.73381        0.98683
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    22b      1.00368   1.00355   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     4     diag(fock) [lmo basis] =        -6.71662
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       4a    1   -6.73284        0.98694
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    20b      1.00399   1.00385   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     5     diag(fock) [lmo basis] =        -6.69587
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       5a    1   -6.71190        0.71866
+       6a    1   -6.71166       -0.27748
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    14b      1.00483   1.00468   0.00017  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     6     diag(fock) [lmo basis] =        -6.69576
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       6a    1   -6.71166        0.71993
+       5a    1   -6.71190        0.27617
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    10b      1.00473   1.00458   0.00017  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     7     diag(fock) [lmo basis] =        -6.69428
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       7a    1   -6.71059        0.58578
+       8a    1   -6.71038       -0.41048
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    18b      1.00420   1.00406   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     8     diag(fock) [lmo basis] =        -6.69424
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       8a    1   -6.71038        0.58647
+       7a    1   -6.71059        0.40972
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    12b      1.00412   1.00399   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.     9     diag(fock) [lmo basis] =        -6.69161
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       9a    1   -6.70755        0.59959
+      10a    1   -6.70744       -0.29344
+      11a    1   -6.70717       -0.10275
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      1.00413   1.00400   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    10     diag(fock) [lmo basis] =        -6.69154
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      10a    1   -6.70744        0.66598
+      11a    1   -6.70717       -0.16937
+       9a    1   -6.70755        0.16050
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     8b      1.00410   1.00396   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    11     diag(fock) [lmo basis] =        -6.67778
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      11a    1   -6.70717        0.72404
+       9a    1   -6.70755        0.23379
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     7b      1.01622   1.01449   0.00172   0.00001  -0.00000
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    12     diag(fock) [lmo basis] =        -6.67238
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      12a    1   -6.68818        0.99731
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    16b      1.00462   1.00451   0.00015  -0.00003  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    13     diag(fock) [lmo basis] =        -0.56078
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      29a    1   -0.36817       -0.22520
+      13a    1   -0.87961       -0.14027
+      23a    1   -0.44232        0.11139
+      15a    1   -0.68483        0.10099
+      17a    1   -0.57309        0.08772
+      14a    1   -0.76893       -0.07768
+      18a    1   -0.55311        0.06631
+      20a    1   -0.50605       -0.03561
+      21a    1   -0.49102        0.02507
+      34a    1   -0.32182        0.02192
+      28a    1   -0.37602       -0.02038
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.48843   0.11485   0.36977   0.00374   0.00007
+    20b      0.22797   0.04948   0.16879   0.00878   0.00093
+    22b      0.22137   0.04448   0.16730   0.00867   0.00092
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    14     diag(fock) [lmo basis] =        -0.56070
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      29a    1   -0.36817       -0.22531
+      13a    1   -0.87961        0.14029
+      23a    1   -0.44232        0.11125
+      15a    1   -0.68483       -0.10104
+      17a    1   -0.57309       -0.08720
+      14a    1   -0.76893       -0.07747
+      18a    1   -0.55311        0.06681
+      20a    1   -0.50605        0.03549
+      21a    1   -0.49102       -0.02516
+      34a    1   -0.32182       -0.02198
+      28a    1   -0.37602        0.02063
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.49163   0.11773   0.37020   0.00364   0.00007
+    20b      0.22512   0.04734   0.16809   0.00876   0.00093
+    22b      0.22104   0.04428   0.16700   0.00881   0.00095
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    15     diag(fock) [lmo basis] =        -0.55384
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      17a    1   -0.57309        0.24566
+      23a    1   -0.44232       -0.20722
+      18a    1   -0.55311        0.14361
+      14a    1   -0.76893       -0.10937
+      24a    1   -0.42015       -0.08702
+      15a    1   -0.68483       -0.04543
+      20a    1   -0.50605        0.04536
+      32a    1   -0.32826       -0.02695
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.55875   0.20143   0.35533   0.00147   0.00053
+     2h      0.43801   0.43157   0.00644
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    16     diag(fock) [lmo basis] =        -0.55374
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      17a    1   -0.57309        0.24430
+      23a    1   -0.44232        0.20768
+      18a    1   -0.55311       -0.14479
+      14a    1   -0.76893        0.10941
+      24a    1   -0.42015       -0.08690
+      20a    1   -0.50605        0.04531
+      15a    1   -0.68483       -0.04528
+      32a    1   -0.32826        0.03128
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.55629   0.19855   0.35582   0.00138   0.00053
+     4h      0.43910   0.43262   0.00648
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    17     diag(fock) [lmo basis] =        -0.54743
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      31a    1   -0.34139        0.16267
+      19a    1   -0.52214       -0.15624
+      14a    1   -0.76893        0.13817
+      13a    1   -0.87961       -0.10144
+      30a    1   -0.35485       -0.09830
+      20a    1   -0.50605        0.07458
+      16a    1   -0.66426        0.06467
+      29a    1   -0.36817       -0.04255
+      17a    1   -0.57309       -0.02431
+      25a    1   -0.39596        0.02248
+      21a    1   -0.49102        0.02128
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.49269   0.11956   0.36995   0.00312   0.00006
+     5b      0.14177   0.03530   0.09742   0.00782   0.00123
+    12b      0.27742   0.07163   0.19814   0.00700   0.00065
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    18     diag(fock) [lmo basis] =        -0.54735
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      31a    1   -0.34139        0.16276
+      19a    1   -0.52214        0.15620
+      14a    1   -0.76893       -0.13823
+      13a    1   -0.87961       -0.10129
+      30a    1   -0.35485        0.09841
+      20a    1   -0.50605        0.07461
+      16a    1   -0.66426        0.06469
+      29a    1   -0.36817        0.04225
+      17a    1   -0.57309       -0.02437
+      25a    1   -0.39596        0.02248
+      21a    1   -0.49102        0.02142
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.49293   0.11949   0.37026   0.00312   0.00006
+     8b      0.14148   0.03451   0.09781   0.00795   0.00122
+    18b      0.27659   0.07198   0.19715   0.00682   0.00064
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    19     diag(fock) [lmo basis] =        -0.54417
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      19a    1   -0.52214       -0.14830
+      14a    1   -0.76893       -0.13643
+      13a    1   -0.87961        0.09923
+      30a    1   -0.35485       -0.09616
+      22a    1   -0.48962       -0.06854
+      16a    1   -0.66426        0.06215
+      33a    1   -0.32769        0.05764
+      29a    1   -0.36817        0.05290
+      28a    1   -0.37602       -0.04949
+      31a    1   -0.34139        0.03610
+      17a    1   -0.57309        0.02591
+      18a    1   -0.55311       -0.02406
+      20a    1   -0.50605       -0.02232
+      23a    1   -0.44232        0.01947
+      27a    1   -0.39128       -0.01815
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.49719   0.11848   0.37568   0.00297   0.00006
+     5b      0.13514   0.03009   0.09584   0.00801   0.00121
+    14b      0.26457   0.06327   0.19345   0.00719   0.00065
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    20     diag(fock) [lmo basis] =        -0.54411
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      19a    1   -0.52214        0.14800
+      14a    1   -0.76893        0.13654
+      13a    1   -0.87961        0.09909
+      30a    1   -0.35485        0.09612
+      22a    1   -0.48962       -0.06846
+      16a    1   -0.66426        0.06207
+      29a    1   -0.36817       -0.05313
+      33a    1   -0.32769        0.05278
+      28a    1   -0.37602       -0.04932
+      31a    1   -0.34139        0.03611
+      17a    1   -0.57309        0.02627
+      18a    1   -0.55311        0.02399
+      20a    1   -0.50605       -0.02232
+      23a    1   -0.44232       -0.01947
+      27a    1   -0.39128       -0.01878
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.49486   0.11770   0.37410   0.00300   0.00006
+     8b      0.13530   0.02981   0.09613   0.00813   0.00123
+    10b      0.26843   0.06650   0.19405   0.00723   0.00065
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    21     diag(fock) [lmo basis] =        -0.48081
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      34a    1   -0.32182        0.25777
+      16a    1   -0.66426       -0.19462
+      31a    1   -0.34139        0.14533
+      17a    1   -0.57309       -0.07691
+      35a    1   -0.31533        0.07525
+      22a    1   -0.48962        0.07475
+      13a    1   -0.87961        0.05511
+      20a    1   -0.50605       -0.03836
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    12b      0.32113   0.07462   0.24063   0.00562   0.00026
+    18b      0.32030   0.07479   0.23961   0.00563   0.00027
+    20b      0.30898   0.07815   0.22480   0.00560   0.00043
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    22     diag(fock) [lmo basis] =        -0.47998
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      16a    1   -0.66426       -0.19315
+      33a    1   -0.32769        0.18395
+      35a    1   -0.31533       -0.17394
+      21a    1   -0.49102       -0.13317
+      31a    1   -0.34139        0.11912
+      17a    1   -0.57309        0.07276
+      13a    1   -0.87961       -0.05523
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    10b      0.32093   0.07389   0.24088   0.00588   0.00027
+    14b      0.31438   0.06982   0.23871   0.00558   0.00027
+    22b      0.31182   0.08111   0.22512   0.00516   0.00042
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    23     diag(fock) [lmo basis] =        -0.47070
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      32a    1   -0.32826        0.17038
+      15a    1   -0.68483       -0.12734
+      36a    1   -0.31411        0.10765
+      18a    1   -0.55311        0.09811
+      35a    1   -0.31533        0.09189
+      22a    1   -0.48962       -0.08577
+      16a    1   -0.66426       -0.04961
+      30a    1   -0.35485       -0.04903
+      21a    1   -0.49102        0.04340
+      29a    1   -0.36817        0.03245
+      13a    1   -0.87961       -0.03191
+      37a    1   -0.19909        0.02649
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.24195   0.05344   0.18150   0.00641   0.00059
+     7b      0.35471   0.06859   0.28126   0.00473   0.00013
+    14b      0.29877   0.06303   0.23057   0.00491   0.00027
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    24     diag(fock) [lmo basis] =        -0.47065
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      32a    1   -0.32826       -0.17206
+      15a    1   -0.68483       -0.12729
+      36a    1   -0.31411       -0.10784
+      18a    1   -0.55311       -0.09813
+      35a    1   -0.31533        0.09154
+      22a    1   -0.48962       -0.08569
+      16a    1   -0.66426       -0.04965
+      30a    1   -0.35485        0.04904
+      21a    1   -0.49102        0.04341
+      29a    1   -0.36817       -0.03247
+      13a    1   -0.87961       -0.03187
+      37a    1   -0.19909        0.02654
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     7b      0.35378   0.06751   0.28142   0.00473   0.00013
+     8b      0.24476   0.05597   0.18178   0.00642   0.00059
+    10b      0.29975   0.06259   0.23185   0.00505   0.00025
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    25     diag(fock) [lmo basis] =        -0.45980
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      36a    1   -0.31411        0.24092
+      15a    1   -0.68483       -0.09838
+      18a    1   -0.55311       -0.08538
+      16a    1   -0.66426        0.06879
+      32a    1   -0.32826       -0.06656
+      21a    1   -0.49102       -0.05880
+      33a    1   -0.32769        0.05355
+      35a    1   -0.31533        0.05302
+      30a    1   -0.35485       -0.04680
+      22a    1   -0.48962        0.04046
+      19a    1   -0.52214        0.02952
+      34a    1   -0.32182        0.02776
+      13a    1   -0.87961       -0.02641
+      20a    1   -0.50605       -0.02133
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     8b      0.24573   0.05048   0.18883   0.00585   0.00058
+    16b      0.33243   0.07636   0.25087   0.00503   0.00017
+    18b      0.31688   0.06490   0.24732   0.00441   0.00025
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    26     diag(fock) [lmo basis] =        -0.45973
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      36a    1   -0.31411       -0.24148
+      15a    1   -0.68483       -0.09839
+      18a    1   -0.55311        0.08502
+      16a    1   -0.66426        0.06885
+      33a    1   -0.32769        0.06421
+      21a    1   -0.49102       -0.05903
+      32a    1   -0.32826        0.05481
+      35a    1   -0.31533        0.05314
+      30a    1   -0.35485        0.04665
+      22a    1   -0.48962        0.04041
+      19a    1   -0.52214       -0.02934
+      34a    1   -0.32182        0.02819
+      13a    1   -0.87961       -0.02643
+      20a    1   -0.50605       -0.02140
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.24295   0.04822   0.18829   0.00587   0.00057
+    12b      0.31968   0.06601   0.24889   0.00454   0.00024
+    16b      0.33074   0.07520   0.25047   0.00492   0.00016
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    27     diag(fock) [lmo basis] =        -0.45295
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      35a    1   -0.31533       -0.36794
+      20a    1   -0.50605       -0.18505
+      15a    1   -0.68483       -0.17427
+      21a    1   -0.49102        0.08898
+      33a    1   -0.32769       -0.06930
+      34a    1   -0.32182        0.04849
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.10022   0.01301   0.07996   0.00621   0.00105
+     7b      0.37373   0.07626   0.29342   0.00399   0.00006
+    16b      0.33200   0.08469   0.24384   0.00338   0.00009
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    28     diag(fock) [lmo basis] =        -0.42736
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      28a    1   -0.37602        0.49994
+      22a    1   -0.48962       -0.20834
+      27a    1   -0.39128        0.07405
+      24a    1   -0.42015       -0.06382
+      20a    1   -0.50605       -0.04970
+      15a    1   -0.68483        0.01838
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    20b      0.50428   0.24185   0.25994   0.00133   0.00116
+    21h      0.48099   0.47721   0.00377
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    29     diag(fock) [lmo basis] =        -0.42729
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      25a    1   -0.39596       -0.39947
+      20a    1   -0.50605        0.14526
+      27a    1   -0.39128       -0.09631
+      21a    1   -0.49102        0.07538
+      34a    1   -0.32182        0.07274
+      24a    1   -0.42015        0.06856
+      28a    1   -0.37602        0.03824
+      33a    1   -0.32769        0.03130
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    22b      0.50125   0.23092   0.26727   0.00191   0.00115
+    23h      0.47486   0.47115   0.00371
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    30     diag(fock) [lmo basis] =        -0.41047
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39316       -0.23066
+      30a    1   -0.35485       -0.10299
+      27a    1   -0.39128        0.09071
+      25a    1   -0.39596       -0.08066
+      21a    1   -0.49102       -0.07845
+      36a    1   -0.31411       -0.07276
+      19a    1   -0.52214        0.07173
+      28a    1   -0.37602       -0.06644
+      34a    1   -0.32182        0.06022
+      33a    1   -0.32769       -0.04612
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    18b      0.47168   0.19096   0.27835   0.00123   0.00114
+    19h      0.48295   0.47934   0.00361
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    31     diag(fock) [lmo basis] =        -0.41044
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39316        0.22282
+      30a    1   -0.35485        0.10266
+      27a    1   -0.39128        0.09855
+      25a    1   -0.39596       -0.08036
+      21a    1   -0.49102       -0.07858
+      36a    1   -0.31411        0.07293
+      19a    1   -0.52214       -0.07166
+      28a    1   -0.37602       -0.06656
+      34a    1   -0.32182        0.06067
+      33a    1   -0.32769       -0.04320
+      22a    1   -0.48962       -0.04222
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    12b      0.47506   0.20078   0.27262   0.00052   0.00115
+    13h      0.48571   0.48208   0.00363
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    32     diag(fock) [lmo basis] =        -0.41044
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39316       -0.23786
+      27a    1   -0.39128        0.19129
+      30a    1   -0.35485        0.10559
+      19a    1   -0.52214       -0.06928
+      36a    1   -0.31411        0.06695
+      21a    1   -0.49102        0.06476
+      34a    1   -0.32182       -0.05960
+      22a    1   -0.48962        0.05392
+      33a    1   -0.32769        0.03819
+      25a    1   -0.39596       -0.02795
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    14b      0.46764   0.18874   0.27589   0.00188   0.00113
+    15h      0.48579   0.48219   0.00360
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    33     diag(fock) [lmo basis] =        -0.41036
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39316        0.22674
+      27a    1   -0.39128        0.20237
+      30a    1   -0.35485       -0.10541
+      19a    1   -0.52214        0.06921
+      36a    1   -0.31411       -0.06713
+      21a    1   -0.49102        0.06478
+      34a    1   -0.32182       -0.06005
+      22a    1   -0.48962        0.05379
+      33a    1   -0.32769        0.03552
+      25a    1   -0.39596       -0.02766
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    10b      0.46844   0.19644   0.26959   0.00127   0.00115
+    11h      0.48898   0.48535   0.00362
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    34     diag(fock) [lmo basis] =        -0.40433
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      24a    1   -0.42015        0.26179
+      32a    1   -0.32826        0.20932
+      23a    1   -0.44232       -0.12565
+      29a    1   -0.36817       -0.10636
+      33a    1   -0.32769       -0.08471
+      18a    1   -0.55311       -0.05592
+      17a    1   -0.57309        0.02782
+      28a    1   -0.37602        0.02387
+      31a    1   -0.34139        0.02031
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.48053   0.20587   0.27200   0.00154   0.00111
+     6h      0.48808   0.48449   0.00359
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    35     diag(fock) [lmo basis] =        -0.40424
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      24a    1   -0.42015       -0.26140
+      32a    1   -0.32826        0.18423
+      23a    1   -0.44232       -0.12541
+      33a    1   -0.32769        0.11052
+      29a    1   -0.36817       -0.10647
+      18a    1   -0.55311       -0.05558
+      17a    1   -0.57309       -0.02805
+      28a    1   -0.37602       -0.02390
+      31a    1   -0.34139       -0.02071
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     8b      0.48114   0.21031   0.26892   0.00079   0.00112
+     9h      0.49016   0.48655   0.00361
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    36     diag(fock) [lmo basis] =        -0.39278
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      25a    1   -0.39596        0.21753
+      31a    1   -0.34139       -0.21083
+      34a    1   -0.32182        0.18135
+      20a    1   -0.50605        0.13061
+      27a    1   -0.39128        0.09325
+      33a    1   -0.32769        0.06216
+      21a    1   -0.49102        0.03711
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    16b      0.44076   0.16550   0.27506  -0.00099   0.00119
+    17h      0.50110   0.49756   0.00354
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    37     diag(fock) [lmo basis] =        -0.27023
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      37a    1   -0.19909        0.79382
+      22a    1   -0.48962        0.05829
+      28a    1   -0.37602        0.05454
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     7b      0.63997  -0.01134   0.65135  -0.00005   0.00001
+ 
+ -------------------------------------------------------------------------------
+
+ BETA SHELLS:
+
+
+ number of sweeps =      10000
+
+ subset of molecular orbitals to be localized : 
+ ---> manually selected occupied molecular orbitals 
+
+------------------------------------------------------------------------
+  shells to be localized 
+------------------------------------------------------------------------
+ a        1-36                                               
+------------------------------------------------------------------------
+
+
+ localized orbitals are written to file lbet
+
+ boys converged after  62563 pivots, in    168 sweeps, thsw =   0.99579687D-12
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    38     diag(fock) [lmo basis] =       -10.17100
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       1a    1  -10.19973        0.99464
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      1.00260   1.00235   0.00025  -0.00000   0.00000
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    39     diag(fock) [lmo basis] =       -10.17096
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       2a    1  -10.19969        0.99464
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      1.00263   1.00238   0.00025  -0.00000   0.00000
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    40     diag(fock) [lmo basis] =        -6.71762
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       3a    1   -6.73363        0.98128
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    22b      1.00377   1.00363   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    41     diag(fock) [lmo basis] =        -6.71673
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       4a    1   -6.73284        0.98140
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    20b      1.00396   1.00382   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    42     diag(fock) [lmo basis] =        -6.69575
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       5a    1   -6.71201        0.72305
+       6a    1   -6.71178       -0.27369
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    14b      1.00467   1.00452   0.00017  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    43     diag(fock) [lmo basis] =        -6.69564
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       6a    1   -6.71178        0.72376
+       5a    1   -6.71201        0.27298
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    10b      1.00456   1.00442   0.00017  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    44     diag(fock) [lmo basis] =        -6.69431
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       7a    1   -6.71033        0.58734
+       8a    1   -6.71012       -0.40872
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    18b      1.00423   1.00409   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    45     diag(fock) [lmo basis] =        -6.69427
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       8a    1   -6.71012        0.58796
+       7a    1   -6.71033        0.40800
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    12b      1.00416   1.00402   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    46     diag(fock) [lmo basis] =        -6.69152
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+       9a    1   -6.70755        0.99487
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      1.00392   1.00379   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    47     diag(fock) [lmo basis] =        -6.69145
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      10a    1   -6.70748        0.99496
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     8b      1.00388   1.00375   0.00016  -0.00001  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    48     diag(fock) [lmo basis] =        -6.68452
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      11a    1   -6.69529        0.99773
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     7b      1.01489   1.01521  -0.00033   0.00001  -0.00000
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    49     diag(fock) [lmo basis] =        -6.67232
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      12a    1   -6.68837        0.99707
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    16b      1.00451   1.00440   0.00015  -0.00002  -0.00001
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    50     diag(fock) [lmo basis] =        -0.56083
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      29a    1   -0.36639       -0.22405
+      13a    1   -0.87780       -0.14237
+      23a    1   -0.44154        0.11354
+      15a    1   -0.67996        0.10372
+      17a    1   -0.57224        0.08474
+      14a    1   -0.76764       -0.07875
+      18a    1   -0.55176        0.06637
+      21a    1   -0.48947        0.03144
+      20a    1   -0.50381       -0.03129
+      28a    1   -0.37131       -0.02584
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.48212   0.11357   0.36472   0.00377   0.00007
+    20b      0.22629   0.04827   0.16827   0.00881   0.00094
+    22b      0.23067   0.05165   0.16947   0.00862   0.00092
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    51     diag(fock) [lmo basis] =        -0.56075
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      29a    1   -0.36639        0.22408
+      13a    1   -0.87780       -0.14239
+      23a    1   -0.44154       -0.11341
+      15a    1   -0.67996        0.10376
+      17a    1   -0.57224        0.08423
+      14a    1   -0.76764        0.07853
+      18a    1   -0.55176       -0.06685
+      21a    1   -0.48947        0.03154
+      20a    1   -0.50381       -0.03118
+      28a    1   -0.37131       -0.02617
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.48544   0.11657   0.36513   0.00367   0.00007
+    20b      0.22355   0.04622   0.16760   0.00879   0.00095
+    22b      0.23032   0.05149   0.16911   0.00876   0.00095
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    52     diag(fock) [lmo basis] =        -0.55463
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      17a    1   -0.57224        0.25155
+      23a    1   -0.44154       -0.20646
+      18a    1   -0.55176        0.14274
+      14a    1   -0.76764       -0.11151
+      24a    1   -0.41866       -0.08605
+      15a    1   -0.67996       -0.04620
+      20a    1   -0.50381        0.03924
+      33a    1   -0.32450        0.03095
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.56161   0.20358   0.35600   0.00148   0.00054
+     2h      0.43318   0.42669   0.00649
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    53     diag(fock) [lmo basis] =        -0.55453
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      17a    1   -0.57224        0.25020
+      23a    1   -0.44154        0.20688
+      18a    1   -0.55176       -0.14392
+      14a    1   -0.76764        0.11154
+      24a    1   -0.41866       -0.08596
+      15a    1   -0.67996       -0.04606
+      20a    1   -0.50381        0.03922
+      33a    1   -0.32450       -0.02748
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.55911   0.20040   0.35676   0.00141   0.00054
+     4h      0.43414   0.42761   0.00653
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    54     diag(fock) [lmo basis] =        -0.54650
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      19a    1   -0.52121        0.14717
+      14a    1   -0.76764        0.13598
+      13a    1   -0.87780       -0.10273
+      30a    1   -0.35348        0.09759
+      28a    1   -0.37131        0.07777
+      22a    1   -0.48253        0.07759
+      16a    1   -0.66255       -0.06625
+      29a    1   -0.36639       -0.04709
+      32a    1   -0.32525       -0.04376
+      31a    1   -0.34004       -0.03045
+      18a    1   -0.55176        0.02631
+      17a    1   -0.57224       -0.02404
+      33a    1   -0.32450        0.02061
+      23a    1   -0.44154       -0.01922
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.48601   0.11599   0.36687   0.00310   0.00006
+     5b      0.13884   0.02727   0.10213   0.00831   0.00113
+    14b      0.26940   0.06018   0.20225   0.00638   0.00059
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    55     diag(fock) [lmo basis] =        -0.54645
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      19a    1   -0.52121       -0.14691
+      14a    1   -0.76764       -0.13607
+      13a    1   -0.87780       -0.10258
+      30a    1   -0.35348       -0.09773
+      22a    1   -0.48253        0.07745
+      28a    1   -0.37131        0.07744
+      16a    1   -0.66255       -0.06617
+      32a    1   -0.32525       -0.04838
+      29a    1   -0.36639        0.04736
+      31a    1   -0.34004       -0.03046
+      18a    1   -0.55176       -0.02626
+      17a    1   -0.57224       -0.02440
+      23a    1   -0.44154        0.01921
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.48438   0.11573   0.36545   0.00313   0.00006
+     8b      0.13875   0.02680   0.10239   0.00842   0.00115
+    10b      0.27260   0.06289   0.20275   0.00637   0.00059
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    56     diag(fock) [lmo basis] =        -0.54561
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      31a    1   -0.34004        0.16530
+      19a    1   -0.52121       -0.15808
+      14a    1   -0.76764        0.13577
+      13a    1   -0.87780       -0.10188
+      30a    1   -0.35348       -0.09644
+      20a    1   -0.50381        0.08117
+      16a    1   -0.66255        0.06397
+      29a    1   -0.36639       -0.04652
+      25a    1   -0.39506        0.02427
+      17a    1   -0.57224       -0.02272
+      23a    1   -0.44154       -0.02020
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     1c      0.49127   0.11686   0.37134   0.00301   0.00006
+     5b      0.13925   0.03254   0.09790   0.00757   0.00124
+    12b      0.27539   0.06909   0.19881   0.00687   0.00063
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    57     diag(fock) [lmo basis] =        -0.54553
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      31a    1   -0.34004       -0.16542
+      19a    1   -0.52121       -0.15807
+      14a    1   -0.76764        0.13583
+      13a    1   -0.87780        0.10174
+      30a    1   -0.35348       -0.09659
+      20a    1   -0.50381       -0.08125
+      16a    1   -0.66255       -0.06400
+      29a    1   -0.36639       -0.04620
+      25a    1   -0.39506       -0.02430
+      17a    1   -0.57224        0.02277
+      23a    1   -0.44154       -0.02028
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     3c      0.49178   0.11702   0.37170   0.00301   0.00006
+     8b      0.13883   0.03161   0.09829   0.00771   0.00122
+    18b      0.27439   0.06932   0.19777   0.00669   0.00062
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    58     diag(fock) [lmo basis] =        -0.48195
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      32a    1   -0.32525        0.23556
+      16a    1   -0.66255       -0.20261
+      31a    1   -0.34004        0.12616
+      21a    1   -0.48947       -0.12208
+      36a    1   -0.31083       -0.11365
+      17a    1   -0.57224        0.07497
+      13a    1   -0.87780       -0.05644
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    10b      0.32034   0.07258   0.24160   0.00590   0.00027
+    14b      0.31416   0.06886   0.23945   0.00559   0.00027
+    22b      0.30109   0.07431   0.22092   0.00542   0.00044
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    59     diag(fock) [lmo basis] =        -0.48023
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      34a    1   -0.32031        0.27532
+      16a    1   -0.66255       -0.19483
+      31a    1   -0.34004        0.14944
+      21a    1   -0.48947        0.09305
+      17a    1   -0.57224       -0.07556
+      36a    1   -0.31083        0.05582
+      13a    1   -0.87780        0.05544
+      20a    1   -0.50381       -0.04180
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    12b      0.32526   0.07961   0.23981   0.00557   0.00027
+    18b      0.32470   0.08002   0.23883   0.00559   0.00027
+    20b      0.30805   0.07673   0.22537   0.00552   0.00044
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    60     diag(fock) [lmo basis] =        -0.46532
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      35a    1   -0.31230       -0.15872
+      22a    1   -0.48253       -0.15326
+      33a    1   -0.32450       -0.13806
+      15a    1   -0.67996       -0.10429
+      36a    1   -0.31083        0.09832
+      18a    1   -0.55176        0.09358
+      16a    1   -0.66255       -0.06212
+      30a    1   -0.35348       -0.04608
+      13a    1   -0.87780       -0.02490
+      19a    1   -0.52121        0.02427
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.27076   0.06920   0.19454   0.00644   0.00059
+     7b      0.28012   0.07535   0.19961   0.00483   0.00033
+    14b      0.33447   0.07546   0.25402   0.00475   0.00025
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    61     diag(fock) [lmo basis] =        -0.46524
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      35a    1   -0.31230        0.15797
+      22a    1   -0.48253       -0.15315
+      33a    1   -0.32450        0.14026
+      15a    1   -0.67996       -0.10421
+      36a    1   -0.31083        0.09887
+      18a    1   -0.55176       -0.09359
+      16a    1   -0.66255       -0.06214
+      30a    1   -0.35348        0.04620
+      13a    1   -0.87780       -0.02486
+      19a    1   -0.52121       -0.02432
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     7b      0.27850   0.07360   0.19975   0.00483   0.00032
+     8b      0.27428   0.07217   0.19508   0.00646   0.00058
+    10b      0.33624   0.07576   0.25537   0.00487   0.00024
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    62     diag(fock) [lmo basis] =        -0.46327
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      35a    1   -0.31230        0.19865
+      15a    1   -0.67996        0.12653
+      33a    1   -0.32450       -0.09505
+      18a    1   -0.55176        0.08810
+      22a    1   -0.48253       -0.06928
+      36a    1   -0.31083       -0.05498
+      32a    1   -0.32525       -0.05135
+      16a    1   -0.66255       -0.04956
+      30a    1   -0.35348        0.04430
+      34a    1   -0.32031       -0.04376
+      20a    1   -0.50381        0.03643
+      13a    1   -0.87780        0.02831
+      19a    1   -0.52121       -0.02792
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     8b      0.24423   0.04705   0.19044   0.00620   0.00054
+    16b      0.34084   0.07893   0.25702   0.00474   0.00015
+    18b      0.29576   0.05386   0.23718   0.00445   0.00026
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    63     diag(fock) [lmo basis] =        -0.46321
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      35a    1   -0.31230        0.19821
+      15a    1   -0.67996       -0.12656
+      33a    1   -0.32450       -0.10435
+      18a    1   -0.55176        0.08771
+      22a    1   -0.48253        0.06933
+      36a    1   -0.31083        0.05594
+      16a    1   -0.66255        0.04960
+      34a    1   -0.32031        0.04496
+      30a    1   -0.35348        0.04409
+      32a    1   -0.32525        0.04040
+      20a    1   -0.50381       -0.03652
+      13a    1   -0.87780       -0.02833
+      19a    1   -0.52121       -0.02776
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.24158   0.04490   0.18993   0.00622   0.00053
+    12b      0.29847   0.05510   0.23856   0.00456   0.00025
+    16b      0.33936   0.07783   0.25673   0.00467   0.00014
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    64     diag(fock) [lmo basis] =        -0.44823
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      36a    1   -0.31083       -0.44462
+      20a    1   -0.50381       -0.17260
+      15a    1   -0.67996       -0.16484
+      21a    1   -0.48947        0.09016
+      32a    1   -0.32525       -0.04329
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.11394   0.01925   0.08783   0.00584   0.00103
+     7b      0.29597   0.08658   0.20499   0.00413   0.00027
+     8b      0.11020   0.01593   0.08736   0.00589   0.00102
+    16b      0.37444   0.09164   0.27823   0.00447   0.00010
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    65     diag(fock) [lmo basis] =        -0.42820
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      28a    1   -0.37131        0.49541
+      22a    1   -0.48253       -0.26694
+      24a    1   -0.41866       -0.05687
+      27a    1   -0.38878        0.03524
+      20a    1   -0.50381       -0.03127
+      31a    1   -0.34004        0.01761
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    20b      0.50949   0.24799   0.25908   0.00129   0.00112
+    21h      0.47239   0.46857   0.00382
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    66     diag(fock) [lmo basis] =        -0.42751
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      25a    1   -0.39506       -0.37597
+      20a    1   -0.50381        0.16480
+      27a    1   -0.38878       -0.12498
+      24a    1   -0.41866        0.07967
+      34a    1   -0.32031        0.07080
+      21a    1   -0.48947        0.05164
+      32a    1   -0.32525        0.03180
+      28a    1   -0.37131        0.02305
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    22b      0.50619   0.23873   0.26426   0.00204   0.00116
+    23h      0.47333   0.46961   0.00372
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    67     diag(fock) [lmo basis] =        -0.41071
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39228        0.23400
+      21a    1   -0.48947        0.12360
+      30a    1   -0.35348        0.10602
+      27a    1   -0.38878       -0.09287
+      25a    1   -0.39506        0.09115
+      19a    1   -0.52121       -0.07194
+      35a    1   -0.31230       -0.07077
+      28a    1   -0.37131        0.05451
+      34a    1   -0.32031       -0.05356
+      32a    1   -0.32525        0.04792
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    18b      0.47485   0.19667   0.27567   0.00136   0.00115
+    19h      0.48110   0.47747   0.00362
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    68     diag(fock) [lmo basis] =        -0.41068
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39228       -0.22987
+      21a    1   -0.48947        0.12375
+      30a    1   -0.35348       -0.10579
+      27a    1   -0.38878       -0.09753
+      25a    1   -0.39506        0.09049
+      19a    1   -0.52121        0.07187
+      35a    1   -0.31230        0.07090
+      28a    1   -0.37131        0.05441
+      34a    1   -0.32031       -0.05387
+      32a    1   -0.32525        0.04835
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    12b      0.47825   0.20651   0.26993   0.00064   0.00116
+    13h      0.48384   0.48019   0.00365
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    69     diag(fock) [lmo basis] =        -0.41065
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39228       -0.23174
+      27a    1   -0.38878        0.20249
+      21a    1   -0.48947        0.11560
+      30a    1   -0.35348        0.10951
+      35a    1   -0.31230       -0.07090
+      19a    1   -0.52121       -0.06967
+      34a    1   -0.32031       -0.05537
+      32a    1   -0.32525        0.04262
+      25a    1   -0.39506       -0.03498
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    14b      0.47227   0.18934   0.28079   0.00097   0.00117
+    15h      0.47634   0.47272   0.00362
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    70     diag(fock) [lmo basis] =        -0.41057
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      26a    1   -0.39228        0.22562
+      27a    1   -0.38878        0.20890
+      21a    1   -0.48947        0.11551
+      30a    1   -0.35348       -0.10934
+      35a    1   -0.31230        0.07111
+      19a    1   -0.52121        0.06960
+      34a    1   -0.32031       -0.05570
+      32a    1   -0.32525        0.04337
+      25a    1   -0.39506       -0.03445
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    10b      0.47396   0.19813   0.27425   0.00040   0.00119
+    11h      0.47949   0.47584   0.00365
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    71     diag(fock) [lmo basis] =        -0.40437
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      24a    1   -0.41866        0.25964
+      33a    1   -0.32450       -0.18421
+      23a    1   -0.44154       -0.12467
+      29a    1   -0.36639       -0.11575
+      32a    1   -0.32525       -0.10995
+      18a    1   -0.55176       -0.05627
+      28a    1   -0.37131        0.03086
+      17a    1   -0.57224        0.02820
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     5b      0.48730   0.21012   0.27540   0.00064   0.00115
+     6h      0.48013   0.47653   0.00360
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    72     diag(fock) [lmo basis] =        -0.40427
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      24a    1   -0.41866       -0.25918
+      33a    1   -0.32450       -0.20709
+      23a    1   -0.44154       -0.12447
+      29a    1   -0.36639       -0.11591
+      32a    1   -0.32525        0.08816
+      18a    1   -0.55176       -0.05594
+      28a    1   -0.37131       -0.03087
+      17a    1   -0.57224       -0.02842
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+     8b      0.48855   0.21544   0.27200  -0.00005   0.00115
+     9h      0.48217   0.47853   0.00364
+ 
+ -------------------------------------------------------------------------------
+ 
+ LOCALISED MO NO.    73     diag(fock) [lmo basis] =        -0.39316
+ 
+   MO contributions yielding  90.00 % of density:
+      MO (col)  energy       contribution  
+      31a    1   -0.34004       -0.19876
+      25a    1   -0.39506        0.19719
+      34a    1   -0.32031        0.19368
+      20a    1   -0.50381        0.15022
+      27a    1   -0.38878        0.11543
+      32a    1   -0.32525        0.06971
+ 
+ Mulliken contributions greater than  0.1000000:
+ atom      total       s         p         d         f
+    16b      0.44248   0.16082   0.28190  -0.00145   0.00121
+    17h      0.48613   0.48256   0.00356
+ 
+ -------------------------------------------------------------------------------
+ 
+ 
+ ==============================================================================
+                      CALCULATION OF QUANTITIES ON GRID
+ ==============================================================================
+ 
+ 
+     output format: .cub (cube format)
+ 
+ 
+ quantities to be calculated are 
+ density                     file: ..d.cub
+ 
+ calculation at a grid of   88*   94*   86 points
+ 
+ origin at            0.00000        0.00000        0.00000
+ 
+ normalised grid vectors:
+                        x              y              z
+  1. vector:         0.00000        0.00000        1.00000
+  2. vector:         0.00000        1.00000        0.00000
+  3. vector:         1.00000        0.00000        0.00000
+ 
+                     minimum       increment       maximum
+  1. vector:         3.54816        0.20263       21.17695
+  2. vector:        -0.21585        0.20147       18.52073
+  3. vector:        -7.22747        0.20200        9.94255
+ 
+ 
+ ==============================================================================
+ 
+HOMO-LUMO Separation
+ HOMO         :   -0.19909176 H =     -5.41757 eV
+ LUMO         :   -0.08688966 H =     -2.36439 eV
+ HOMO-LUMO gap:    0.11220210 H =     +3.05318 eV
+ 
+ ==============================================================================
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :  35.53 seconds
+         total wall-time :  35.59 seconds
+    ------------------------------------------------------------------------
+
+   ****  ridft : all done  ****
+
+
+    2020-03-08 22:18:34.541 
+
