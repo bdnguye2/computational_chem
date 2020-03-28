@@ -1,0 +1,34 @@
+$vibrational spectrum
+#  mode     symmetry     wave number   IR intensity    selection rules
+#                         cm**(-1)        km/mol         IR     RAMAN
+     1                       -0.00         0.00000        -       -
+     2                       -0.00         0.00000        -       -
+     3                       -0.00         0.00000        -       -
+     4                        0.00         0.00000        -       -
+     5                        0.00         0.00000        -       -
+     6                        0.00         0.00000        -       -
+     7        a              40.05         0.40829       YES     YES
+     8        a              98.92         0.33887       YES     YES
+     9        a             109.58         3.53904       YES     YES
+    10        a             172.74         7.38730       YES     YES
+    11        a             178.69         7.82847       YES     YES
+    12        a             217.56        29.28140       YES     YES
+    13        a             234.06       105.96827       YES     YES
+    14        a             326.62        40.61084       YES     YES
+    15        a             396.18         4.43678       YES     YES
+    16        a             437.05        36.23768       YES     YES
+    17        a             458.85        42.44586       YES     YES
+    18        a             565.29        40.14616       YES     YES
+    19        a             699.20       122.89846       YES     YES
+    20        a             769.53       241.45844       YES     YES
+    21        a             822.60       152.78059       YES     YES
+    22        a            1666.63        99.91916       YES     YES
+    23        a            1704.61       135.56148       YES     YES
+    24        a            1714.06       239.41621       YES     YES
+    25        a            3354.64       715.11664       YES     YES
+    26        a            3583.19       326.86425       YES     YES
+    27        a            3679.25       328.96841       YES     YES
+    28        a            3749.29       202.63577       YES     YES
+    29        a            3778.92       151.90448       YES     YES
+    30        a            3899.88        25.78753       YES     YES
+$end

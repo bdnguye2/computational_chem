@@ -1,0 +1,13 @@
+-------------- slurm.epilog ---------------
+Job ID:    6346
+User:      bdnguye2
+Group:     furche
+Job Name:  turbomole_job
+Partition: nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-17-29
+Nodelist:  c-17-29
+Command:   /lustre/DATA/furche/bdnguye2/water_halide/mini_2/run_slurm.turbomole
+WorkDir:   /lustre/DATA/furche/bdnguye2/water_halide/mini_2
+BatchHost: c-17-29
