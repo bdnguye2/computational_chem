@@ -2,8 +2,9 @@
 #$pointval mo 73,74 fmt=cub
 #$pop lall
 #$pointval lmos 1-74 fmt=cub
-$localize mo 1-74
-$pointval lmo 1-37 fmt=cub
+#$localize mo 1-74
+#$pointval lmo 1-37 fmt=cub
+$pointval mo 25,26 fmt=cub
 $title
 $symmetry c1
 $redundant    file=coord
