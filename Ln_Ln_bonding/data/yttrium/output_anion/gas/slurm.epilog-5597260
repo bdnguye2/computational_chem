@@ -1,0 +1,14 @@
+-------------- slurm.epilog ---------------
+Job ID:    5597260
+User:      bdnguye2
+Group:     furche
+Job Name:  yttrium_anion_gas
+Partition: mf_nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-5-[23-24]
+Nodelist:  c-5-[23-24]
+Command:   /data12/cmf/bdnguye2/chem_150/yttrium/init_anion/gas/run_slurm.turbomole
+WorkDir:   /data12/cmf/bdnguye2/chem_150/yttrium/init_anion/gas
+BatchHost: c-5-23
+No /data12/cmf/bdnguye2/chem_150/yttrium/init_anion/gas/SLURM_WORK_DIR[-5597260] file found. Assume job 5597260 already transferred job results back to /data12/cmf/bdnguye2/chem_150/yttrium/init_anion/gas.

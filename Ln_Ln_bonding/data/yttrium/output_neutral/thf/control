@@ -1,0 +1,101 @@
+$cosmo
+  epsilon=    7.600
+  rsolv= 1.30
+$cosmo_atoms
+# radii in Angstrom units
+h  2,14,25-44                                                                  \
+   radius=  1.3000
+c  3-12,15-24                                                                  \
+   radius=  2.0000
+y  1,13                                                                        \
+   radius=  2.2230
+$cosmo_out file=out.cosmo
+$title
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+y  1,13                                                                        \
+   basis =y def2-SVP                                                           \
+   ecp   =y def2-ecp                                                           \
+   jbas  =y def2-SVP
+h  2,14,25-44                                                                  \
+   basis =h def2-SVP                                                           \
+   jbas  =h def2-SVP
+c  3-12,15-24                                                                  \
+   basis =c def2-SVP                                                           \
+   jbas  =c def2-SVP
+$basis    file=basis
+$ecp    file=basis
+$rundimensions
+   dim(fock,dens)=117057
+   natoms=44
+   nshell=208
+   nbf(CAO)=482
+   dim(trafo[SAO<-->AO/CAO])=542
+   rhfshells=1
+   nbf(AO)=452
+$scfmo   file=mos
+$scfiterlimit      100
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=2
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$dft
+   functional tpssh
+   gridsize   m5
+$scfconv        7
+$scfdamp   start=0.700  step=0.050  min=0.050
+$ricore     10000
+$rij
+$jbas    file=auxbasis
+$disp3
+$last SCF energy change = -.84851479E-06
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from ridft
+  x     0.00365885743566    y     0.00272338749536    z    -0.00154005651839    a.u.
+   | dipole | =    0.0122363914  debye
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$closed shells
+ a       1-82                                   ( 2 )
+$last step     tm2molden
+$orbital_max_rnorm 0.26102520399505E-03
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-851.7785131777    -4808.084020110     2242.690516784    -109.3968281680    -5.558299039584     1828.614205905    -.4408854847279E-01
+$end

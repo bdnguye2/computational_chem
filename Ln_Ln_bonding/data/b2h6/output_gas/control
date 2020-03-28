@@ -1,0 +1,81 @@
+$title
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+b  1,5                                                                         \
+   basis =b def2-SVP                                                           \
+   jbas  =b def2-SVP
+h  2-4,6-8                                                                     \
+   basis =h def2-SVP                                                           \
+   jbas  =h def2-SVP
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=1890
+   natoms=8
+   nshell=30
+   nbf(CAO)=60
+   dim(trafo[SAO<-->AO/CAO])=64
+   rhfshells=1
+   nbf(AO)=58
+$scfmo   file=mos
+$closed shells
+ a       1-8                                    ( 2 )
+$scfiterlimit       50
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$disp3
+$last step     tm2molden
+$last SCF energy change = -.56261058E-08
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ridft
+  x    -0.00004980547754    y     0.00000316043369    z     0.00008897181772    a.u.
+   | dipole | =    0.0002592920  debye
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.15064684292016E-04
+$subenergy  Etot         E1                  Ej                Ex                 En
+-52.78108807995    -131.4040730122     0.000000000000     0.000000000000     31.77241701339
+$end

@@ -1,0 +1,43 @@
+=================================== SLURM JOB ===================================
+Sun Jan 28 15:10:10 PST 2018
+
+The job will be started on the following node(s):
+c-8-253
+
+Slurm User:         lmohanam
+Run Directory:      /work/lmohanam/5685505
+Job ID:             5685505
+Job Name:           yttrium_neutral_thf
+Partition:          mf_nes2.8
+Number of nodes:    1
+Number of tasks:    8
+Submitted From:     gplogin3.local:/lustre/DATA/furche/lmohanam/150/project4/init_neutral/gas
+=================================== SLURM JOB ===================================
+
+--- SLURM job-script output ---
+cat: job.start: No such file or directory
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+  statpt ended normally
+grep: job.last: No such file or directory
+grep: job.last: No such file or directory
+cat: job.start: No such file or directory
+Job Done
