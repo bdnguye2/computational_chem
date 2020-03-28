@@ -1,0 +1,19 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'labreport.blg'
+[47] biber:287> INFO - === Mon Mar 12, 2018, 11:42:52
+[141] Biber.pm:348> INFO - Reading 'labreport.bcf'
+[286] Biber.pm:742> INFO - Found 5 citekeys in bib section 0
+[334] Biber.pm:3151> INFO - Processing section 0
+[368] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[388] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[403] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[491] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[491] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[492] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'en-US'
+[492] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[497] bbl.pm:519> INFO - Writing 'labreport.bbl' with encoding 'ascii'
+[504] Utils.pm:147> WARN - The entry 'doi:10.1021/cr020653t' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[520] Utils.pm:147> WARN - The entry 'doi:10.1063/1.467965' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[534] Utils.pm:147> WARN - The entry 'doi:10.1063/1.478616' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[540] bbl.pm:615> INFO - Output to labreport.bbl
+[557] Biber.pm:109> INFO - WARNINGS: 3

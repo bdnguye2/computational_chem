@@ -1,0 +1,187 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global}
+    \entry{doi:10.1021/cr020653t}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d55b408fadf5b85d64d292b1233f4e97}{%
+           family={Finlayson-Pitts},
+           family_i={F\bibinithyphendelim P\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           given_i={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d55b408fadf5b85d64d292b1233f4e97}
+      \strng{fullhash}{d55b408fadf5b85d64d292b1233f4e97}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Reviews}
+      \field{note}{PMID: 14664634}
+      \field{number}{12}
+      \field{title}{The Tropospheric Chemistry of Sea Salt:\x{fffd}\x{fffd}\x{fffd} A Molecular-Level View of the Chemistry of NaCl and NaBr}
+      \field{volume}{103}
+      \field{year}{2003}
+      \field{pages}{4801\bibrangedash 4822}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1021/cr020653t
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/cr020653t
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/cr020653t
+      \endverb
+    \endentry
+    \entry{doi:10.1021/cr0403741}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3a283ce4b4e32e3e82e5e26e40722043}{%
+           family={Jungwirth},
+           family_i={J\bibinitperiod},
+           given={Pavel},
+           given_i={P\bibinitperiod}}}%
+        {{hash=3208ca59d5b9a9377d5cfb813ed7e929}{%
+           family={Tobias},
+           family_i={T\bibinitperiod},
+           given={Douglas\bibnamedelima J.},
+           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{609f2e0018097c0d1387cf70ddcd3a84}
+      \strng{fullhash}{609f2e0018097c0d1387cf70ddcd3a84}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Reviews}
+      \field{note}{PMID: 16608180}
+      \field{number}{4}
+      \field{title}{Specific Ion Effects at the Air/Water Interface}
+      \field{volume}{106}
+      \field{year}{2006}
+      \field{pages}{1259\bibrangedash 1281}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1021/cr0403741
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/cr0403741
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/cr0403741
+      \endverb
+    \endentry
+    \entry{doi:10.1063/1.467965}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a65a21edc29de88588a6113f918079da}{%
+           family={Markovich},
+           family_i={M\bibinitperiod},
+           given={Gil},
+           given_i={G\bibinitperiod}}}%
+        {{hash=e847ebad1d076ee56f9bf5521e672738}{%
+           family={Pollack},
+           family_i={P\bibinitperiod},
+           given={Stuart},
+           given_i={S\bibinitperiod}}}%
+        {{hash=0d622ae1c850301d775d94576c546fca}{%
+           family={Giniger},
+           family_i={G\bibinitperiod},
+           given={Rina},
+           given_i={R\bibinitperiod}}}%
+        {{hash=3d9d6ab3da742d26a633a01213055945}{%
+           family={Cheshnovsky},
+           family_i={C\bibinitperiod},
+           given={Ori},
+           given_i={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b0e29dd5a77173bd74e625823b4ddda}
+      \strng{fullhash}{c995ff8fdec509388f22b3b6a3adfeeb}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{11}
+      \field{title}{Photoelectron spectroscopy of Cl\x{fffd}\x{fffd}\x{fffd}, Br\x{fffd}\x{fffd}\x{fffd}, and I\x{fffd}\x{fffd}\x{fffd} solvated in water clusters}
+      \field{volume}{101}
+      \field{year}{1994}
+      \field{pages}{9344\bibrangedash 9353}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1063/1.467965
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.467965
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.467965
+      \endverb
+    \endentry
+    \entry{TURBOMOLE}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{{TURBOMOLE V7.2 2017}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989-2007, {TURBOMOLE GmbH}, since 2007; available from \\ {\tt http://www.turbomole.com}.}
+    \endentry
+    \entry{doi:10.1063/1.478616}{article}{}
+      \name{author}{3}{}{%
+        {{hash=63cb266402fba5cd6d9233a307e59eac}{%
+           family={Ayotte},
+           family_i={A\bibinitperiod},
+           given={Patrick},
+           given_i={P\bibinitperiod}}}%
+        {{hash=f4a2dc49ea765f5539a09c5ec092606e}{%
+           family={Weddle},
+           family_i={W\bibinitperiod},
+           given={Gary\bibnamedelima H.},
+           given_i={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=aace1b5aa7cc52926739c14690c5c7ea}{%
+           family={Johnson},
+           family_i={J\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7856302dae0f1e3ad8bb205eecb6302d}
+      \strng{fullhash}{7856302dae0f1e3ad8bb205eecb6302d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{15}
+      \field{title}{An infrared study of the competition between hydrogen-bond networking and ionic solvation: Halide-dependent distortions of the water trimer in the X\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}\x{fffd}(H2O)3, (X=Cl, Br, I) systems}
+      \field{volume}{110}
+      \field{year}{1999}
+      \field{pages}{7129\bibrangedash 7132}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1063/1.478616
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.478616
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.478616
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
