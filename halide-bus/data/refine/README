@@ -1,0 +1,5 @@
++ Generated refined structures from 1000K and 3000K molecular
+dynamics simlations
++ The first 4 structures are from 1000K and the 5th structure
+comes from 3000K
++ energies and xyz are in coord.xyz files

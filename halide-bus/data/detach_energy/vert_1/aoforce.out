@@ -1,0 +1,178 @@
+ operating system is UNIX !
+
+ force (missouri) : TURBOMOLE V7.2 ( 21454 ) 4 Oct 2017 at 12:24:43
+ Copyright (C) 2017 TURBOMOLE GmbH, Karlsruhe
+
+
+    2018-03-12 00:27:14.878 
+
+
+
+                             T U R B O M O L E   
+
+                          a o f o r c e - program
+
+                        using direct algorithms for
+
+                       SCF level calculations of
+                         * harmonic force constants
+                         * hyperpolarizabilities
+                         * IR and RAMAN intensities
+                         * VCD intensities
+
+                       DFT level calculations of
+                         * harmonic force constants
+                         * IR intensities
+                                                   
+       Stephan Boecker, Peter Deglmann, Filipp Furche and Marco Haeser
+                          Quantum Chemistry Group
+                          Universitaet  Karlsruhe
+                                   Germany
+
+ 
+ 
+ 
+ 
+     References :
+ 
+       RI-J implementation:
+         Peter Deglmann, Klaus May, Filipp Furche, Reinhart Ahlrichs
+                 Chem. Phys. Lett. 384:103 (2004)
+ 
+       Efficiency, technical details:
+         Peter Deglmann, Filipp Furche, Reinhart Ahlrichs
+                 Chem. Phys. Lett. 362:511 (2002)
+ 
+       Search of lowest eigenvalues by iterative diagonalization:
+         Peter Deglmann, Filipp Furche
+                 J. Chem. Phys. 117:9535 (2002)
+ 
+       Vibrational circular dichroism implementation:
+        Kevin Reiter, Michael Kuehn, Florian Weigend
+                 J. Chem. Phys. 146:054102 (2017)  
+ 
+ 
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+          0.35729007    0.18056993    3.04091202    cl    17.000     0
+          2.68894815    1.15039794   -2.40772409    o      8.000     0
+         -0.53518703   -3.35479122   -1.73353636    o      8.000     0
+         -2.83466124    1.73155014   -1.80448932    o      8.000     0
+          1.04600532    1.86775587   -2.77934490    h      1.000     0
+         -2.16541775    1.71612925   -0.08033015    h      1.000     0
+          0.83083827   -2.38179513   -2.46812979    h      1.000     0
+         -2.72685811   -0.04938891   -2.21529595    h      1.000     0
+         -0.45203649   -2.77218282    0.01981446    h      1.000     0
+          2.55216568    0.93789442   -0.57523020    h      1.000     0
+ 
+       center of nuclear mass  :    0.00950193   -0.02067598    0.05048059
+       center of nuclear charge:   -0.00613985   -0.02967327   -0.08444703
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    cl       1     63     37   def2-TZVP   [5s5p2d1f|14s9p3d1f]
+    o        3     46     31   def2-TZVP   [5s3p2d1f|11s6p2d1f]
+    h        6      8      6   def2-TZVP   [3s1p|5s1p]
+   ---------------------------------------------------------------------------
+   total:   10    249    166
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   53
+   total number of contracted shells         :   70
+   total number of cartesian basis functions :  186
+   total number of SCF-basis functions       :  166
+
+ 
+             FOUND RI-J FLAG !
+ 
+
+ NOTE: THIS IS A PRELIMINARY IMPLEMENTATION. THE RI APPROXIMATION IS
+       PRESENTLY USED FOR CPKS CONTRIBUTIONS TO THE HESSIAN ONLY! SEE
+       MANUAL FOR FURTHER DETAILS.
+
+  
+ AUXILIARY BASIS SET information:
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    cl       1     77     51   def2-TZVP   [8s4p3d1f1g|14s5p5d2f1g]
+    o        3     70     49   def2-TZVP   [6s4p3d1f1g|12s5p4d2f1g]
+    h        6     16     11   def2-TZVP   [3s1p1d|5s2p1d]
+   ---------------------------------------------------------------------------
+   total:   10    383    264
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   59
+   total number of contracted shells         :   92
+   total number of cartesian basis functions :  318
+   total number of SCF-basis functions       :  264
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+
+ determining totally symmetric integral contributions 
+    - equivalent to irreducible tensor elements - 
+ which can be formed within each triple of representations :
+
+             representation triple      contributions
+
+              a     a     a               1
+       UHF mode switched on !
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      166       24
+ 
+ number of basis functions   :                    166
+ number of occupied orbitals :                     24
+ 
+ ALPHA-Occupation:                    24
+ BETA-Occupation :                    23
+  MOs are in ASCII format !
+
+
+ reading orbital data $uhfmo_alpha  from file alpha
+ orbital characterization : scfconv=7
+
+ reading orbital data $uhfmo_beta  from file beta
+ orbital characterization : scfconv=7
+ time elapsed for calculating density matrices :   0.004 sec
+
+ number of non-frozen orbitals          :   166
+ number of non-frozen occupied orbitals :    24
+
+ number of non-frozen orbitals          :   166
+ number of non-frozen occupied orbitals :    23
+ Blocking parameters 
+ shells:
+    index      start shell   last shell  start bf    last bf    #bf 
+       1             1          70             1        186    186
+  
+           ----------------------
+               RI - INFORMATION
+           ----------------------

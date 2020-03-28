@@ -1,0 +1,106 @@
+$title
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+cl 1                                                                           \
+   basis =cl def2-TZVP                                                         \
+   jbas  =cl def2-TZVP
+o  2-4                                                                         \
+   basis =o def2-TZVP                                                          \
+   jbas  =o def2-TZVP
+h  5-10                                                                        \
+   basis =h def2-TZVP                                                          \
+   jbas  =h def2-TZVP
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=17751
+   natoms=10
+   nshell=70
+   nbf(CAO)=186
+   dim(trafo[SAO<-->AO/CAO])=226
+   rhfshells=2
+   nbf(AO)=166
+$scfmo   file=mos
+$closed shells
+ a       1-24                                   ( 2 )
+$scfiterlimit 300
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor   5000 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$forceapprox    file=forceapprox
+$disp3
+$dft
+   functional pbe0
+   gridsize   m3
+$scfconv 7
+$scfdamp   start=0.700  step=0.050  min=0.050
+$ricore     3000
+$rij
+$jbas    file=auxbasis
+$last SCF energy change = -689.13820
+$charge from ridft
+         -0.000 (not to be modified here)
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$vibrational reduced masses
+   7.6677539638   7.2194967253  15.2296865417   7.8226527681   9.3605475197
+   8.6455352667   7.9665007498   9.3396237347   9.0963644995   6.8461073380
+   5.4554032010   7.3762618917   1.1037540291   1.0295200493   1.0314977156
+   1.0264038788   1.0361742130   1.0443214624   1.0477987726   1.0685192250
+   1.0422823665   1.0797532216   1.0780643747   1.0809286206   1.0638428709
+   1.0614043283   1.0566392337   1.0673239976   1.0688376489   1.0648406517
+$nvibro       30
+$uhfmo_alpha   file=alpha
+$uhfmo_beta   file=beta
+$uhf
+$alpha shells
+ a       1-24                                   ( 1 )
+$beta shells
+ a       1-23                                   ( 1 )
+$energy    file=energy
+$grad    file=gradient
+$natural orbitals    file=natural
+$natural orbital occupation    file=natural
+$last step     ridft
+$orbital_max_rnorm 0.92881194636333E-04
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-689.1382044205    -1277.821180192     465.9376654559    -40.59563181916    -1.640110890016     164.9853129767    -.4259952347754E-02
+$ssquare from ridft
+          0.755 (not to be modified here)
+$dipole from ridft
+  x    -0.16082807157649    y    -0.14615659692623    z     1.36268418310673    a.u.
+   | dipole | =    3.5073931383  debye
+$end
