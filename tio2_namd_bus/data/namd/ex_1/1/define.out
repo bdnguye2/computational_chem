@@ -1,0 +1,150 @@
+
+ define (gplogin1.local) : TURBOMOLE V7.2 ( 21454 ) 2 Oct 2017 at 18:01:17
+ Copyright (C) 2017 TURBOMOLE GmbH, Karlsruhe
+
+
+    2018-03-07 14:41:29.148 
+
+                    HOST NAME = gplogin1.local
+             OPERATING SYSTEM = unix
+   STANDARD BASIS SET LIBRARY = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/basen/
+  ALTERNATE BASIS SET LIBRARY = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/basold/
+ LIBRARY FOR RI-J  BASIS SETS = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/jbasen/
+ LIBRARY FOR RI-JK BASIS SETS = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/jkbasen/
+ LIBRARY FOR RIMP2/RICC2 SETS = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/cbasen/
+ LIBRARY FOR RIR12 BASIS SETS = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/cabasen/
+ LIBRARY FOR OEP   BASIS SETS = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/xbasen/
+            STRUCTURE LIBRARY = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/structures/
+ 
+
+ ***********************************************************
+ *                                                         *
+ *                       D E F I N E                       *
+ *                                                         *
+ *         TURBOMOLE'S  INTERACTIVE  INPUT  PROGRAM        *
+ *                                                         *
+ *  Quantum Chemistry Group       University of Karlsruhe  *
+ *                                                         *
+ ***********************************************************
+
+
+ FILE control ALREADY EXISTS 
+ I WILL PLUG IN THE NEW DATA.
+
+ DATA WILL BE TAKEN FROM control BY DEFAULT
+ 
+ INPUT TITLE 
+
+ SYMMETRY c1   AND CARTESIAN COORDINATES FOR   9 ATOMS 
+ HAVE BEEN READ FROM THE DEFAULT INPUT FILE control . 
+ DEFINITIONS OF INTERNAL COORDINATES HAVE  N O T  BEEN READ. 
+ SPECIFICATION OF BOND TOPOLOGY HAS BEEN READ. 
+ DO YOU WANT TO CHANGE THE GEOMETRY DATA ?  DEFAULT=n  GOBACK=&
+
+
+ ATOMIC ATTRIBUTE DATA (BASES,CHARGES,MASSES,ECPS) HAVE BEEN
+ TAKEN FROM THE DEFAULT INPUT FILE control.
+ DO YOU WANT TO CHANGE THESE DATA ? DEFAULT=n  GOBACK=&
+
+
+              ATOMIC COORDINATES              ATOM SHELLS CHARGE PSEUDO MASS
+    -0.00690828    0.00650047   -0.08162845    ti    11     22.     0 47.900
+     0.61497942   -2.50339296    2.08847956    o      6      8.     0 15.999
+    -2.60918910   -1.09740819   -1.94937178    o      6      8.     0 15.999
+    -4.58463114   -1.05758580   -2.37704043    h      3      1.     0  1.008
+    -0.63499694    2.73159553    2.09697841    o      6      8.     0 15.999
+    -1.51488347    2.32865244    3.60364988    h      3      1.     0  1.008
+     2.68383118    0.89573415   -1.95131329    o      6      8.     0 15.999
+     2.97539060    0.93244738   -3.96657052    h      3      1.     0  1.008
+     2.58536455   -2.93350899    2.09887796    h      3      1.     0  1.008
+ 
+
+ we will work with the  1s 3p 5d  7f
+
+ there are 1 real representations :   a   
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      107       29
+ 
+ number of basis functions   :                    107
+ number of occupied orbitals :                     29
+ 
+
+ reading orbital data $scfmo  from file mos
+ orbital characterization : scfconv=7
+
+ MOLECULAR ORBITAL DATA (OCCUPATION NUMBERS,MOS) HAVE BEEN 
+ TAKEN FROM THE DEFAULT INPUT FILE control . 
+ DO YOU WANT TO CHANGE THESE DATA ?  DEFAULT=n  GOBACK=&
+
+
+ orbitals $scfmo will be written to file mos
+
+ ADJUSTING DATA GROUP  $drvopt  FOR CURRENT REQUIREMENTS
+
+ FORCE CONSTANT INITIALIZATION $forceinit WILL BE ENABLED
+
+ DO YOU WANT TO DELETE DATA GROUPS LIKE
+     $energy
+     $grad
+     $dipole
+ LEFT OVER FROM PREVIOUS CALCULATIONS ? DEFAULT(n)
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ delete data group $energy ? DEFAULT(y) 
+
+ try to be more specific, please 
+
+
+ delete data group $grad ? DEFAULT(y) 
+
+ delete data group $dipole ? DEFAULT(y) 
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+ try to be more specific, please 
+
+
+========================
+ internal module stack: 
+------------------------
+    define
+========================
+
+  DUE TO USER SIGNAL ! 
+ define ended abnormally

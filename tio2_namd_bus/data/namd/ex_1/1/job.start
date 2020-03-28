@@ -1,0 +1,11 @@
+
+Wed Mar  7 14:49:21 PST 2018
+jobex WAS CALLED AS: jobex -ri -ex -md
+1499 STEPS MOLECULAR DYNAMICS WILL BE PERFORMED
+PROCEDURE WILL START WITH A dscf like STEP
+AN EXCITED STATE GEOMETRY OPTIMIZATION WILL BE PERFORMED
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp
+DSCF  = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/ridft
+GRAD  = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/egrad
+MD = /beegfs/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/frog
+
