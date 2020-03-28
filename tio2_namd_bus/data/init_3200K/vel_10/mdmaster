@@ -1,0 +1,42 @@
+# A I M D : master file
+#
+$nsteps      256
+$natoms        9
+$log file=mdlog.1
+$current file=mdlog.1
+$turbomole file=control
+$seed 1351757242
+$title
+$log_history
+  maxlog      256
+       0                    mdlog.1
+$ke_control
+  length     50
+  response      1
+$barrier
+$constraints
+  algorithm   none
+  tolerance  0.1000000E-01
+  corpercyc  0.2500000
+$md_status
+  free
+  from t= -40.0000000000       until t=  0.00000000000
+$md_action
+$end
+# NB: commented-out lines have no effect
+# NB: lines after $end have no effect
+# $md_action
+#   free from t=<real>
+#   set temperature at t=<real> to x=<real> K
+#   set total energy at t=<real> to x=<real> H
+#   set kinetic energy at t=<real> to x=<real> H
+#   fix temperature from t=<real>
+#   fix total energy from t=<real>
+#   anneal from t=<real>
+#   quench from t=<real>
+#   quench from t=<real> to file=<filename>
+#   relax at t=<real>
+#   set position file=<filename> at t=<real>
+#   set velocity file=<filename> at t=<real>
+#   set velocity at t=<real> random
+#   set velocity at t=<real> zero

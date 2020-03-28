@@ -1,0 +1,22 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[1] Config.pm:343> INFO - Logfile is 'labreport.blg'
+[44] biber:287> INFO - === Mon Mar 19, 2018, 17:16:50
+[136] Biber.pm:348> INFO - Reading 'labreport.bcf'
+[279] Biber.pm:742> INFO - Found 8 citekeys in bib section 0
+[471] Biber.pm:3151> INFO - Processing section 0
+[505] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[747] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[951] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[955] Utils.pm:147> WARN - Duplicate entry key: 'TURBOMOLE' in file 'references.bib', skipping ...
+[1030] Utils.pm:147> WARN - BibTeX subsystem: /tmp/df0aIaxik4/references.bib_1853.utf8, line 371, warning: 8 characters of junk seen at toplevel
+[1030] Utils.pm:147> WARN - BibTeX subsystem: /tmp/df0aIaxik4/references.bib_1853.utf8, line 427, warning: 7 characters of junk seen at toplevel
+[1030] Utils.pm:147> WARN - BibTeX subsystem: /tmp/df0aIaxik4/references.bib_1853.utf8, line 442, warning: 4 characters of junk seen at toplevel
+[1030] Utils.pm:147> WARN - BibTeX subsystem: /tmp/df0aIaxik4/references.bib_1853.utf8, line 457, warning: 13 characters of junk seen at toplevel
+[1092] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1092] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1092] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'en-US'
+[1092] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[1100] bbl.pm:519> INFO - Writing 'labreport.bbl' with encoding 'ascii'
+[1178] Utils.pm:147> WARN - The entry 'doi:10.1063/1.463096' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1182] bbl.pm:615> INFO - Output to labreport.bbl
+[1196] Biber.pm:109> INFO - WARNINGS: 6
