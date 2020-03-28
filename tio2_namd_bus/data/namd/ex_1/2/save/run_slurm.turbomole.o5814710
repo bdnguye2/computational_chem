@@ -1,0 +1,17 @@
+=================================== SLURM JOB ===================================
+Wed Mar  7 14:56:57 PST 2018
+
+The job will be started on the following node(s):
+c-3-343
+
+Slurm User:         bdnguye2
+Run Directory:      /work/bdnguye2/5814710
+Job ID:             5814710
+Job Name:           vel_2_tio2_2200K
+Partition:          mf_nes2.8
+Number of nodes:    1
+Number of tasks:    8
+Submitted From:     gplogin1.local:/lustre/DATA/furche/bdnguye2/tio2/namd/ex_1/2
+=================================== SLURM JOB ===================================
+
+--- SLURM job-script output ---

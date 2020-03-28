@@ -1,0 +1,147 @@
+$scfinstab rpas
+$soes
+  a 1
+$surface_hopping
+$nacme
+$exopt 1
+$title
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+ti 1                                                                           \
+   basis =ti def2-SVP                                                          \
+   jbas  =ti def2-SVP
+o  2-3,5,7                                                                     \
+   basis =o def2-SVP                                                           \
+   jbas  =o def2-SVP
+h  4,6,8-9                                                                     \
+   basis =h def2-SVP                                                           \
+   jbas  =h def2-SVP
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=6966
+   natoms=9
+   nshell=47
+   nbf(CAO)=116
+   dim(trafo[SAO<-->AO/CAO])=134
+   rhfshells=1
+   nbf(AO)=107
+$scfmo   file=mos
+$closed shells
+ a       1-29                                   ( 2 )
+$scfiterlimit 100
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor 1000
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$dft
+   functional pbe0
+   gridsize   m3
+   weight derivatives
+$scfconv 7
+$scfdamp   start=0.700  step=0.050  min=0.050
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$last step     egrad
+$orbital_max_rnorm 0.31936112114060E-05
+$last SCF energy change = -1152.0875
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-1152.087508631    -2243.591011811     817.6521726969    -56.53612552415    -2.156250567286     332.5437065741
+$charge from egrad
+          0.000 (not to be modified here)
+$dipole from egrad
+  x     0.49938713509171    y     0.49508169678621    z    -0.30965509310537    a.u.
+   | dipole | =    1.9529953523  debye
+$ex_energies  ex energies
+  cycle =      1    SCF energy =    -1152.0875086310
+  0.19964574202313D+00
+$gsenergy=    -1152.0875
+$esenergy=    -1151.8879
+$couplingvector
+# cartesian nonadiabatic coupling vector
+  0.11015273625068D-01  0.38093250467304D-01  -.12266893900236D-01
+  -.55981222419409D-01  0.18421842184195D-01  0.76801310348756D-01
+  0.71615650264493D-01  -.72486441875876D-01  -.92250207300589D-01
+  -.20281269226910D-01  0.17282236469851D-01  0.40455551101496D-01
+  0.17287723079898D-01  0.28027930473061D-02  0.36590683520060D-01
+  -.28912303907571D-01  0.19009736917916D-01  -.37664831079385D-01
+  0.44788294334150D-01  -.70682049285470D-01  0.67047206911106D-01
+  -.46570056966177D-01  0.52983235151974D-01  -.42107671583552D-01
+  0.10069725908812D-01  -.35782908586708D-02  -.22910744859259D-01
+$esgrad
+# cartesian derivatives of excited state energy gradient
+    xyz component
+  0.27187545434123D-01  0.11868031614600D-01  0.13274168641924D-01
+  0.41283187969217D-01  0.43686047614888D-01  0.46725844251159D-02
+  0.23088937859438D-01  0.64249072243090D-02  0.14822574263950D-01
+  0.86707812881109D-02  -.59894707163618D-02  0.10189169991368D-01
+  0.14955468217932D-01  -.64067728511771D-01  -.44732742817114D-01
+  0.12190587587058D-02  0.80451523973643D-02  0.74908309255321D-02
+  -.28231612961131D-01  -.10362057474849D+00  -.77263995604589D-01
+  -.16613142948357D-01  0.90288872489175D-01  0.11946135281794D+00
+  -.71560223114822D-01  0.13364760840936D-01  -.47913943416542D-01
+$last excitation energy change= 0.19964574
+$nac            cartesian nacs
+  cycle =      1 nacme ex. state energy =    -1151.8878628890 |dE/dxyz| =  0.235545
+   -0.01678989277577     -0.08960641325743      0.06369018538184      ti
+    0.90746041895476     -2.65873652304140      1.82965531923560      o
+   -2.80876236630062     -0.94778358458729     -1.73744312975015      o
+   -3.81479662355541      0.20542783512980     -2.68619222901264      h
+   -0.74450736387790      2.73225056727811      1.66610783722933      o
+   -0.07734125341614      4.38216308396864      2.14500091101692      h
+    2.62680374143888      1.03224311155829     -1.88504737031849      o
+    2.62993804120288      0.00308125205357     -3.15821558138935      h
+    2.36174999814988     -2.83996050329468      2.68429889166958      h
+  0.11015273625068D-01  0.38093250467304D-01  -.12266893900236D-01
+  -.55981222419409D-01  0.18421842184195D-01  0.76801310348756D-01
+  0.71615650264493D-01  -.72486441875876D-01  -.92250207300589D-01
+  -.20281269226910D-01  0.17282236469851D-01  0.40455551101496D-01
+  0.17287723079898D-01  0.28027930473061D-02  0.36590683520060D-01
+  -.28912303907571D-01  0.19009736917916D-01  -.37664831079385D-01
+  0.44788294334150D-01  -.70682049285470D-01  0.67047206911106D-01
+  -.46570056966177D-01  0.52983235151974D-01  -.42107671583552D-01
+  0.10069725908812D-01  -.35782908586708D-02  -.22910744859259D-01
+$nac_matrix     na-coupling matrix
+  cycle =      1    SCF energy =    -1152.0875086310
+$sh_coeffs     sh coefficients
+  cycle =      1    SCF energy =    -1152.0875086310
+  0.00000000000000D+00  0.16304166312761-321
+$integral_ex  ex energies
+  cycle =      1    SCF energy =    -1152.0875086310
+$end
