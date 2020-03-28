@@ -1,0 +1,14 @@
+-------------- slurm.epilog ---------------
+Job ID:    5815350
+User:      bdnguye2
+Group:     furche
+Job Name:  vel_59_tio2_2200K
+Partition: mf_nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-7-27
+Nodelist:  c-7-27
+Command:   /lustre/DATA/furche/bdnguye2/tio2/namd/ex_1/59/run_slurm.turbomole
+WorkDir:   /lustre/DATA/furche/bdnguye2/tio2/namd/ex_1/59
+BatchHost: c-7-27
+No /lustre/DATA/furche/bdnguye2/tio2/namd/ex_1/59/SLURM_WORK_DIR[-5815350] file found. Assume job 5815350 already transferred job results back to /lustre/DATA/furche/bdnguye2/tio2/namd/ex_1/59.

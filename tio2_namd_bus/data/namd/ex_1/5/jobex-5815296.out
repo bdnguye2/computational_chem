@@ -1,0 +1,109 @@
+ridft program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/ridft
+relax program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/relax
+frog program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/frog
+uff program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/uff
+define program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/define
+statpt program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/statpt
+OPTIMIZATION CYCLE 1
+RUN ON STATE 1
+OPTIMIZATION CYCLE 2
+RUN ON STATE 1
+OPTIMIZATION CYCLE 3
+RUN ON STATE 1
+OPTIMIZATION CYCLE 4
+RUN ON STATE 1
+OPTIMIZATION CYCLE 5
+RUN ON STATE 1
+OPTIMIZATION CYCLE 6
+RUN ON STATE 1
+OPTIMIZATION CYCLE 7
+RUN ON STATE 1
+OPTIMIZATION CYCLE 8
+RUN ON STATE 1
+OPTIMIZATION CYCLE 9
+RUN ON STATE 1
+OPTIMIZATION CYCLE 10
+RUN ON STATE 1
+OPTIMIZATION CYCLE 11
+RUN ON STATE 1
+OPTIMIZATION CYCLE 12
+RUN ON STATE 1
+OPTIMIZATION CYCLE 13
+RUN ON STATE 1
+OPTIMIZATION CYCLE 14
+RUN ON STATE 1
+OPTIMIZATION CYCLE 15
+RUN ON STATE 1
+OPTIMIZATION CYCLE 16
+RUN ON STATE 1
+OPTIMIZATION CYCLE 17
+RUN ON STATE 1
+OPTIMIZATION CYCLE 18
+RUN ON STATE 1
+OPTIMIZATION CYCLE 19
+RUN ON STATE 1
+OPTIMIZATION CYCLE 20
+RUN ON STATE 1
+OPTIMIZATION CYCLE 21
+RUN ON STATE 1
+OPTIMIZATION CYCLE 22
+RUN ON STATE 1
+OPTIMIZATION CYCLE 23
+RUN ON STATE 1
+OPTIMIZATION CYCLE 24
+RUN ON STATE 1
+OPTIMIZATION CYCLE 25
+RUN ON STATE 1
+OPTIMIZATION CYCLE 26
+RUN ON STATE 1
+OPTIMIZATION CYCLE 27
+RUN ON STATE 1
+OPTIMIZATION CYCLE 28
+RUN ON STATE 1
+OPTIMIZATION CYCLE 29
+RUN ON STATE 1
+OPTIMIZATION CYCLE 30
+RUN ON STATE 1
+OPTIMIZATION CYCLE 31
+RUN ON STATE 1
+OPTIMIZATION CYCLE 32
+RUN ON STATE 1
+OPTIMIZATION CYCLE 33
+RUN ON STATE 1
+OPTIMIZATION CYCLE 34
+RUN ON STATE 1
+OPTIMIZATION CYCLE 35
+RUN ON STATE 1
+OPTIMIZATION CYCLE 36
+RUN ON STATE 1
+OPTIMIZATION CYCLE 37
+RUN ON STATE 1
+OPTIMIZATION CYCLE 38
+RUN ON STATE 1
+OPTIMIZATION CYCLE 39
+RUN ON STATE 1
+OPTIMIZATION CYCLE 40
+RUN ON STATE 1
+OPTIMIZATION CYCLE 41
+RUN ON STATE 1
+OPTIMIZATION CYCLE 42
+RUN ON STATE 1
+OPTIMIZATION CYCLE 43
+RUN ON STATE 0
+rdgrad program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/rdgrad
+OPTIMIZATION CYCLE 44
+RUN ON STATE 0
+rdgrad program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/rdgrad
+OPTIMIZATION CYCLE 45
+RUN ON STATE 0
+rdgrad program used is /beegfs/modfac/apps/TURBOMOLE/7.1_intel/bin/em64t-unknown-linux-gnu/rdgrad
+OPTIMIZATION CYCLE 46
+ERROR: your energy calculation did not converge !!
+       Possible reasons:
+       - not enough iterations: increase the max. number of SCF iterations
+         i.e. $scfiterlimit
+         and check your occupation.
+       - because of wrong input like starting an RI calculation
+         without having switched on RI 
+       - missing input (basis set, auxiliary basis set, MOs, ..) 
+    Check job.last and job.<number> for more detailed error output
