@@ -1,0 +1,115 @@
+$denconv 1d-7
+$statpt
+ itrvec 1
+$title
+$operating system unix
+$symmetry c3
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+c  1-8,10-13,15-19,21                                                          \
+   basis =c def2-SV(P)                                                         \
+   jbas  =c def2-SV(P)
+n  9,14,20                                                                     \
+   basis =n def2-SV(P)                                                         \
+   jbas  =n def2-SV(P)
+h  22-30                                                                       \
+   basis =h def2-SV(P)                                                         \
+   jbas  =h def2-SV(P)
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=56052
+   natoms=30
+   nshell=144
+   nbf(CAO)=333
+   dim(trafo[SAO<-->AO/CAO])=1378
+   rhfshells=1
+   nbf(AO)=312
+$scfmo   file=mos
+$closed shells
+ a       1-23                                   ( 2 )
+ e       1-46                                   ( 2 )
+$scfiterlimit       30
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$dft
+   functional tpss
+   gridsize   m3
+$scfconv        7
+$scfdamp   start=0.700  step=0.050  min=0.050
+$disp3
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$last step     tm2molden
+$last SCF energy change = -.16232889E-07
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from force
+  x     0.00000000000007    y     0.00000000000032    z    -0.00066980162366    a.u.
+   | dipole | =    0.0017024788  debye
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+   7.0853673864   7.0615407808   8.2176058122   7.0428829480   7.5956919197
+   8.2322199755   7.9095765997   4.0796720654   4.0796720654   4.0872432543
+   4.0872432543   2.1755732789   2.7192335015   2.7192335015   7.1659926943
+   7.1659926943   5.7645868704   8.1471387849   8.1471387849   2.4130577271
+   4.2243480461   4.2243480461   4.7449897470   4.7449897470   9.3455388268
+   4.3454348663   5.1975723681   4.5772534109   4.5772534109   6.8080388647
+   8.0076202753   8.0073109525   8.0073109525  10.1157968731   5.0697160366
+   5.0697160366   7.6503105148   7.6503105148   6.9937288332   1.8000170868
+   1.7258124392   1.7258124392   8.8310674206   8.8310674206   1.9439086079
+   1.9439086079   1.7936051043  10.6058968473   8.1575425788   8.8232011152
+   8.8232011152   8.7029797727   1.1341145437   1.1341145437   1.1273493056
+   4.7214274907   4.7214274907   1.4486265338   1.4486265338   1.2661966163
+   9.5620912955   3.2279669255   3.2279669255   2.5636714844   5.4779460827
+   5.4779460827   1.5274083424   1.5274083424   1.7371044008   1.0821050653
+   1.1762269535   1.1762269535   9.5991885750   9.5991885750  10.5259753940
+  11.5142350319  11.5142350319  10.9873867982  11.7283345704  11.8204608994
+  11.8204608994   1.0601353805   1.0601389823   1.0601389823   1.1076289014
+   1.1076289014   1.1075660408   1.0905502849   1.0905502849   1.0904632024
+$nvibro       90
+$vibrational spectrum    file=vibspectrum
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.24241518255572E-05
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-855.0349806959    -4186.192362831     1927.156560734    -117.0838197724    -4.710393038032     1525.818440178    -.2340596612427E-01
+$end

@@ -1,0 +1,118 @@
+$denconv 1d-7
+$title
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+c  1-8,10-13,15-19,21                                                          \
+   basis =c def2-SV(P)                                                         \
+   jbas  =c def2-SV(P)
+n  9,14,20                                                                     \
+   basis =n def2-SV(P)                                                         \
+   jbas  =n def2-SV(P)
+h  22-30                                                                       \
+   basis =h def2-SV(P)                                                         \
+   jbas  =h def2-SV(P)
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=56052
+   natoms=30
+   nshell=144
+   nbf(CAO)=333
+   dim(trafo[SAO<-->AO/CAO])=375
+   rhfshells=1
+   nbf(AO)=312
+$scfmo   file=mos
+$scfiterlimit       300
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$dft
+   functional tpss
+   gridsize   m3
+$disp3
+$scfconv   7
+$scfdamp   start=0.700  step=0.050  min=0.050
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$closed shells
+ a       1-69                                   ( 2 )
+$last step     tm2molden
+$last SCF energy change = 0.26512453E-07
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from force
+  x    -0.00630479050307    y    -0.00703689767691    z    -0.06363572424353    a.u.
+   | dipole | =    0.1635201784  debye
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$cartesianstep
+  total steps      5
+  forceupdate      on
+$tmole
+$redund_inp
+    metric -3
+$orbital_max_rnorm 0.44302386673966E-05
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-855.1002599717    -4243.252245006     1955.655699663    -117.1220393935    -4.719632935612     1554.363561943    -.2560424341027E-01
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+   7.0334687888   7.6341272653   7.9343955864   7.7288194025   7.6769842422
+   8.2448582926   4.5056878080   4.4998564983   5.2909081371   2.2792036851
+   3.4122435721   3.4012026220   6.0297166462   2.8027053794   2.8054108450
+   7.6080913965   7.5823101196   7.6181992291   7.6306707764   5.0247086133
+   5.0415421108   2.8683101005   4.5523273069   4.5393205180   5.9027153422
+   7.6620012428   5.9182524913   4.7038698858   4.6929347538   5.3820363754
+   5.5678348732   6.4881508603   6.5506023411   5.4569531217   5.4340997389
+   7.6705489335   7.5940975860   6.3201679597   6.3149557530   1.5924455925
+   1.5034058585   1.5064655580   2.7628718051   2.7678626494   2.0063756434
+   4.1741980524   4.1083463278   7.9235888775   6.1377106521   1.4491802181
+   1.4787905857   1.1549170604   3.2021930933   3.0875193971   7.2971975391
+   1.7984078661   1.8098436103   1.3739564790   2.3033746384   2.3082395811
+   3.7619605182   3.7826492849   1.7188733500  10.4671700820   6.0494907569
+   6.0227718569   4.0869160576   4.0830229371   3.8671324490   1.1836031192
+   1.1859668576   1.3326879181   2.6764990024   2.7008322030   2.9482999650
+   8.4047837092   8.4417833867   9.5712722645   9.7814608072  11.2140529265
+  11.2218354378   1.0672468268   1.0671035462   1.0670223884   1.0986777615
+   1.0989490242   1.0988591070   1.0908666767   1.0908624362   1.0908343723
+$nvibro       90
+$vibrational spectrum    file=vibspectrum
+$end

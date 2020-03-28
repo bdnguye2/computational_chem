@@ -1,0 +1,24 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'labreport.blg'
+[46] biber:287> INFO - === Fri Mar 23, 2018, 08:42:31
+[141] Biber.pm:348> INFO - Reading 'labreport.bcf'
+[287] Biber.pm:742> INFO - Found 7 citekeys in bib section 0
+[306] Biber.pm:3151> INFO - Processing section 0
+[341] Biber.pm:3308> INFO - Looking for bibtex format file 'references.bib' for section 0
+[593] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[811] bibtex.pm:974> INFO - Found BibTeX data source 'references.bib'
+[816] Utils.pm:147> WARN - Duplicate entry key: 'TURBOMOLE' in file 'references.bib', skipping ...
+[888] Utils.pm:147> WARN - BibTeX subsystem: /tmp/MFUVM_kknO/references.bib_17881.utf8, line 337, warning: 8 characters of junk seen at toplevel
+[889] Utils.pm:147> WARN - BibTeX subsystem: /tmp/MFUVM_kknO/references.bib_17881.utf8, line 393, warning: 7 characters of junk seen at toplevel
+[889] Utils.pm:147> WARN - BibTeX subsystem: /tmp/MFUVM_kknO/references.bib_17881.utf8, line 408, warning: 4 characters of junk seen at toplevel
+[889] Utils.pm:147> WARN - BibTeX subsystem: /tmp/MFUVM_kknO/references.bib_17881.utf8, line 423, warning: 13 characters of junk seen at toplevel
+[891] Utils.pm:147> WARN - The field 'abstract' in entry 'Laura' cannot be null, deleting it
+[891] Utils.pm:147> WARN - The field 'abstract' in entry 'doi:10.1002/jcc.21759' cannot be null, deleting it
+[948] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[949] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[949] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'en-US'
+[949] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[956] bbl.pm:519> INFO - Writing 'labreport.bbl' with encoding 'ascii'
+[968] Utils.pm:147> WARN - The entry 'Vincenzo' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1044] bbl.pm:615> INFO - Output to labreport.bbl
+[1143] Biber.pm:109> INFO - WARNINGS: 8

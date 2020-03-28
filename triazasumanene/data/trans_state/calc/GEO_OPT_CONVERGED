@@ -1,0 +1,26 @@
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 28
+
+ energy change  : actual value =   0.1516E-06 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.2394E-03 threshold =   0.1000E-02
+
+Job ended at   Mon Mar 19 17:18:38 PDT 2018
+  on machine     c-3-37.gp.local
+  by user        bdnguye2
+  in directory   /work/bdnguye2/7501
+  
+job.start file had been created with details about the job type: 
+
+Mon Mar 19 17:14:51 PDT 2018
+jobex WAS CALLED AS: jobex -trans -ri -c 100
+AN OPTIMIZATION WITH MAX. 100 CYCLES WILL BE PERFORMED
+CONVERGENCY CRITERION FOR TOTAL SCF-ENERGY IS 10**(-6)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF SCF-ENERGY GRADIENT IS 10**(-3)
+CONVERGENCY CRITERION FOR MAXIMUM NORM OF BASIS SET GRADIENT IS 10**(-3)
+PROCEDURE WILL START WITH A grad like STEP
+A TRANSITION STATE SEARCH WILL BE PERFORMED
+EXISTING HESSIAN MATRIX FOUND IN FILE hessian
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp
+DSCF  = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/ridft
+GRAD  = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/rdgrad
+STATPT = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/statpt
+

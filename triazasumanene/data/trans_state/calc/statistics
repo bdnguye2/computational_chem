@@ -1,0 +1,35 @@
+Mon Mar 19 17:18:35 PDT 2018
+
+ DSCF STATISTICS OUTPUT :
+
+ integral neglect threshold       :  0.10E-10
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ --------------------    1.ITERATION  --------------------
+ total energy                          : -854.60941198670    
+ one-electron energy                   : -3997.3337824595    
+ two-electron energy                   :  1710.8527989358    
+ damping factor ttr                    :           0.7000    
+
+ --------------------    2.ITERATION  --------------------
+ total energy                          : -854.60941201116    
+ one-electron energy                   : -3997.3321953602    
+ two-electron energy                   :  1710.8512118120    
+ energy increment                      :          -0.2446E-07
+ damping factor ttr                    :           0.7000    
+
+ --------------------    3.ITERATION  --------------------
+ total energy                          : -854.60941202352    
+ one-electron energy                   : -3997.3337607951    
+ two-electron energy                   :  1710.8527772345    
+ energy increment                      :          -0.1236E-07
+ damping factor ttr                    :           0.7500    
+
+ --------------------    4.ITERATION  --------------------
+ total energy                          : -854.61598164483    
+ one-electron energy                   : -3997.3334191363    
+ two-electron energy                   :  1710.8458659544    
+ energy increment                      :          -0.5429E-08
+ damping factor ttr                    :           0.8000    

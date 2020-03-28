@@ -1,0 +1,360 @@
+
+ freeh (gplogin2.gp.local) : TURBOMOLE V7.2 ( 21454 ) 2 Oct 2017 at 16:43:05
+ Copyright (C) 2017 TURBOMOLE GmbH, Karlsruhe
+
+
+    2018-03-23 00:14:55.299 
+
+
+
+                      f r e e   e n t h a l p y - program
+                            quantum chemistry group
+                            universitaet  karlsruhe
+                                     germany
+
+
+  -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
+ 
+   This program calculates partition sums and chemical
+   potentials for linear and non-linear molecules in
+   harmonic and ideal gas approximations.
+ 
+   Essential inputs from the control file comprise :
+   $vibrational spectrum
+   $coord
+   $atoms
+   $symmetry
+ 
+  -*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*
+ 
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -0.77897597   -2.53713861    0.00000000    c      6.000     0
+         -2.59762868   -0.59737791    0.00000000    c      6.000     0
+          1.81615879   -1.95092347    0.00000000    c      6.000     0
+          2.58671448    0.59395633    0.00000000    c      6.000     0
+          0.78146989    2.54830138    0.00000000    c      6.000     0
+         -1.80773851    1.94318229    0.00000000    c      6.000     0
+          3.77723676   -3.86201783    0.00000000    c      6.000     0
+          3.61703854   -6.35435305    0.00000000    c      6.000     0
+         -0.43799859   -7.24227539    0.00000000    n      7.000     0
+         -1.40273303   -5.19568706    0.00000000    c      6.000     0
+         -6.27405127   -3.88539388    0.00000000    c      6.000     0
+         -5.23322393   -1.34017408    0.00000000    c      6.000     0
+         -7.31155044    0.04472926    0.00000000    c      6.000     0
+         -6.05299517    4.00045560    0.00000000    n      7.000     0
+         -3.79823047    3.81264597    0.00000000    c      6.000     0
+         -0.22782417    7.37618473    0.00000000    c      6.000     0
+          1.45598717    5.20219190    0.00000000    c      6.000     0
+          6.50187544   -3.49079085    0.00000000    c      6.000     0
+          5.20096350    1.38304109    0.00000000    c      6.000     0
+          6.49099377    3.24181979    0.00000000    n      7.000     0
+          3.69451190    6.30962379    0.00000000    c      6.000     0
+          4.74295918    8.07374066    0.00000000    h      1.000     0
+          7.56962643   -3.62095452    1.77469421    h      1.000     0
+          7.56962643   -3.62095452   -1.77469421    h      1.000     0
+          4.62058493   -8.14439347    0.00000000    h      1.000     0
+         -9.36354411    0.07065281    0.00000000    h      1.000     0
+         -6.92065181   -4.74501152   -1.77469421    h      1.000     0
+         -6.92065181   -4.74501152    1.77469421    h      1.000     0
+         -0.64897461    8.36596604   -1.77469421    h      1.000     0
+         -0.64897461    8.36596604    1.77469421    h      1.000     0
+ 
+       center of nuclear mass  :   -0.00000000    0.00000000    0.00000000
+       center of nuclear charge:   -0.00000000    0.00000000    0.00000000
+
+ symmetry group of the molecule :   c3h
+
+ the group has the following generators :
+   c3(z)
+   mirror plane sigma(xy)
+
+    6 symmetry operations found
+
+ there are 4 real representations :   a'   e'   a"   e"  
+
+ maximum number of shells which are related by symmetry :  6
+
+
+   ***  vibrational spectroscopic data read from $vibrational spectrum
+        file=<vibspectrum>  ***
+
+    VIBRATIONAL SPECTRUM :
+
+   mode     symmetry     wave number     intensity     selection rules
+                          cm**(-1)         km/mol   
+     1        a'           -601.68       0.0000000       NO      YES
+     2        e'           -376.53       0.0000000       YES     YES
+     3        e'           -376.53       0.0000000       YES     YES
+     4        e'            -65.59       0.0000000       YES     YES
+     5        e'            -65.59       0.0000000       YES     YES
+     6                        0.00       0.0000000        -       - 
+     7                        0.00       0.0000000        -       - 
+     8                        0.00       0.0000000        -       - 
+     9                        0.00       0.0000000        -       - 
+    10                        0.00       0.0000000        -       - 
+    11                        0.00       0.0000000        -       - 
+    12        a"             70.15       0.9674600       YES     NO 
+    13        e"             79.25       0.0000000       NO      YES
+    14        e"             79.25       0.0000000       NO      YES
+    15        a'             88.49       0.0000000       NO      YES
+    16        a"            124.00       5.1008700       YES     NO 
+    17        a"            196.00       3.2837300       YES     NO 
+    18        e"            196.12       0.0000000       NO      YES
+    19        e"            196.12       0.0000000       NO      YES
+    20        e"            220.62       0.0000000       NO      YES
+    21        e"            220.62       0.0000000       NO      YES
+    22        e'            231.93       8.3041000       YES     YES
+    23        e'            231.93       8.3041000       YES     YES
+    24        a"            344.47       0.3468900       YES     NO 
+    25        e"            350.91       0.0000000       NO      YES
+    26        e"            350.91       0.0000000       NO      YES
+    27        a'            358.31       0.0000000       NO      YES
+    28        e'            374.30       0.9657300       YES     YES
+    29        e'            374.30       0.9657300       YES     YES
+    30        a'            439.08       0.0000000       NO      YES
+    31        e"            443.75       0.0000000       NO      YES
+    32        e"            443.75       0.0000000       NO      YES
+    33        a'            461.13       0.0000000       NO      YES
+    34        e'            468.63       3.1919200       YES     YES
+    35        e'            468.63       3.1919200       YES     YES
+    36        a"            474.26      21.0543900       YES     NO 
+    37        e'            489.80       3.0994800       YES     YES
+    38        e'            489.80       3.0994800       YES     YES
+    39        a"            554.22      29.0438200       YES     NO 
+    40        a'            573.21       0.0000000       NO      YES
+    41        e"            589.74       0.0000000       NO      YES
+    42        e"            589.74       0.0000000       NO      YES
+    43        e'            602.49      98.7501000       YES     YES
+    44        e'            602.49      98.7501000       YES     YES
+    45        a'            604.86       0.0000000       NO      YES
+    46        e'            709.82      89.3937500       YES     YES
+    47        e'            709.82      89.3937500       YES     YES
+    48        a'            710.63       0.0000000       NO      YES
+    49        e"            717.87       0.0000000       NO      YES
+    50        e"            717.87       0.0000000       NO      YES
+    51        a"            719.23      51.7288300       YES     NO 
+    52        e"            722.99       0.0000000       NO      YES
+    53        e"            722.99       0.0000000       NO      YES
+    54        a'            778.41       0.0000000       NO      YES
+    55        a"            839.64       1.3962300       YES     NO 
+    56        e'            847.15       2.0978100       YES     YES
+    57        e'            847.15       2.0978100       YES     YES
+    58        a"           1008.64       0.0635200       YES     NO 
+    59        e"           1008.94       0.0000000       NO      YES
+    60        e"           1008.94       0.0000000       NO      YES
+    61        e'           1049.72       3.6342400       YES     YES
+    62        e'           1049.72       3.6342400       YES     YES
+    63        a'           1179.71       0.0000000       NO      YES
+    64        a'           1280.53       0.0000000       NO      YES
+    65        e'           1296.62       2.7241400       YES     YES
+    66        e'           1296.62       2.7241400       YES     YES
+    67        a'           1391.04       0.0000000       NO      YES
+    68        a'           1420.87       0.0000000       NO      YES
+    69        e'           1432.04       1.1641200       YES     YES
+    70        e'           1432.04       1.1641200       YES     YES
+    71        a'           1446.03       0.0000000       NO      YES
+    72        e'           1447.56       9.2927500       YES     YES
+    73        e'           1447.56       9.2927500       YES     YES
+    74        e'           1579.46       2.9415200       YES     YES
+    75        e'           1579.46       2.9415200       YES     YES
+    76        e'           1665.32       2.5594200       YES     YES
+    77        e'           1665.32       2.5594200       YES     YES
+    78        a'           1668.37       0.0000000       NO      YES
+    79        a'           2012.68       0.0000000       NO      YES
+    80        e'           2030.68      79.3159000       YES     YES
+    81        e'           2030.68      79.3159000       YES     YES
+    82        a'           3107.11       0.0000000       NO      YES
+    83        e'           3107.14       0.4299200       YES     YES
+    84        e'           3107.14       0.4299200       YES     YES
+    85        e"           3207.80       0.0000000       NO      YES
+    86        e"           3207.80       0.0000000       NO      YES
+    87        a"           3207.85       2.2675200       YES     NO 
+    88        e'           3324.75      92.4376100       YES     YES
+    89        e'           3324.75      92.4376100       YES     YES
+    90        a'           3324.88       0.0000000       NO      YES
+
+ -----------------------------------------
+ Judged from the schoenflies symbol c3h ,
+ the number of rotations in the nuclear   
+ exchange group is SIGMA=   3. SIGMA is 
+ the symmetry number entering the quasi-  
+ classical rotational partition sum.      
+ Hit RETURN to accept or enter a different
+ integer value.                           
+ -----------------------------------------
+
+ 
+
+ center of mass :     0.00000000000000   -0.00000000000000    0.00000000000000
+    1 c    -0.77897597213719   -2.53713861264007    0.00000000000000
+    2 c    -2.59762867559933   -0.59737791435767    0.00000000000000
+    3 c     1.81615878729314   -1.95092346548917    0.00000000000000
+    4 c     2.58671447753733    0.59395632551150    0.00000000000000
+    5 c     0.78146988830619    2.54830137984679    0.00000000000000
+    6 c    -1.80773850540005    1.94318228712851    0.00000000000000
+    7 c     3.77723676107617   -3.86201782666116    0.00000000000000
+    8 c     3.61703854209919   -6.35435305478073    0.00000000000000
+    9 n    -0.43799859451107   -7.24227538956415    0.00000000000000
+   10 c    -1.40273303112531   -5.19568706112720    0.00000000000000
+   11 c    -6.27405127312341   -3.88539388258098    0.00000000000000
+   12 c    -5.23322392829507   -1.34017407786979    0.00000000000000
+   13 c    -7.31155044110497    0.04472926346501    0.00000000000000
+   14 n    -6.05299517130978    4.00045560445066    0.00000000000000
+   15 c    -3.79823046948765    3.81264597024563    0.00000000000000
+   16 c    -0.22782416946206    7.37618472846150    0.00000000000000
+   17 c     1.45598716721883    5.20219190453101    0.00000000000000
+   18 c     6.50187544258551   -3.49079084588052    0.00000000000000
+   19 c     5.20096350061285    1.38304109088156    0.00000000000000
+   20 n     6.49099376582086    3.24181978511355    0.00000000000000
+   21 c     3.69451189900575    6.30962379131570    0.00000000000000
+   22 h     4.74295918476945    8.07374066357049    0.00000000000000
+   23 h     7.56962642725233   -3.62095452064068    1.77469420926376
+   24 h     7.56962642725233   -3.62095452064068   -1.77469420926376
+   25 h     4.62058492583477   -8.14439347490838    0.00000000000000
+   26 h    -9.36354411060423    0.07065281133786    0.00000000000000
+   27 h    -6.92065181444903   -4.74501152283823   -1.77469420926376
+   28 h    -6.92065181444903   -4.74501152283823    1.77469420926376
+   29 h    -0.64897461280323    8.36596604347885   -1.77469420926376
+   30 h    -0.64897461280323    8.36596604347885    1.77469420926376
+ 
+      4717.43091
+         0.00000 4717.43091
+         0.00000    0.00000 9396.76613
+ 
+          ----------------------------------------
+          eigenvalues & -vectors of inertia tensor
+          ----------------------------------------
+ 
+      4717.43091 4717.43091 9396.76613
+
+ 
+         0.00000    0.00000    0.00000
+         0.00000    0.00000    0.00000
+         0.00000    0.00000    0.00000
+
+
+ wavenumbers calculated by scf theory tend to be
+ 1-10% too large and may be corrected by scaling
+ -----------------------------------------------
+ default value of scaling factor (BP/SVP):   0.9914
+ enter new value for corr, if you want to change
+ -----------------------------------------------
+
+
+ mode with (imaginary?) eigenvalue    -596.50555200 cm-1 
+ will not be included in the zero-point vib. energy
+
+ mode with (imaginary?) eigenvalue    -373.29184200 cm-1 
+ will not be included in the zero-point vib. energy
+
+ mode with (imaginary?) eigenvalue    -373.29184200 cm-1 
+ will not be included in the zero-point vib. energy
+
+ mode with (imaginary?) eigenvalue     -65.02592600 cm-1 
+ will not be included in the zero-point vib. energy
+
+ mode with (imaginary?) eigenvalue     -65.02592600 cm-1 
+ will not be included in the zero-point vib. energy
+
+ enter the range of temperatures (K) and pressures (MPa)
+ at which you want to calculate partition sums and free enthalpies :
+
+ tstart=<real> tend=<real> numt=<integer> pstart=<real> pend=<real> nump=<integer>
+
+ default values are  :
+ tstart=298.15 tend=298.15 numt=1 pstart=0.1 pend=0.1 nump=1
+
+ or enter  q  or  *  to quit
+
+
+ 
+          ------------------
+           your wishes are :
+          ------------------
+
+  pstart=  0.1000      pend=  0.1000      nump=   1
+
+  tstart=   298.1      tend=   476.0      numt=   2
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+  imaginary frequency not included in vib. partition sum 
+ 
+           zero point vibrational energy
+           -----------------------------
+           zpe=   502.7     kJ/mol
+ 
+   T        p       ln(qtrans) ln(qrot) ln(qvib) chem.pot.   energy    entropy
+  (K)      (MPa)                                 (kJ/mol)   (kJ/mol) (kJ/mol/K)
+ 
+ 298.15   0.1000000      18.99    14.37    11.64    391.16    548.66   0.53657
+ 476.00   0.1000000      20.16    15.08    20.89    280.59    610.93   0.70231
+ 
+   T        P              Cv            Cp       enthalpy
+  (K)     (MPa)        (kJ/mol-K)    (kJ/mol-K)   (kJ/mol)
+ 298.15   0.1000000     0.2921796     0.3004939    551.14
+ 476.00   0.1000000     0.3998747     0.4081890    614.89
+ 
+ ******************************************************
+ | qtrans=(m*k*T/(2*pi))^1.5*v h/(2*pi)=1a.u.(omitted)|
+ |   m=mol. mass in a.u. v=vol. per mol. of ideal gas |
+ | qvib=product(i) 1/(1-exp(-e(i)/kT)                 |
+ |   e(i)=frequency of i-th vibrational mode          |
+ | qrot=((2*pi*kT)^3*A*B*C)^0.5/(sigma*pi)            |
+ |   A,B,C=moments of inertia in a.u.                 |
+ | qrot=2*pi*kT*A/(sigma*pi) for lin. mol.            |
+ | chem.pot.=ZPE-RT*ln(qtrans*qrot*qvib)              |
+ |   ZPE=zero point vibrational energy                |
+ | energy=ZPE+3RT                                     |
+ |  +sum(i) e(i)*(1+exp(-e(i)/kT))/2*(1-exp(-e(i)/kT) |
+ |       =3/2RT for atoms etc.                        |
+ | enthalpy=energy+RT                                 |
+ | entropy=(energy+RT-chem.pot.)/T                    |
+ | const.vol.Heat Capacity : Cv=d(energy)/dT          |
+ | const.press.Heat Capacity : Cp=d(enthalpy)/dT      |
+ | These formulas are applicable only if              |
+ | * rotation can be treated classically              |
+ | * the molecule forms an ideal gas/solution         |
+ | * the harmonic approximation to vibrational        |
+ |   modes is not grossly misleading                  |
+ | Electronic (SCF or MP2) energies still have        |
+ | to be added to obtain "absolute potentials"        |
+ | for chemical equilibrium constants.                |
+ ******************************************************
+ 
+
+ enter the range of temperatures (K) and pressures (MPa)
+ at which you want to calculate partition sums and free enthalpies :
+
+ tstart=<real> tend=<real> numt=<integer> pstart=<real> pend=<real> nump=<integer>
+
+ default values are  :
+ tstart=298.15 tend=298.15 numt=1 pstart=0.1 pend=0.1 nump=1
+
+ or enter  q  or  *  to quit
+
+
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.03 seconds
+         total wall-time :   0.09 seconds
+    ------------------------------------------------------------------------
+
+   ****  freeh : all done  ****
+
+
+    2018-03-23 00:14:55.346 
+

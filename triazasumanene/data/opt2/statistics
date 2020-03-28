@@ -1,0 +1,70 @@
+
+ DSCF STATISTICS OUTPUT :
+
+ integral neglect threshold       :  0.10E-10
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+ cpu-time for construction of rho     :       14.512 s
+
+
+
+ --------------------    1.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :       16.494 s
+
+ cpu-time for xc part                 :      130.773 s
+
+
+
+ --------------------    2.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        9.649 s
+
+ cpu-time for xc part                 :       88.744 s
+
+
+
+ --------------------    3.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        9.503 s
+
+ cpu-time for xc part                 :       85.526 s
+
+
+
+ --------------------    4.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        9.746 s
+
+ cpu-time for xc part                 :       80.917 s
+
+
+
+ --------------------    5.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :       10.894 s
+
+ cpu-time for xc part                 :       75.860 s
+
+
+
+ --------------------    6.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :       11.758 s
+
+ cpu-time for xc part                 :       67.193 s
+
+
+
+ --------------------    7.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        3.353 s
+
+ cpu-time for xc part                 :       17.771 s
+
+ cpu-time for construction of rho     :       44.847 s
+
+
+
+ --------------------    8.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :       11.333 s
+
+ cpu-time for xc part                 :      291.775 s
+
+
+  escf  : cpu elapsed      1068.042 s
+          wall              157.774 s

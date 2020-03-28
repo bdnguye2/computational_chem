@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+%
+% Packages and other includes
+% Pagination
+\usepackage[letterpaper, margin=1.25in]{geometry}
+%
+% Graphics, floats, tables
+\usepackage{graphicx, color, float, array}
+%
+% Hyperlinks
+\usepackage{hyperref}
+%
+% AMS packages for equations, math symbols
+\usepackage{amsmath, amssymb, braket}
+%
+% Bibliography
+\usepackage[style=numeric,sorting=none]{biblatex}
+\addbibresource{references.bib}
+%
+% Revision (see Makefile)
+\input{revision.tex}
+%
+% Definitions and settings
+% Paragraph indent and spacing
+\setlength{\parskip}{0.4\baselineskip}
+\setlength{\parindent}{0in}
+%
+% Math mode version of "r" column type (requires array package)
+\newcolumntype{R}{>{$}r<{$}}
+%
+% Title, authors, date
+\title{\textbf{Uncovering the Chirality of Triazasumanene}}
+\author{Brian Nguyen}
+\date{Chem 150L Winter 2018 \\ \today, Revision \Revision}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  \noindent The abstract should contain a concise summary of the
+  question/hypothesis investigated (first sentence), state the methods
+  that were used to address it (second sentence), followed by a summary
+  of the most important results (1-2 sentences), and the main
+  conclusions (1-2 sentences). The abstract should be written in present
+  tense.
+\end{abstract}
+
+\section{Introduction}
+
+Miniaturization of novel devices and machines on a molecular level
+has been one of the main goals in electronics\cite{Vincenzo}. The decreasing
+device size may lead to greater power and funcationality residing on
+a chip. For instance, polycyclic aromatic carbons with curved $\pi$-conjugated
+structures, such as fullerenes, carbon nanotubes, and buckybowls
+are appealing materials due to their low density, structural stability,
+and extended-delocalized $\pi$ networks that support mobile charge
+carriers\cite{Laura}. However, few heteroatom-doped buckybowls
+have been synthesized and reported. The most recent successful
+synthesis of triazasumanene is an isoelectronic heteroanalogue
+of sumanene from Tan et. al.\cite{doi:10.1246/bcsj.20170384}
+
+First principle calculations may provide insights on the electronic
+structures of these sumanene derivatives and improve upon the
+current state-of-the-art. In this report, we provide a theoretical
+investigation of the triazasumanene by computing the optimized
+ground state and transition state structures with the corresponding
+electronic circular dichroism (ECD).
+
+\section{Methods}
+
+\subsection{Statement of the Models}
+
+A racemic mixture is a 50:50 mixture of two enantiomers. In the synthesis
+of triazasumanene, two absolute stereochemical configurations coexisist
+which are designated as clockwise (C) and counterclockwise (A) as shown
+in Fig \ref{fig:stereo}. The configuration is based on the heteroatoms
+having the lowest possible number.
+
+\begin{figure}[htbp]
+  \center
+  \includegraphics[scale=0.25]{buck.png}
+  \caption{An illustration demonstrating the nomenclature of buckybowl
+    enantiomers.}
+  \label{fig:stereo}
+\end{figure}
+
+To resolve the racemic triazasumanene, one method is to use electronic
+circular dichroism (ECD) spectroscopy coupled with electronic structure
+calculations.
+
+\subsection{Computational Details}
+
+Within the TURBOMOLE v7.2 suite\ref{TURBOMOLE}, the aoforce module is used to compute
+the vibrational frequencies and generate the ECD spectrum. The
+triazasumanene structure was constructed on avogadro v1.2\ref{Hanwell2012}
+and minimized with universal force field. This initial structure was fairly
+planar and this iitial guess used to optimize with TPSS\ref{PhysRevLett.91.146401}.
+  
+
+\section{Results}
+
+
+
+\section{Conclusions}
+
+
+
+\printbibliography
+
+\end{document}

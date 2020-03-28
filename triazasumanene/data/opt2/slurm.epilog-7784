@@ -1,0 +1,13 @@
+-------------- slurm.epilog ---------------
+Job ID:    7784
+User:      bdnguye2
+Group:     furche
+Job Name:  turbomole_job
+Partition: nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-5-17
+Nodelist:  c-5-17
+Command:   /DFS-B/DATA/furche/bdnguye2/chem150l/opt2/run_slurm.turbomole
+WorkDir:   /DFS-B/DATA/furche/bdnguye2/chem150l/opt2
+BatchHost: c-5-17

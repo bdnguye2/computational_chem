@@ -1,0 +1,117 @@
+$statpt
+ itrvec 1
+$denconv 1d-7
+$title
+$operating system unix
+$symmetry c3h
+$redundant    file=coord
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   on
+ redundant  on
+ cartesian  off
+ global     off
+ basis      off
+$atoms
+c  1-8,10-13,15-19,21                                                          \
+   basis =c def2-SV(P)                                                         \
+   jbas  =c def2-SV(P)
+n  9,14,20                                                                     \
+   basis =n def2-SV(P)                                                         \
+   jbas  =n def2-SV(P)
+h  22-30                                                                       \
+   basis =h def2-SV(P)                                                         \
+   jbas  =h def2-SV(P)
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=56052
+   natoms=30
+   nshell=144
+   nbf(CAO)=333
+   dim(trafo[SAO<-->AO/CAO])=1410
+   rhfshells=1
+   nbf(AO)=312
+$scfmo   file=mos
+$closed shells
+ a'      1-19                                   ( 2 )
+ e'      1-38                                   ( 2 )
+ a"      1-4                                    ( 2 )
+ e"      1-8                                    ( 2 )
+$scfiterlimit       30
+$thize     0.10000000E-04
+$thime        5
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$dft
+   functional tpss
+   gridsize   m3
+$scfconv        7
+$scfdamp   start=0.700  step=0.050  min=0.050
+$disp3
+$ricore      500
+$rij
+$jbas    file=auxbasis
+$last step     freeh
+$last SCF energy change = -.45821309E-06
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from force
+  x    -0.00000000000016    y     0.00000000000077    z     0.00000000000000    a.u.
+   | dipole | =    0.0000000000  debye
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+  11.5493281741  11.2718805149  11.2718805149   5.5751876571   5.5751876571
+   7.0272119543   6.7144633532   8.3243032249   8.7195831828   7.8926584450
+   7.5920098102   4.4508047385   4.9761996796   4.9761996796   7.3859872102
+   5.5157327692   4.1765518991   3.6546542878   3.6546542878   5.1710814768
+   5.1710814768  11.1293414592  11.1293414592   1.8772971055   8.8311577807
+   2.9862279040   2.9862279041   8.3574703284   8.3574703283   6.9042660505
+   1.8275392663   1.8275392663   6.4171107044   8.6642079985   8.6642079985
+   5.0889407757   6.4776065701   6.4776065701   1.6198659429   2.9786988719
+   1.0676301616   1.0676301616   1.4328129230   2.8215155502   2.8215155502
+   1.4056829459   1.4056829459   1.4292657301   6.6667099529   6.6667099529
+   1.2247588473   1.2247588473   1.2558575271   8.3157512533   8.7678437332
+   7.6086589796   7.6086589796   1.3718121940   1.3686772566   1.3686772566
+   9.4085658027   9.4085658027   5.6505590090  11.7023854730   5.1525383848
+   5.1525383848   6.4303055877  11.1655212939   3.3277224927   3.3277224927
+   1.2418980277   1.6285563383   1.6285563383  11.7013368745  11.7013368745
+   7.8087707476   7.8087707476   7.8984076245  12.6869122935  12.7019186289
+  12.7019186289   1.0511725125   1.0512167293   1.0512167293   1.1205178488
+   1.1205178488   1.1204989213   1.1114883156   1.1114883156   1.1113206569
+$nvibro       90
+$vibrational spectrum    file=vibspectrum
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.28554486279964E-05
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-854.6423134368    -3998.528615983     1832.680551721    -116.6045638389    -4.609149753206     1432.445903757    -.2643934024971E-01
+$end

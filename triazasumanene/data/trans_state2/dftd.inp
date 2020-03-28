@@ -1,0 +1,27 @@
+
+
+a coord
+sy c3 0.03
+ired
+*
+b all def2-SV(P)
+*
+eht
+
+
+
+dft
+on
+func tpss
+*
+dsp
+on
+*
+ri
+on
+*
+scf
+conv
+7
+
+*

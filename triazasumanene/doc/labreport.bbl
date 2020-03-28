@@ -1,0 +1,314 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global}
+    \entry{Vincenzo}{article}{}
+      \name{author}{3}{}{%
+        {{hash=756fa8c3149a425edb4635ce01a46d34}{%
+           family={Balzani},
+           family_i={B\bibinitperiod},
+           given={Vincenzo},
+           given_i={V\bibinitperiod}}}%
+        {{hash=f8f6abe60ca1e435c8cfddd0a3453526}{%
+           family={Credi},
+           family_i={C\bibinitperiod},
+           given={Alberto},
+           given_i={A\bibinitperiod}}}%
+        {{hash=2da0e26fbdc25600935137e5ee413084}{%
+           family={Venturi},
+           family_i={V\bibinitperiod},
+           given={Margherita},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{803cee36980a9997e16f4716b710f809}
+      \strng{fullhash}{803cee36980a9997e16f4716b710f809}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The macroscopic concepts of a device and a machine can be extended to the molecular level. Molecular\x{fffd}level devices and machines are constructed by a bottom\x{fffd}up approach. The atom\x{fffd}by\x{fffd}atom bottom\x{fffd}up approach is unrealistic from the chemical viewpoint. The bottom\x{fffd}up approach molecule\x{fffd}by\x{fffd}molecule following the guidelines of supramolecular (multicomponent) chemistry has proved to be successful. The extension of the concepts of a device and a machine to the molecular level is of interest not only for basic research, but also for the growth of nanoscience and the development of nanotechnology.}
+      \field{journaltitle}{Chemistry \x{fffd} A European Journal}
+      \field{number}{24}
+      \field{title}{The Bottom\x{fffd}Up Approach to Molecular\x{fffd}Level Devices and Machines}
+      \field{volume}{8}
+      \field{pages}{5524\bibrangedash 5532}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1002/1521-3765(20021216)8:24<5524::AID-CHEM5524>3.0.CO;2-J
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/1521-3765%2820021216%298%3A24%3C5524%3A%3AAID-CHEM5524%3E3.0.CO%3B2-J
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/1521-3765%2820021216%298%3A24%3C5524%3A%3AAID-CHEM5524%3E3.0.CO%3B2-J
+      \endverb
+      \keyw{chemistry and art,miniaturization,molecular devices,molecular machines,nanotechnology,supramolecular chemistry}
+    \endentry
+    \entry{Laura}{article}{}
+      \name{author}{3}{}{%
+        {{hash=97f1ac1db4a82c14358f88f173e4608c}{%
+           family={Zoppi},
+           family_i={Z\bibinitperiod},
+           given={Laura},
+           given_i={L\bibinitperiod}}}%
+        {{hash=b4897ed4e70b1ea702bb1090d1f3489a}{%
+           family={Siegel},
+           family_i={S\bibinitperiod},
+           given={Jay\bibnamedelima S.},
+           given_i={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=701ce620038bb51616ac8f4f2be629a7}{%
+           family={Baldridge},
+           family_i={B\bibinitperiod},
+           given={Kim\bibnamedelima K.},
+           given_i={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b841cbbbb76d0588840480fdd89eb67}
+      \strng{fullhash}{3b841cbbbb76d0588840480fdd89eb67}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wiley Interdisciplinary Reviews: Computational Molecular Science}
+      \field{number}{1}
+      \field{title}{Electron transport and optical properties of curved aromatics}
+      \field{volume}{3}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/wcms.1107
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/wcms.1107
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1107
+      \endverb
+    \endentry
+    \entry{doi:10.1246/bcsj.20170384}{article}{}
+      \name{author}{6}{}{%
+        {{hash=76038159f1d584285eaae007ed501365}{%
+           family={Tan},
+           family_i={T\bibinitperiod},
+           given={Qitao},
+           given_i={Q\bibinitperiod}}}%
+        {{hash=1b1d881a5c62d1deb35fe6fb8d7121fe}{%
+           family={Kaewmati},
+           family_i={K\bibinitperiod},
+           given={Patcharin},
+           given_i={P\bibinitperiod}}}%
+        {{hash=66afffd99b6af5041e810e40aa0c565a}{%
+           family={Higashibayashi},
+           family_i={H\bibinitperiod},
+           given={Shuhei},
+           given_i={S\bibinitperiod}}}%
+        {{hash=e9d79276b239a1f9082b9c2bce392faa}{%
+           family={Kawano},
+           family_i={K\bibinitperiod},
+           given={Masaki},
+           given_i={M\bibinitperiod}}}%
+        {{hash=28af5815fa2635799a5bddcb590806c7}{%
+           family={Yakiyama},
+           family_i={Y\bibinitperiod},
+           given={Yumi},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=2e67c21ea30b67f6e5bcb7772536a85f}{%
+           family={Sakurai},
+           family_i={S\bibinitperiod},
+           given={Hidehiro},
+           given_i={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f0dbf3f2b5f8813b3e5fbad7ee6a146}
+      \strng{fullhash}{ebbba463639d64ceab2e4ab03b6a0495}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Buckybowls, which are represented by sumanene and corannulene, have attracted considerable attention for their unique bowl structures and interesting physicochemical properties. However, still few heteroatom-doped buckybowls have been reported to date. Here we show the successful synthesis of triazasumanene, an isoelectronic heteroanalogue of sumanene, which possesses a deeper bowl with stable bowl chirality and unique helical columnar packing in the crystal as an enantiopure form. In contrast, the crystal packing of the racemate shows a unidirectional columnar structure, which resembles that of the pristine sumanene. Doping of nitrogen atoms into the periphery of the sumanene framework also leads to perturbations of the electronic structure as shown by a significant decrease of the lowest unoccupied molecular orbital (LUMO) level and the optical band gap in comparison to all-carbon sumanene. The pyridine ring of triazasumanene shows unusual susceptibility towards acidic hydrolysis due to the highly strained curved structure.}
+      \field{journaltitle}{Bulletin of the Chemical Society of Japan}
+      \field{number}{4}
+      \field{title}{Triazasumanene: An Isoelectronic Heteroanalogue of Sumanene}
+      \field{volume}{91}
+      \field{year}{2018}
+      \field{pages}{531\bibrangedash 537}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1246/bcsj.20170384
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1246/bcsj.20170384
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1246/bcsj.20170384
+      \endverb
+    \endentry
+    \entry{TURBOMOLE}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{{TURBOMOLE V7.2 2017}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989-2007, {TURBOMOLE GmbH}, since 2007; available from \\ {\tt http://www.turbomole.com}.}
+    \endentry
+    \entry{Hanwell2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=6f30fea7ce735a7d3f6e3f7c0880af4e}{%
+           family={Hanwell},
+           family_i={H\bibinitperiod},
+           given={Marcus\bibnamedelima D.},
+           given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4db55d064050f0105d77a3d038056a04}{%
+           family={Curtis},
+           family_i={C\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           given_i={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7f0d40cffe9de02ce1b3a3544f899742}{%
+           family={Lonie},
+           family_i={L\bibinitperiod},
+           given={David\bibnamedelima C.},
+           given_i={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a1356070b4bdb67b7c411f697d26b09c}{%
+           family={Vandermeersch},
+           family_i={V\bibinitperiod},
+           given={Tim},
+           given_i={T\bibinitperiod}}}%
+        {{hash=f9322e07d154743de2529c07c2bd9c44}{%
+           family={Zurek},
+           family_i={Z\bibinitperiod},
+           given={Eva},
+           given_i={E\bibinitperiod}}}%
+        {{hash=f4af20a2e638f8f624ed4e18dc322dd6}{%
+           family={Hutchison},
+           family_i={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima R.},
+           given_i={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{3927bc3c650500757b9e55eead126db2}
+      \strng{fullhash}{b633343f66670a4e1e48ed3a7e304488}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Avogadro project has developed an advanced molecule editor and visualizer designed for cross-platform use in computational chemistry, molecular modeling, bioinformatics, materials science, and related areas. It offers flexible, high quality rendering, and a powerful plugin architecture. Typical uses include building molecular structures, formatting input files, and analyzing output of a wide variety of computational chemistry packages. By using the CML file format as its native document type, Avogadro seeks to enhance the semantic accessibility of chemical data types.}
+      \field{issn}{1758-2946}
+      \field{journaltitle}{Journal of Cheminformatics}
+      \field{month}{08}
+      \field{number}{1}
+      \field{title}{Avogadro: an advanced semantic chemical editor, visualization, and analysis platform}
+      \field{volume}{4}
+      \field{year}{2012}
+      \field{pages}{17}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1758-2946-4-17
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/1758-2946-4-17
+      \endverb
+    \endentry
+    \entry{PhysRevLett.91.146401}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3e114a93729f3957f60519871546aead}{%
+           family={Tao},
+           family_i={T\bibinitperiod},
+           given={Jianmin},
+           given_i={J\bibinitperiod}}}%
+        {{hash=f7d11de7da27036e0c12d4055b2fb92d}{%
+           family={Perdew},
+           family_i={P\bibinitperiod},
+           given={John\bibnamedelima P.},
+           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=68444601b5ada1afb9472f658e64431f}{%
+           family={Staroverov},
+           family_i={S\bibinitperiod},
+           given={Viktor\bibnamedelima N.},
+           given_i={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=2344ccf562c26dc9eae25808fc333f9b}{%
+           family={Scuseria},
+           family_i={S\bibinitperiod},
+           given={Gustavo\bibnamedelima E.},
+           given_i={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c460a45ea84ed69518b08e3346e855d6}
+      \strng{fullhash}{73c9c5433014f0fed13db89a6c7d5bfb}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{14}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{09}
+      \field{title}{Climbing the Density Functional Ladder: Nonempirical Meta{}Generalized Gradient Approximation Designed for Molecules and Solids}
+      \field{volume}{91}
+      \field{year}{2003}
+      \field{pages}{146401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.91.146401
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.91.146401
+      \endverb
+    \endentry
+    \entry{doi:10.1002/jcc.21759}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3a2585af369dbd4150db746c63177b0c}{%
+           family={Grimme},
+           family_i={G\bibinitperiod},
+           given={Stefan},
+           given_i={S\bibinitperiod}}}%
+        {{hash=c1a85a74b8b1d9992721d20377d7f50f}{%
+           family={Ehrlich},
+           family_i={E\bibinitperiod},
+           given={Stephan},
+           given_i={S\bibinitperiod}}}%
+        {{hash=7cb60366f9b8a050856b7dcdde43b066}{%
+           family={Goerigk},
+           family_i={G\bibinitperiod},
+           given={Lars},
+           given_i={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \strng{fullhash}{a4b6041b0a755ed3bf5baedebafa62a0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{number}{7}
+      \field{title}{Effect of the damping function in dispersion corrected density functional theory}
+      \field{volume}{32}
+      \field{pages}{1456\bibrangedash 1465}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1002/jcc.21759
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.21759
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21759
+      \endverb
+      \keyw{dispersion energy,density functional theory,noncovalent interactions,van der Waals complexes}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
