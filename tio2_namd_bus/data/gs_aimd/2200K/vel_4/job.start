@@ -1,0 +1,10 @@
+
+Tue Mar  6 15:35:26 PST 2018
+jobex WAS CALLED AS: jobex -ri -md
+256 STEPS MOLECULAR DYNAMICS WILL BE PERFORMED
+PROCEDURE WILL START WITH A dscf like STEP
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp
+DSCF  = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/ridft
+GRAD  = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/rdgrad
+MD = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/frog
+

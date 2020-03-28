@@ -1,0 +1,22 @@
+Job started at   Tue Mar 6 15:35:41 PST 2018
+  on machine     c-17-17.gp.local
+  by user        bdnguye2
+  in directory   /work/bdnguye2/6522
+
+ CAUTION: this file will not be removed if user or the system decides 
+          to kill the job !!!
+          To let jobex stop smoothly, simple create
+          an empty file called \'stop\' in this directory
+          jobex will stop at the next possible step
+
+job.start file has been created with details about the job type: 
+
+Tue Mar  6 15:35:41 PST 2018
+jobex WAS CALLED AS: jobex -ri -md
+256 STEPS MOLECULAR DYNAMICS WILL BE PERFORMED
+PROCEDURE WILL START WITH A dscf like STEP
+LOAD MODULES WILL BE TAKEN FROM DIRECTORY /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp
+DSCF  = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/ridft
+GRAD  = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/rdgrad
+MD = /sopt/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu_smp/frog
+

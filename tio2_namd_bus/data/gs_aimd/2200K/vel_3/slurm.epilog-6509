@@ -1,0 +1,13 @@
+-------------- slurm.epilog ---------------
+Job ID:    6509
+User:      bdnguye2
+Group:     furche
+Job Name:  vel_3_tio2_2200K
+Partition: nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-3-38
+Nodelist:  c-3-38
+Command:   /lustre/DATA/furche/bdnguye2/tio2/init_2200K/vel_3/run_slurm.turbomole
+WorkDir:   /lustre/DATA/furche/bdnguye2/tio2/init_2200K/vel_3
+BatchHost: c-3-38

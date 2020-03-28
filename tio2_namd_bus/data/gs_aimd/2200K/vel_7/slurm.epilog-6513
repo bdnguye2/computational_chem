@@ -1,0 +1,13 @@
+-------------- slurm.epilog ---------------
+Job ID:    6513
+User:      bdnguye2
+Group:     furche
+Job Name:  vel_7_tio2_2200K
+Partition: nes2.8
+QOS:       normal 
+Account:   furche
+Reason:    None,c-17-7
+Nodelist:  c-17-7
+Command:   /lustre/DATA/furche/bdnguye2/tio2/init_2200K/vel_7/run_slurm.turbomole
+WorkDir:   /lustre/DATA/furche/bdnguye2/tio2/init_2200K/vel_7
+BatchHost: c-17-7

@@ -1,0 +1,426 @@
+
+OPTIMIZATION CYCLE 256
+Tue Mar  6 16:03:44 PST 2018
+           Doing BLAS/Lapack in the master proc. with  8 CPUs.
+           SMPCPUS    set: Shared-memory Parallelization with   8 CPUs.
+
+           SMP Parallelization Reference:
+           C. van Wullen, J. Comput. Chem. 32 (2011) 1195--1201
+ operating system is UNIX !
+
+ rdgrad (c-17-17.gp.local) : TURBOMOLE V7.2 ( 21454 ) 4 Oct 2017 at 12:48:15
+ Copyright (C) 2017 TURBOMOLE GmbH, Karlsruhe
+
+
+    2018-03-06 16:03:44.190 
+
+
+
+                                 r d g r a d
+
+                          gradient for ridft program 
+
+                        by K.Eichkorn, O.Treutler, H.Oehm, 
+                             M.Haeser and R.Ahlrichs
+                  (Chemical Physics Letters 242 (1995) 652-660)
+                    parallel version: M.v.Arnim  &  R.Ahlrichs
+                            quantum chemistry group
+                             university  karlsruhe
+                                   germany
+
+
+
+
+                          References             
+                                                 
+          Density Functional:                              
+              O. Treutler and R. Ahlrichs                      
+              Efficient Molecular Numerical Integration Schemes
+              J. chem. Phys. 102: 346 (1995)                   
+          Parallel Version:                                
+              Performance of parallel TURBOMOLE for Density    
+              Functional Calculations                          
+              M. v.Arnim and R. Ahlrichs                      
+              J. comp. Chem. 19: 1746 (1998)                   
+          RI-J Method:                                     
+              Auxiliary Basis Sets to approximate Coulomb      
+              Potentials                                       
+              Chem. Phys. Lett. 240: 283 (1995)                
+              K. Eichkorn, O. Treutler, H. Oehm, M. Haeser     
+              and R. Ahlrichs                                  
+              Chem. Phys. Lett. 242: 652 (1995)                
+                                                           
+              Auxiliary Basis Sets for Main Row Atoms and their
+              Use to approximate Coulomb Potentials            
+              K. Eichkorn, F. Weigend, O. Treutler and         
+              R. Ahlrichs                                      
+              Theo. Chem. Acc. 97: 119 (1997)                   
+                                         
+
+
+
+ integral neglect threshold       :  0.29E-10
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ DENSITY CONVERGENCE CHECK SWITCHED ON !
+ SCF CONVERGENCE IF RMS(delta[D]) <     0.1000000000E-06
+
+ PBE0 hybrid functional
+ exchange:    3/4 (LDA+PBE) + 1/4 HF
+ correlation: LDA (PW) + PBE
+ A Hybrid-DFT calculation using the RI-J approximation will be carried out.
+  
+  
+ AUXILIARY BASIS SET information:
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      107       29
+ 
+ number of basis functions   :                    107
+ number of occupied orbitals :                     29
+ 
+
+ number of off-diagonal lagrangians expected :  0
+
+ biggest AO integral is expected to be    13.493451081
+  
+           ------------------
+           density functional
+           ------------------
+ PBE0 hybrid functional
+ exchange:    3/4 (LDA+PBE) + 1/4 HF
+ correlation: LDA (PW) + PBE
+
+ iterations will be done with small grid
+  
+ spherical integration : Lebedev's spherical grid
+ spherical gridsize    :                     3
+    i.e. gridpoints    :                   302
+ value for diffuse not defined
+ radial integration    : Chebyshev 2nd kind (scaling 3)
+ radial gridsize       :                     3
+ integration cells     :                     9
+ partition function    : becke
+ partition sharpness   :                     3
+  
+  
+           ------------------------
+             RDGRAD - INFORMATION
+           ------------------------
+  
+ Threshold for integral neglect (rithr1): 1E-10
+ Threshold for integral neglect (rithr2): 1E-10
+ Contributions to RI integral batches: 
+  neglected integral batches:                    66
+  direct contribution:                         1062
+     
+ ****************************************
+ Memory allocated for RDGRAD: 2 MiB
+ ****************************************
+                                            
+     
+
+ nuclear repulsion energy  :   324.531806955    
+
+  MOs are in ASCII format !
+
+
+ reading orbital data $scfmo  from file mos
+ orbital characterization : scfconv=7
+  Deviation of MOs from orthonormality   4.508294909263966E-011
+
+    ----------------------------------------
+     S+T+V CONTRIBUTIONS TO ENERGY GRADIENT 
+    ----------------------------------------
+
+ 1e-integral 1st. derivatives will be neglected if expon. factor < 0.577171E-13
+
+
+ setting up bound for integral derivative estimation
+
+ increment for numerical differentiation : 0.00050000
+
+ biggest AO integral is expected to be    13.493451081
+ biggest cartesian 1st derivative AO integral is expected to be    41.054869515
+
+ biggest 1-particle AO density matrix element is expected to be    2.5968043176
+
+ setting up bound for integral derivative estimation
+
+ increment for numerical differentiation : 0.00050000
+
+ biggest AO integral is expected to be    13.493451081
+ biggest cartesian 1st derivative AO integral is expected to be    41.054869515
+
+ 2e-integral 1st. derivatives will be neglected if expon. factor < 0.100000E-06
+ outer boundary for 2e-integral derivative neglection is 0.247156E-08
+
+          Overall gridpoints after grid construction =         48605
+
+ Integrated ground state density     :   58.00002182090977    
+
+
+          ------------------------------------------------
+           cartesian gradient of the energy (hartree/bohr)
+          ------------------------------------------------
+
+  ATOM      1 ti          2 o           3 o           4 h           5 o 
+dE/dx -0.5491608D-01  0.2073952D-01 -0.1010924D-01  0.3585854D-01 -0.8442660D-01
+dE/dy  0.2716077D-01 -0.3226608D-01  0.1838329D-03  0.6554403D-02 -0.7918771D-01
+dE/dz -0.9025408D-02  0.2894697D-01  0.6145099D-02  0.5082405D-02 -0.1650434D-02
+
+  ATOM      6 h           7 o           8 h           9 h 
+dE/dx  0.8393654D-01 -0.1696514D-02  0.1914170D-01 -0.8308772D-02
+dE/dy  0.7511789D-01 -0.2945892D-01  0.3118545D-01  0.4248617D-03
+dE/dz  0.5214160D-03  0.2233918D-01 -0.4465633D-01 -0.7603258D-02
+ 
+ resulting FORCE  (fx,fy,fz) = (0.219D-03,-.285D-03,0.996D-04)
+ resulting MOMENT (mx,my,mz) = (0.389D-03,0.429D-03,-.350D-03)
+
+
+ exx =       0.072043 eyy =       0.222464 ezz =       0.123084
+ eyz =      -0.136680 exz =      -0.109089 exy =       0.092482
+
+
+ **********************************************************************
+  |maximum component of gradient| : 0.84426602E-01  (atom  5 o )       
+   gradient norm                  : 0.19636240    
+ **********************************************************************
+   ***  cartesian gradients written onto <gradient>  ***
+
+
+     --- calculation of the energy gradient finished ---
+
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   9.41 seconds
+         total wall-time :   1.38 seconds
+    ------------------------------------------------------------------------
+
+   ****  rdgrad : all done  ****
+
+
+    2018-03-06 16:03:45.555 
+
+fine, there is no data group "$actual step"
+next step = relax
+
+ frog (c-17-17.gp.local) : TURBOMOLE V7.2 ( 21454 ) 2 Oct 2017 at 16:43:05
+ Copyright (C) 2017 TURBOMOLE GmbH, Karlsruhe
+
+
+    2018-03-06 16:03:45.593 
+
+
+ frog (c-17-17.gp.local) : TURBOMOLE V7.2 ( 21454 ) 2 Oct 2017 at 16:43:05
+ Copyright (C) 2017 TURBOMOLE GmbH, Karlsruhe
+
+
+    2018-03-06 16:03:45.593 
+
+ 
+       `--._            A b     I n i t i o           .-
+            `.  M o l e c u l a r   D y n a m i c s  /
+              \               .-.       .           / 
+               \             /   \     / `.        /  
+                `-----._    /     `._.'    `--.__.'   
+                        `--'                          
+ 
+ 
+
+Reading information from mdmaster                                                                        
+Reading log history information from mdmaster                                                                        
+Reading input data from mdlog.1                                                                         
+Checking for non-default isotopic masses in control                                                                         
+ 
+No constraints requested.
+Reading status from mdmaster                                                                        
+Reading actions from mdmaster                                                                        
+Getting gradients from control                                                                         
+ time-oldtime =    40.0000000000000     
+ current timestep =    40.0000000000000     
+Generating $log data for last completed MD step:                                
+t=   10200.0000000                                                              
+-0.360749633173E-01 -0.240431864835E-01 -0.870112264845E-02 ti                  
+ 0.879248857794      -2.89976178539       1.98530553658     o                   
+ -2.50087026920     -0.627141677722      -2.03909730739     o                   
+ -4.20657435862     -0.962305579583      -2.28185848142     h                   
+-0.740655528145       2.57183337498       2.04715764792     o                   
+ 0.925217797848       4.09255969307       2.07337205956     h                   
+  2.67220709325      0.696022599818      -2.03132849382     o                   
+  3.18337214505       1.72541020550      -3.59195717667     h                   
+  2.31156968763      -2.57703411332       3.03333922887     h                   
+  40.0000000000       0.00000000000                                             
+ti        0.300825852540E-04 -0.880522227991E-04 -0.525867697700E-04            
+o         0.231378924623E-03 -0.417313411263E-03  0.189608404805E-03            
+o         0.511807918206E-03  0.645357648878E-04 -0.451318333147E-04            
+h         0.136535027038E-02  0.221098983617E-02 -0.230902269446E-02            
+o         0.114942988542E-03  0.377371894728E-03  0.169314983006E-03            
+h        -0.105124127944E-02  0.270067431795E-03 -0.373415180872E-03            
+o        -0.103147788657E-02  0.234703829450E-04  0.176680505015E-03            
+h         0.276976163099E-02  0.135955059658E-03 -0.410268786251E-02            
+h        -0.905176201956E-03  0.360489726205E-03  0.984659460030E-03            
+ 0.614729449613E-01  -1152.06617560       0.00000000000                         
+-0.549160826190E-01  0.271607711826E-01 -0.902540752847E-02                     
+ 0.207395176315E-01 -0.322660756837E-01  0.289469738193E-01                     
+-0.101092449879E-01  0.183832851953E-03  0.614509940977E-02                     
+ 0.358585437462E-01  0.655440283527E-02  0.508240544285E-02                     
+-0.844266019446E-01 -0.791877112740E-01 -0.165043398647E-02                     
+ 0.839365382266E-01  0.751178912042E-01  0.521415958289E-03                     
+-0.169651399501E-02 -0.294589167879E-01  0.223391812535E-01                     
+ 0.191417013134E-01  0.311854489179E-01 -0.446563289524E-01                     
+-0.830877186867E-02  0.424861664407E-03 -0.760325840529E-02                     
+ 
+
+   Time t=   10200.0000000     a.u. (  246.717600000     fs)
+
+   e x e c u t i n g    M D   s t e p   (leapfrog algorithm)
+
+   Number of MD steps left:       0
+ 
+   Time t=   10240.0000000     a.u. (  247.685120000     fs)
+
+ 
+Provisional $current data:                                                      
+t=   10240.0000000                                                              
+-0.338653680153E-01 -0.280629741117E-01 -0.106392102949E-01 ti                  
+ 0.887366243695      -2.91468420315       1.99130184019     o                   
+ -2.47984335873     -0.624570332207      -2.04123970122     o                   
+ -4.18318552985     -0.879573480093      -2.37864508580     h                   
+-0.731426160555       2.59127249299       2.05402079014     o                   
+ 0.810077234085       4.03795064790       2.05798140968     h                   
+  2.63104104864      0.698577532939      -2.02548680234     o                   
+  3.27749425051       1.70369249976      -3.71717850519     h                   
+  2.28259781664      -2.56298448862       3.07934643185     h                   
+  40.0000000000       0.00000000000                                             
+ti        0.552398825509E-04 -0.100494690704E-03 -0.484521911622E-04            
+o         0.202934647536E-03 -0.373060443882E-03  0.149907590216E-03            
+o         0.525672761675E-03  0.642836378773E-04 -0.535598456457E-04            
+h         0.584720719242E-03  0.206830248725E-02 -0.241966510949E-02            
+o         0.230734189759E-03  0.485977950152E-03  0.171578555499E-03            
+h        -0.287851409408E-02 -0.136522612915E-02 -0.384766247116E-03            
+o        -0.102915111528E-02  0.638733280223E-04  0.146042287060E-03            
+h         0.235305263661E-02 -0.542942643581E-03 -0.313053321305E-02            
+h        -0.724296774720E-03  0.351240617465E-03  0.115018007453E-02            
+ 
+    50 energy records for statistics read from mdlog.1                                                                         
+       Total Energy (H):
+              current value   -1152.00470265    
+                    average   -1152.00534973    
+         standard deviation   0.199336092181E-02
+                      drift  -0.120241966124E-04
+        jump from last step   0.934498908009E-03
+ 
+     Kinetic Energy (H):
+              current value   0.614729449613E-01
+                    average   0.600708474923E-01
+         standard deviation   0.131512353243E-01
+                      drift   0.155962851388E-03
+ avg. quasi-temperature (K)    1806.39483897    
+      number of constraints       0
+ 
+         Pressure (GPa):
+              current value    0.00000000000    
+                    average    0.00000000000    
+ 
+ 
+   approx integration error   0.423508849408E-01
+ 
+Estimated integration error by reading last steps from mdlog.1                  
+ 
+Generating $log data for last completed MD step:                                
+t=   10200.0000000                                                              
+-0.360749633173E-01 -0.240431864835E-01 -0.870112264845E-02 ti                  
+ 0.879248857794      -2.89976178539       1.98530553658     o                   
+ -2.50087026920     -0.627141677722      -2.03909730739     o                   
+ -4.20657435862     -0.962305579583      -2.28185848142     h                   
+-0.740655528145       2.57183337498       2.04715764792     o                   
+ 0.925217797848       4.09255969307       2.07337205956     h                   
+  2.67220709325      0.696022599818      -2.03132849382     o                   
+  3.18337214505       1.72541020550      -3.59195717667     h                   
+  2.31156968763      -2.57703411332       3.03333922887     h                   
+  40.0000000000       0.00000000000                                             
+ti        0.300825852540E-04 -0.880522227991E-04 -0.525867697700E-04            
+o         0.231378924623E-03 -0.417313411263E-03  0.189608404805E-03            
+o         0.511807918206E-03  0.645357648878E-04 -0.451318333147E-04            
+h         0.136535027038E-02  0.221098983617E-02 -0.230902269446E-02            
+o         0.114942988542E-03  0.377371894728E-03  0.169314983006E-03            
+h        -0.105124127944E-02  0.270067431795E-03 -0.373415180872E-03            
+o        -0.103147788657E-02  0.234703829450E-04  0.176680505015E-03            
+h         0.276976163099E-02  0.135955059658E-03 -0.410268786251E-02            
+h        -0.905176201956E-03  0.360489726205E-03  0.984659460030E-03            
+ 0.614729449613E-01  -1152.06617560       0.00000000000                         
+-0.549160826190E-01  0.271607711826E-01 -0.902540752847E-02                     
+ 0.207395176315E-01 -0.322660756837E-01  0.289469738193E-01                     
+-0.101092449879E-01  0.183832851953E-03  0.614509940977E-02                     
+ 0.358585437462E-01  0.655440283527E-02  0.508240544285E-02                     
+-0.844266019446E-01 -0.791877112740E-01 -0.165043398647E-02                     
+ 0.839365382266E-01  0.751178912042E-01  0.521415958289E-03                     
+-0.169651399501E-02 -0.294589167879E-01  0.223391812535E-01                     
+ 0.191417013134E-01  0.311854489179E-01 -0.446563289524E-01                     
+-0.830877186867E-02  0.424861664407E-03 -0.760325840529E-02                     
+ 
+Generated $current data for new MD step:                                        
+t=   10240.0000000                                                              
+-0.338653680153E-01 -0.280629741117E-01 -0.106392102949E-01 ti                  
+ 0.887366243695      -2.91468420315       1.99130184019     o                   
+ -2.47984335873     -0.624570332207      -2.04123970122     o                   
+ -4.18318552985     -0.879573480093      -2.37864508580     h                   
+-0.731426160555       2.59127249299       2.05402079014     o                   
+ 0.810077234085       4.03795064790       2.05798140968     h                   
+  2.63104104864      0.698577532939      -2.02548680234     o                   
+  3.27749425051       1.70369249976      -3.71717850519     h                   
+  2.28259781664      -2.56298448862       3.07934643185     h                   
+  40.0000000000       0.00000000000                                             
+ti        0.552398825509E-04 -0.100494690704E-03 -0.484521911622E-04            
+o         0.202934647536E-03 -0.373060443882E-03  0.149907590216E-03            
+o         0.525672761675E-03  0.642836378773E-04 -0.535598456457E-04            
+h         0.584720719242E-03  0.206830248725E-02 -0.241966510949E-02            
+o         0.230734189759E-03  0.485977950152E-03  0.171578555499E-03            
+h        -0.287851409408E-02 -0.136522612915E-02 -0.384766247116E-03            
+o        -0.102915111528E-02  0.638733280223E-04  0.146042287060E-03            
+h         0.235305263661E-02 -0.542942643581E-03 -0.313053321305E-02            
+h        -0.724296774720E-03  0.351240617465E-03  0.115018007453E-02            
+ 
+Logging MD run data ($log) to file mdlog.1                                                                         
+Writing data for next step ($current) to mdlog.1                                                                         
+
+    2018-03-06 16:03:46.214 
+
+         total cpu-time :   0.43 seconds
+         total wall-time :   0.62 seconds
+
+          ******************************************************
+
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.44 seconds
+         total wall-time :   0.63 seconds
+    ------------------------------------------------------------------------
+
+   ****  frog : all done  ****
+
+
+    2018-03-06 16:03:46.214 
+
+
+MOLECULAR DYNAMICS RUN ENDED NORMALLY
+
+Tue Mar  6 16:03:46 PST 2018
