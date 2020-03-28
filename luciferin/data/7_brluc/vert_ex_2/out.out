@@ -1,0 +1,16 @@
+cat: job.start: No such file or directory
+OPTIMIZATION CYCLE 1
+ rdgrad ended normally
+  statpt ended normally
+ ridft ended normally
+OPTIMIZATION CYCLE 2
+ rdgrad ended normally
+  statpt ended normally
+ ridft ended normally
+OPTIMIZATION CYCLE 3
+ rdgrad ended normally
+  statpt ended normally
+ ridft ended normally
+grep: job.last: No such file or directory
+grep: job.last: No such file or directory
+cat: job.start: No such file or directory

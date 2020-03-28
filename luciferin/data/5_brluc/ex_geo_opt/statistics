@@ -1,0 +1,176 @@
+
+ DSCF STATISTICS OUTPUT :
+
+ integral neglect threshold       :  0.11E-10
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+ cpu-time for construction of rho     :        0.776 s
+
+
+
+ --------------------    1.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.108 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10171062
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        2.268 s
+
+
+
+ --------------------    2.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.108 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10168189
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        1.788 s
+
+
+
+ --------------------    3.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.124 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10239531
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        1.676 s
+
+
+
+ --------------------    4.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.076 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10168148
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        1.256 s
+
+
+
+ --------------------    5.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.036 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10168148
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        0.708 s
+
+ cpu-time for construction of rho     :        2.244 s
+
+
+
+ --------------------    6.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.100 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10172197
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        8.120 s
+
+ cpu-time for ri-coulomb part         :        0.036 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10170696
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        4.744 s
+
+ cpu-time for ri-coulomb part         :        0.040 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10168151
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        4.972 s
+
+
+
+ --------------------    1.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.044 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10168148
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        1.004 s
+
+
+
+ --------------------    2.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.032 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10168236
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        0.768 s
+
+
+
+ --------------------    3.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.040 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     12468360
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        0.744 s
+
+
+
+ --------------------    4.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.040 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     12480931
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        0.716 s
+
+
+
+ --------------------    5.ITERATION  --------------------
+ cpu-time for ri-coulomb part         :        0.036 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10071496
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        2.832 s
+
+ cpu-time for ri-coulomb part         :        0.036 s
+
+ number of shell pairs ii,jj included  :         5115
+ number of integral batches included   :     10230061
+ number of batches from twoint         :            0
+ unnecessary integral batches on file  :            0
+
+ cpu-time for xc part                 :        2.896 s
+
+ wall time for kk loop in edjk :       20.159 s
+ cpu-time for xc part                 :        7.628 s
+
+
+  egrad  : cpu elapsed       300.900 s
+          wall              300.931 s

@@ -1,0 +1,19 @@
+#!/bin/sh
+# environment settings for ssh-runs
+# general
+export PATH=/modfac/apps/totalview/bin:/modfac/apps/toolworks/memoryscape.3.15.4-6/bin:/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu:/modfac/apps/TURBOMOLE/7.2.1-official/scripts:/modfac/home/bdnguye2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/modfac/bin:/modfac/apps/MGLTools/bin:/modfac/apps/NAMD:/modfac/apps/cambridge/bin
+# TURBOMOLE
+export TURBODIR=/modfac/apps/TURBOMOLE/7.2.1-official
+export TOOLS=
+export PARA_ARCH=
+export TMOUT=
+# NUMFORCE
+export STARTDIR=/work/bdnguye2/luc_project/5_brluc/ex_geo_opt/save
+export FORCEDIR=/work/bdnguye2/luc_project/5_brluc/ex_geo_opt/save/numforce
+export MAXJOBS=1
+export SCRIPTS=/modfac/apps/TURBOMOLE/7.2.1-official/scripts
+export TURBOLOAD=/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu
+export getmo=/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu/ridft
+export getgrad=/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu/egrad
+export showdg=/modfac/apps/TURBOMOLE/7.2.1-official/bin/em64t-unknown-linux-gnu/sdg
+export LD_LIBRARY_PATH=
